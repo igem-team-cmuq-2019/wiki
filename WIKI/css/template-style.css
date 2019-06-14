@@ -3154,3 +3154,7 @@ margin-right: 10px
     padding: 30px !important;
   }
 } 
+.link {
+  text-decoration: underline;
+  font-weight: bold;
+}
