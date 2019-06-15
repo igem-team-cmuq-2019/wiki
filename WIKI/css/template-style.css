@@ -3158,3 +3158,40 @@ margin-right: 10px
   text-decoration: underline;
   font-weight: bold;
 }
+/* START members.html */
+.teamParent {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.teamItem {
+    min-width: 300px;
+    max-width: 300px;
+    display: inline-block;
+    margin: 20px;
+}
+.teamItem img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+.icon-linked_in_circle {
+    margin-left: 5px;
+}
+.itemName {
+    display: inline-block;
+}
+.viewResume {
+    margin-top: 10px;
+}
+.viewResume a {
+    color: #73194B !important;
+}
+.backgroundLight {
+    background-color: #eee !important;
+}
+.image-hover-overlay-content p {
+    color: #000 !important;
+}
+/* END members.html */
