@@ -41,105 +41,7 @@
     <!-- Page overlay with fade out effect after page load. Try to change class background-dark to another color (for example white or primary color) -->
     <div id="page-overlay" class="background-blue"></div>
 
-    <!-- HEADER -->
-    <header role="banner" class="position-absolute">
-      <!-- Top Navigation -->
-      <nav class="background-transparent background-primary-dott full-width sticky">
-        <div class="top-nav">
-          <!-- mobile version logo -->
-          <div class="logo hide-xl hide-xxl">
-             <a href="index.html" class="logo">
-              <!-- Logo White Version -->
-              <img class="logo-white" src="img/igem-org.png" alt="">
-              <!-- Logo Dark Version -->
-              <img class="logo-dark" src="img/igem-white.png" alt="">
-            </a>
-          </div>
-          <p class="nav-text"></p>
-
-          <!-- left menu items -->
-          <div class="top-nav left-menu">
-             <ul class="right top-ul chevron">
-                <li class ="active-item"><a href="index.html">Home</a></li>
-                <li>
-                  <a>Team</a>
-                  <ul>
-                    <li><a href="team/members.html">Members</a></li>
-                    <li><a href="team/collaborations.html">Collaborations</a></li>
-                    <li><a href="team/sponsors.html">Sponsors</a></li>
-                    <li><a href="team/attributions.html">Attributions</a></li>
-                  </ul>
-                </li>
-                <li>
-                  <a>Project</a>
-                  <ul>
-                      <li><a href="project/details/description.html">Description</a></li>
-                      <li>
-                        <a>Project Details</a>
-                        <ul>
-                          <li><a href="project/details/project_details/current_methods.html">Current Methods</a></li>
-                          <li><a href="project/details/project_details/our_methods.html">Our Methods</a></li>
-                          <li><a href="project/details/project_details/future_implications.html">Future Implications</a></li>
-                          <li><a href="project/details/project_details/references.html">References</a></li>
-                        </ul>
-                      </li>
-                      <li>
-                        <a>Hardware</a>
-                        <ul>
-                          <li class = "x"><a href="project/hardware/design_considerations.html">Design Considerations</a></li>
-                          <li><a href="project/hardware/design_process.html">Design Process</a></li>
-                        </ul>
-                      </li>
-                      <li>
-                        <a>Software</a>
-                        <ul>
-                          <li><a href="project/software/data_security.html">Data Security</a></li>
-                          <li><a href="project/software/design_considerations.html">Design Considerations</a></li>
-                          <li><a href="project/software/algorithm.html">Algorithm</a></li>
-                        </ul>
-                      </li>
-                      <li><a href="project/into_lab.html">Into lab?</a></li>
-                      <li><a href="project/model.html">Model</a></li>
-                      <li><a href="project/results.html">Results</a></li>
-                      <li><a href="project/lab_notebook.html">Lab Notebook</a></li>
-                  </ul>
-                </li>
-                <li>
-                  <a>Parts</a>
-                  <ul>
-                    <li><a href="parts/overview.html">Overview</a></li>
-                    <li><a href="parts/basic.html">Basic Parts</a></li>
-                    <li><a href="parts/improved.html">Improved Parts</a></li>
-                    <li><a href="parts/composite.html">Composite Parts</a></li>
-                  </ul>
-                </li>
-                <li><a href="human_practices/human_practices.html">Human Practices</a></li>
-             </ul>
-          </div>
-
-          <!-- logo -->
-          <ul class="logo-menu">
-            <a href="index.html" class="logo">
-              <!-- Logo White Version -->
-              <img class="logo-white" src="img/igem-white.png" alt="">
-              <!-- Logo Dark Version -->
-              <img class="logo-dark" src="img/igem-org.png" alt="">
-            </a>
-          </ul>
-
-          <!-- right menu items -->
-          <div class="top-nav right-menu">
-             <ul class="top-ul chevron">
-                <li><a href="safety/safety.html">Safety</a></li>
-                <li><a href="outreach/outreach.html">Outreach</a></li>
-                <li><a href="video/video.html">Video</a></li>
-                <li><a href="awards/awards.html">Awards</a></li>
-                <li><a href="judging_form.html/judging_form.html">Judging Form</a></li>
-             </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
+    <div id="header"></div>
 
     <!-- MAIN -->
     <main role="main">
@@ -386,7 +288,7 @@
                 <p class="margin-bottom-10 text-primary text-uppercase">[TITLE HERE]</p>
               </div>
             </div>
-            
+
           <!-- <a href="about-us.html" class="s-12 m-6 l-3 center button border-radius background-primary text-size-20 margin-top-60 text-white">About Us</a> -->
         </div>
       </section>
@@ -424,41 +326,9 @@
             </div>
          </div>
       </section>
-    </main>
 
-    <!-- FOOTER -->
-    <footer>
-        <!-- Social -->
-        <div class="background-primary padding text-center">
-            <a href="/"><i class="icon-facebook_circle text-size-25 text-blue"></i></a>
-            <a href="/"><i class="icon-twitter_circle text-size-25 text-blue"></i></a>
-            <a href="/"><i class="icon-google_plus_circle text-size-25 text-blue"></i></a>
-            <a href="/"><i class="icon-instagram_circle text-size-25 text-blue"></i></a>
-            <a href="/"><i class="icon-linked_in_circle text-size-25 text-blue"></i></a>
-        </div>
-        <!-- Main Footer -->
-        <section class="section background-dark">
-            <div class="line">
-            <div class="margin2x">
-                <div class="s-12 m-6 l-3 xl-5">
-                    <h4 class="text-white text-strong">Our Mission</h4>
-                    <p>
-                    </p>
-                </div>
-                <div class="s-12 m-6 l-3 xl-3">
-                    <h4 class="text-white text-strong margin-m-top-30">Contact Us</h4>
-                    <p><i class="icon-sli-screen-smartphone text-primary"></i> +974 something?</p>
-                    <a class="text-primary-hover" href="mailto:igem@gmail.com"><i class="icon-sli-mouse text-primary"></i> igem@gmail.com</a><br>
-                </div>
-            </div>
-            </div>
-        </section>
-        <div class="background-dark">
-            <div class="line">
-                <hr class="break margin-top-bottom-0" style="border-color: #777;">
-            </div>
-        </div>
-    </footer>
+      <div id="footer"></div>
+    </main>
 
     <script type="text/javascript" src="js/responsee.js"></script>
     <script type="text/javascript" src="js/plugins.min.js"></script>

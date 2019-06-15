@@ -1,5 +1,9 @@
-jQuery(document).ready(function($) {  
-  // Owl Carousel                     
+jQuery(document).ready(function($) {
+    // load header and footer
+    $('#header').load('header.html');
+    $('#footer').load('footer.html');
+
+  // Owl Carousel
   var owl = $('.carousel-default');
   owl.owlCarousel({
     nav: true,
@@ -11,7 +15,7 @@ jQuery(document).ready(function($) {
     autoplayTimeout: 5000
   });
 
-  // Owl Carousel - Content Blocks  
+  // Owl Carousel - Content Blocks
   var owl = $('.carousel-blocks');
   owl.owlCarousel({
     nav: true,
@@ -33,7 +37,7 @@ jQuery(document).ready(function($) {
     autoplay: true,
     autoplayTimeout: 5000
   });
-  
+
   // Owl Carousel - Content 3 Blocks
   var owl = $('.carousel-3-blocks');
   owl.owlCarousel({
@@ -55,8 +59,8 @@ jQuery(document).ready(function($) {
     navText: ["&#xe605","&#xe606"],
     autoplay: true,
     autoplayTimeout: 5000
-  });  
-  
+  });
+
   var owl = $('.carousel-fade-transition');
   owl.owlCarousel({
     nav: true,
@@ -64,31 +68,31 @@ jQuery(document).ready(function($) {
     items: 1,
     loop: true,
     navText: ["&#xe605","&#xe606"],
-    autoplay: true, 
+    autoplay: true,
     animateOut: 'fadeOut',
     autoplayTimeout: 5000
   });
-  
+
   // skillbar
   $('.skillbar').bind('inview', function (event, visible) {
-    if (visible) {  
+    if (visible) {
       $('.skillbar').each(function(){
   	    $(this).find('.skillbar-bar').animate({
   	   	  width:$(this).attr('data-percent')
   	    },3000);
       });
-       
-    } 
+
+    }
   });
-  
+
   // Simple Preloader
   $(window).load(function() {
   	$("#page-overlay").delay(200).fadeOut("slow");
   })
-  
+
   // countTo
   $('.timer').bind('inview', function (event, visible) {
-    if (visible) {  
+    if (visible) {
       $('.timer').countTo({
         speed: 1400,
         refreshInterval: 10,
@@ -103,8 +107,8 @@ jQuery(document).ready(function($) {
         }
       });
       $( this ).off( event );
-    } 
-  });      
+    }
+  });
   function count(options) {
     var $this = $(this);
     options = $.extend({}, options || {}, $this.data('countToOptions') || {});
@@ -116,17 +120,17 @@ jQuery(document).ready(function($) {
       return value.toFixed(options.decimals).replace(/\B(?=(?:\d{3})+(?!\d))/g, ',');
     }
   });
-  
+
   // Sticky Nav Bar
   $(window).scroll(function() {
-    if ($(this).scrollTop() > 20){  
+    if ($(this).scrollTop() > 20){
         $('.sticky').addClass("fixed");
     }
     else{
         $('.sticky').removeClass("fixed");
     }
   });
-  
+
   // Lightbox
   $('a[data-rel^=lightcase]').lightcase({
     maxWidth: 1000,
@@ -140,40 +144,40 @@ jQuery(document).ready(function($) {
 			loop: true
 		},
   });
-  
+
   // Content Animation
   $.fn.isInViewport = function() {
     var elementTop = $(this).offset().top;
     var elementBottom = elementTop + $(this).outerHeight();
-  
+
     var viewportTop = $(window).scrollTop();
     var viewportBottom = viewportTop + $(window).height();
-  
+
     return elementBottom > viewportTop && elementTop < viewportBottom;
   };
-  
+
   $(window).on('resize scroll', function() {
     $('.animated-element').each(function() {
       if ($(this).isInViewport()) {
         $(this).addClass('animation');
       }
     });
-  }); 
-   
+  });
+
   // map
   $('#map').each(function() {
-  
+
     var latitude = $(this).data( "latitude" );
     var longitude = $(this).data( "longitude" );
     var zoom = $(this).data( "zoom" );
-    
+
     var address = 'Custom Address';
     var mapOptions = {
     	zoom: zoom,
-    	scrollwheel: false,     
+    	scrollwheel: false,
   	  center: new google.maps.LatLng(latitude, longitude),
-  	  mapTypeId: google.maps.MapTypeId.ROADMAP,  		
-    }   
+  	  mapTypeId: google.maps.MapTypeId.ROADMAP,
+    }
   	var stylez = [
   		{
   		  featureType: "all",
@@ -183,7 +187,7 @@ jQuery(document).ready(function($) {
   		  ]
   		}
   	];
-    var map = new google.maps.Map(document.getElementById('map'),  
+    var map = new google.maps.Map(document.getElementById('map'),
   								mapOptions);
     var image = 'img/arrow.png';
     var myLatLng = new google.maps.LatLng(latitude, longitude);
@@ -191,28 +195,28 @@ jQuery(document).ready(function($) {
   	  position: myLatLng,
   	  map: map,
   	  icon: image
-    });	
-  	var mapType = new google.maps.StyledMapType(stylez, { name:"Grayscale" });    
+    });
+  	var mapType = new google.maps.StyledMapType(stylez, { name:"Grayscale" });
   	map.mapTypes.set('tehgrayz', mapType);
-  	map.setMapTypeId('tehgrayz');   
+  	map.setMapTypeId('tehgrayz');
   });
-  
+
   // Custom scripts
-  // Pie Charts 
+  // Pie Charts
   $('.chart').bind('inview', function (event, visible) {
-    if (visible) {            
-      $('.chart').easyPieChart({ 
+    if (visible) {
+      $('.chart').easyPieChart({
         barColor: '#28a5df',
-        trackColor: '', 
-        size: 127, 
-        lineWidth: 2,    
+        trackColor: '',
+        size: 127,
+        lineWidth: 2,
         scaleLength: 0,
         animate: {
     			duration: 8000,
     			enabled: true
-        }          
-     }); 
-   }          
+        }
+     });
+   }
  });
 });
 
@@ -242,7 +246,7 @@ jQuery(document).ready(function($) {
                 document.documentElement.scrollTop :
                 document.body.scrollTop),
             elems = [];
-        
+
         // naughty, but this is how it knows which elements to check for
         $.each($.cache, function () {
             if (this.events && this.events.inview) {
@@ -260,7 +264,7 @@ jQuery(document).ready(function($) {
                 if (scrolltop > (top + height) || scrolltop + vpH < top) {
                     if (inview) {
                         $el.data('inview', false);
-                        $el.trigger('inview', [ false ]);                        
+                        $el.trigger('inview', [ false ]);
                     }
                 } else if (scrolltop < (top + height)) {
                     if (!inview) {
@@ -271,7 +275,7 @@ jQuery(document).ready(function($) {
             });
         }
     });
-    
+
     // kick the event to pick up any elements already in view.
     // note however, this only works if the plugin is included after the elements are bound to 'inview'
     $(function () {
