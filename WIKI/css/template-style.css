@@ -341,7 +341,7 @@ hr.break-small.break-double.background-purple:before, hr.break-small.break-doubl
 }
 hr.break-small.break-double.background-blue:before, hr.break-small.break-double.background-blue:after,
 .primary-color-blue hr.break-small.break-double.background-primary:before, .primary-color-blue hr.break-small.break-double.background-primary:after {
-  background: #005881;
+  background:#61429B;
 }
 hr.break-small.break-double.background-light-blue:before, hr.break-small.break-double.background-light-blue:after,
 .primary-color-light-blue hr.break-small.break-double.background-primary:before, .primary-color-light-blue hr.break-small.break-double.background-primary:after {
@@ -665,7 +665,7 @@ aside.aside-left {
   color: #913fd9 !important;
 }
 .text-blue, .text-blue *, .primary-color-blue .text-primary, .primary-color-blue .text-primary * {
-  color: #005881 !important;
+  color: #fff !important;
 }
 .text-light-blue, .text-light-blue *, .primary-color-light-blue .text-primary, .primary-color-light-blue .text-primary * {
   color: #28a5df !important;
@@ -740,7 +740,7 @@ aside.aside-left {
   background-color: #913fd9 !important;
 }
 .background-blue, .primary-color-blue .background-primary {
-  background-color: #005881 !important;
+  background-color: #61429B !important;
 }
 .background-light-blue, .primary-color-light-blue .background-primary {
   background-color: #28a5df !important;
@@ -3094,7 +3094,6 @@ margin-right: 10px
   }
   .logo img {
     margin: 0 auto;
-    max-width: 300px;
   }
   .logo img.logo-white {
     display:none;
