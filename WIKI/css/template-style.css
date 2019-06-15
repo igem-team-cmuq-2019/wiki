@@ -9,11 +9,11 @@ p {
   font-size: 0.85rem;
   line-height: 1.6rem;
 }
-a, a:link, a:visited, a:hover, a:active { 
+a, a:link, a:visited, a:hover, a:active {
 color: #777;
 }
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-  color: #000;                                         
+  color: #000;
   margin-bottom: 15px;
   margin-top: 0;
 }
@@ -24,12 +24,12 @@ h4, .h4 {font-size: 1.1rem;}
 h5, .h5 {font-size: 1rem;}
 h6, .h6 {font-size: 0.9rem;}
 h1.headline, .h1.headline {
-  font-size: 3.8rem; 
+  font-size: 3.8rem;
   letter-spacing: -2.5px;
 }
 h2.headline, .h2.headline {
-  font-size: 3rem; 
-  letter-spacing: -2px; 
+  font-size: 3rem;
+  letter-spacing: -2px;
 }
 h3.headline, .h3.headline {
   font-size: 2.6rem;
@@ -37,11 +37,11 @@ h3.headline, .h3.headline {
 }
 h4.headline, .h4.headline {
   font-size: 2.4rem;
-  letter-spacing: -1.5px; 
+  letter-spacing: -1.5px;
 }
 h5.headline, .h5.headline {
   font-size: 2.2rem;
-  letter-spacing: -1.4px; 
+  letter-spacing: -1.4px;
 }
 h6.headline, .h6.headline {
   font-size: 2rem;
@@ -65,7 +65,7 @@ h6.headline, .h6.headline {
 .text-size-70, .text-xxl-size-70 {font-size: 70px !important;}
 .text-size-80, .text-xxl-size-80 {font-size: 80px !important;}
 .text-size-90, .text-xxl-size-90 {font-size: 90px !important;}
-.text-size-100, .text-xxl-size-100 {font-size: 100px !important;}                                                                                                                
+.text-size-100, .text-xxl-size-100 {font-size: 100px !important;}
 .background-green .section-title:after, .primary-color-green .background-primary .section-title:after {color: #fff;}
 .text-thin {font-weight: 300;}
 b, strong, .text-strong {font-weight: 700;}
@@ -156,79 +156,79 @@ td {border-right:1px solid #fff;}
   background-repeat: no-repeat;
   background-size: cover;
 }
-.background-white-hightlight .top-nav .active-item > a, .background-white-hightlight .top-nav li a:hover, .background-white-hightlight .aside-nav li a:hover, 
+.background-white-hightlight .top-nav .active-item > a, .background-white-hightlight .top-nav li a:hover, .background-white-hightlight .aside-nav li a:hover,
 .background-white-hightlight .aside-nav > ul > li.active-item > a:link, .background-white-hightlight .aside-nav > ul > li.active-item > a:visited,
-.primary-color-white .background-primary-hightlight .top-nav .active-item > a, .primary-color-white .background-primary-hightlight .top-nav li a:hover, .primary-color-white .background-primary-hightlight .aside-nav li a:hover, 
+.primary-color-white .background-primary-hightlight .top-nav .active-item > a, .primary-color-white .background-primary-hightlight .top-nav li a:hover, .primary-color-white .background-primary-hightlight .aside-nav li a:hover,
 .primary-color-white .background-primary-hightlight .aside-nav > ul > li.active-item > a:link, .primary-color-white .background-primary-hightlight .aside-nav > ul > li.active-item > a:visited {
   background: #fff none repeat scroll 0 0;
   color: #002633;
 }
-.background-yellow-hightlight .top-nav .active-item > a, .background-yellow-hightlight .top-nav li a:hover, .background-yellow-hightlight .aside-nav li a:hover, 
+.background-yellow-hightlight .top-nav .active-item > a, .background-yellow-hightlight .top-nav li a:hover, .background-yellow-hightlight .aside-nav li a:hover,
 .background-yellow-hightlight .aside-nav > ul > li.active-item > a:link, .background-yellow-hightlight .aside-nav > ul > li.active-item > a:visited,
-.primary-color-yellow .background-primary-hightlight .top-nav .active-item > a, .primary-color-yellow .background-primary-hightlight .top-nav li a:hover, .primary-color-yellow .background-primary-hightlight .aside-nav li a:hover, 
+.primary-color-yellow .background-primary-hightlight .top-nav .active-item > a, .primary-color-yellow .background-primary-hightlight .top-nav li a:hover, .primary-color-yellow .background-primary-hightlight .aside-nav li a:hover,
 .primary-color-yellow .background-primary-hightlight .aside-nav > ul > li.active-item > a:link, .primary-color-yellow .background-primary-hightlight .aside-nav > ul > li.active-item > a:visited {
   background: #F1D529 none repeat scroll 0 0;
   color: #002633;
 }
-.background-orange-hightlight .top-nav .active-item > a, .background-orange-hightlight .top-nav li a:hover, .background-orange-hightlight .aside-nav li a:hover, 
+.background-orange-hightlight .top-nav .active-item > a, .background-orange-hightlight .top-nav li a:hover, .background-orange-hightlight .aside-nav li a:hover,
 .background-orange-hightlight .aside-nav > ul > li.active-item > a:link, .background-orange-hightlight .aside-nav > ul > li.active-item > a:visited,
-.primary-color-orange .background-primary-hightlight .top-nav .active-item > a, .primary-color-orange .background-primary-hightlight .top-nav li a:hover, .primary-color-orange .background-primary-hightlight .aside-nav li a:hover, 
+.primary-color-orange .background-primary-hightlight .top-nav .active-item > a, .primary-color-orange .background-primary-hightlight .top-nav li a:hover, .primary-color-orange .background-primary-hightlight .aside-nav li a:hover,
 .primary-color-orange .background-primary-hightlight .aside-nav > ul > li.active-item > a:link, .primary-color-orange .background-primary-hightlight .aside-nav > ul > li.active-item > a:visited {
   background: #E4A600 none repeat scroll 0 0;
   color: #fff;
 }
-.background-red-hightlight .top-nav .active-item > a, .background-red-hightlight .top-nav li a:hover, .background-red-hightlight .aside-nav li a:hover, 
+.background-red-hightlight .top-nav .active-item > a, .background-red-hightlight .top-nav li a:hover, .background-red-hightlight .aside-nav li a:hover,
 .background-red-hightlight .aside-nav > ul > li.active-item > a:link, .background-red-hightlight .aside-nav > ul > li.active-item > a:visited,
-.primary-color-red .background-primary-hightlight .top-nav .active-item > a, .primary-color-red .background-primary-hightlight .top-nav li a:hover, .primary-color-red .background-primary-hightlight .aside-nav li a:hover, 
+.primary-color-red .background-primary-hightlight .top-nav .active-item > a, .primary-color-red .background-primary-hightlight .top-nav li a:hover, .primary-color-red .background-primary-hightlight .aside-nav li a:hover,
 .primary-color-red .background-primary-hightlight .aside-nav > ul > li.active-item > a:link, .primary-color-red .background-primary-hightlight .aside-nav > ul > li.active-item > a:visited {
   background: #C81010 none repeat scroll 0 0;
   color: #fff;
 }
-.background-pink-hightlight .top-nav .active-item > a, .background-pink-hightlight .top-nav li a:hover, .background-pink-hightlight .aside-nav li a:hover, 
+.background-pink-hightlight .top-nav .active-item > a, .background-pink-hightlight .top-nav li a:hover, .background-pink-hightlight .aside-nav li a:hover,
 .background-pink-hightlight .aside-nav > ul > li.active-item > a:link, .background-pink-hightlight .aside-nav > ul > li.active-item > a:visited,
-.primary-color-pink .background-primary-hightlight .top-nav .active-item > a, .primary-color-pink .background-primary-hightlight .top-nav li a:hover, .primary-color-pink .background-primary-hightlight .aside-nav li a:hover, 
+.primary-color-pink .background-primary-hightlight .top-nav .active-item > a, .primary-color-pink .background-primary-hightlight .top-nav li a:hover, .primary-color-pink .background-primary-hightlight .aside-nav li a:hover,
 .primary-color-pink .background-primary-hightlight .aside-nav > ul > li.active-item > a:link, .primary-color-pink .background-primary-hightlight .aside-nav > ul > li.active-item > a:visited {
   background: #DE1E5E none repeat scroll 0 0;
   color: #fff;
 }
-.background-purple-hightlight .top-nav .active-item > a, .background-purple-hightlight .top-nav li a:hover, .background-purple-hightlight .aside-nav li a:hover, 
+.background-purple-hightlight .top-nav .active-item > a, .background-purple-hightlight .top-nav li a:hover, .background-purple-hightlight .aside-nav li a:hover,
 .background-purple-hightlight .aside-nav > ul > li.active-item > a:link, .background-purple-hightlight .aside-nav > ul > li.active-item > a:visited,
-.primary-color-purple .background-primary-hightlight .top-nav .active-item > a, .primary-color-purple .background-primary-hightlight .top-nav li a:hover, .primary-color-purple .background-primary-hightlight .aside-nav li a:hover, 
+.primary-color-purple .background-primary-hightlight .top-nav .active-item > a, .primary-color-purple .background-primary-hightlight .top-nav li a:hover, .primary-color-purple .background-primary-hightlight .aside-nav li a:hover,
 .primary-color-purple .background-primary-hightlight .aside-nav > ul > li.active-item > a:link, .primary-color-purple .background-primary-hightlight .aside-nav > ul > li.active-item > a:visited {
   background: #913fd9 none repeat scroll 0 0;
   color: #fff;
 }
-.background-blue-hightlight .top-nav .active-item > a, .background-blue-hightlight .top-nav li a:hover, .background-blue-hightlight .aside-nav li a:hover, 
+.background-blue-hightlight .top-nav .active-item > a, .background-blue-hightlight .top-nav li a:hover, .background-blue-hightlight .aside-nav li a:hover,
 .background-blue-hightlight .aside-nav > ul > li.active-item > a:link, .background-blue-hightlight .aside-nav > ul > li.active-item > a:visited,
-.primary-color-blue .background-primary-hightlight .top-nav .active-item > a, .primary-color-blue .background-primary-hightlight .top-nav li a:hover, .primary-color-blue .background-primary-hightlight .aside-nav li a:hover, 
+.primary-color-blue .background-primary-hightlight .top-nav .active-item > a, .primary-color-blue .background-primary-hightlight .top-nav li a:hover, .primary-color-blue .background-primary-hightlight .aside-nav li a:hover,
 .primary-color-blue .background-primary-hightlight .aside-nav > ul > li.active-item > a:link, .primary-color-blue .background-primary-hightlight .aside-nav > ul > li.active-item > a:visited {
   background: #252D73 none repeat scroll 0 0;
   color: #E8E8E8;
-} 
-.background-light-blue-hightlight .top-nav .active-item > a, .background-light-blue-hightlight .top-nav li a:hover, .background-light-blue-hightlight .aside-nav li a:hover, 
+}
+.background-light-blue-hightlight .top-nav .active-item > a, .background-light-blue-hightlight .top-nav li a:hover, .background-light-blue-hightlight .aside-nav li a:hover,
 .background-light-blue-hightlight .aside-nav > ul > li.active-item > a:link, .background-light-blue-hightlight .aside-nav > ul > li.active-item > a:visited,
-.primary-color-light-blue .background-primary-hightlight .top-nav .active-item > a, .primary-color-light-blue .background-primary-hightlight .top-nav li a:hover, .primary-color-light-blue .background-primary-hightlight .aside-nav li a:hover, 
+.primary-color-light-blue .background-primary-hightlight .top-nav .active-item > a, .primary-color-light-blue .background-primary-hightlight .top-nav li a:hover, .primary-color-light-blue .background-primary-hightlight .aside-nav li a:hover,
 .primary-color-light-blue .background-primary-hightlight .aside-nav > ul > li.active-item > a:link, .primary-color-light-blue .background-primary-hightlight .aside-nav > ul > li.active-item > a:visited {
   background: #28a5df none repeat scroll 0 0;
   color: #fff;
-} 
-.background-aqua-hightlight .top-nav .active-item > a, .background-aqua-hightlight .top-nav li a:hover, .background-aqua-hightlight .aside-nav li a:hover, 
+}
+.background-aqua-hightlight .top-nav .active-item > a, .background-aqua-hightlight .top-nav li a:hover, .background-aqua-hightlight .aside-nav li a:hover,
 .background-aqua-hightlight .aside-nav > ul > li.active-item > a:link, .background-aqua-hightlight .aside-nav > ul > li.active-item > a:visited,
-.primary-color-aqua .background-primary-hightlight .top-nav .active-item > a, .primary-color-aqua .background-primary-hightlight .top-nav li a:hover, .primary-color-aqua .background-primary-hightlight .aside-nav li a:hover, 
+.primary-color-aqua .background-primary-hightlight .top-nav .active-item > a, .primary-color-aqua .background-primary-hightlight .top-nav li a:hover, .primary-color-aqua .background-primary-hightlight .aside-nav li a:hover,
 .primary-color-aqua .background-primary-hightlight .aside-nav > ul > li.active-item > a:link, .primary-color-aqua .background-primary-hightlight .aside-nav > ul > li.active-item > a:visited {
   background: #00B5A6 none repeat scroll 0 0;
   color: #fff;
 }
-.background-green-hightlight .top-nav .active-item > a, .background-green-hightlight .top-nav li a:hover, .background-green-hightlight .aside-nav li a:hover, 
+.background-green-hightlight .top-nav .active-item > a, .background-green-hightlight .top-nav li a:hover, .background-green-hightlight .aside-nav li a:hover,
 .background-green-hightlight .aside-nav > ul > li.active-item > a:link, .background-green-hightlight .aside-nav > ul > li.active-item > a:visited,
-.primary-color-green .background-primary-hightlight .top-nav .active-item > a, .primary-color-green .background-primary-hightlight .top-nav li a:hover, .primary-color-green .background-primary-hightlight .aside-nav li a:hover, 
+.primary-color-green .background-primary-hightlight .top-nav .active-item > a, .primary-color-green .background-primary-hightlight .top-nav li a:hover, .primary-color-green .background-primary-hightlight .aside-nav li a:hover,
 .primary-color-green .background-primary-hightlight .aside-nav > ul > li.active-item > a:link, .primary-color-green .background-primary-hightlight .aside-nav > ul > li.active-item > a:visited {
   background: #49BF4C none repeat scroll 0 0;
   color: #fff;
 }
-.background-dark-hightlight .top-nav .active-item > a, .background-dark-hightlight .top-nav li a:hover, .background-dark-hightlight .aside-nav li a:hover, 
+.background-dark-hightlight .top-nav .active-item > a, .background-dark-hightlight .top-nav li a:hover, .background-dark-hightlight .aside-nav li a:hover,
 .background-dark-hightlight .aside-nav > ul > li.active-item > a:link, .background-dark-hightlight .aside-nav > ul > li.active-item > a:visited,
-.primary-color-dark .background-primary-hightlight .top-nav .active-item > a, .primary-color-dark .background-primary-hightlight .top-nav li a:hover, .primary-color-dark .background-primary-hightlight .aside-nav li a:hover, 
+.primary-color-dark .background-primary-hightlight .top-nav .active-item > a, .primary-color-dark .background-primary-hightlight .top-nav li a:hover, .primary-color-dark .background-primary-hightlight .aside-nav li a:hover,
 .primary-color-dark .background-primary-hightlight .aside-nav > ul > li.active-item > a:link, .primary-color-dark .background-primary-hightlight .aside-nav > ul > li.active-item > a:visited {
   background: #002633 none repeat scroll 0 0;
   color: #fff;
@@ -241,7 +241,7 @@ td {border-right:1px solid #fff;}
 /* Breaks */
 hr.break {
   border: 0;
-  border-top: 1px solid #e5e5e5; 
+  border-top: 1px solid #e5e5e5;
   display: block;
   margin: 40px 0;
 }
@@ -288,7 +288,7 @@ hr.break-small.break-center {
   margin: 20px auto 35px;
 }
 hr.break-small.break-double {
-  height: 0; 
+  height: 0;
   margin-bottom: 39px;
 }
 hr.break-small.break-double:before {
@@ -315,11 +315,11 @@ hr.break-small.break-center.break-double:before {
 hr.break.break-small.break-center.break-double:after {
   margin: 4px auto 35px;
 }
-hr.break-small.break-double.background-white:before, hr.break-small.break-double.background-white:after, 
+hr.break-small.break-double.background-white:before, hr.break-small.break-double.background-white:after,
 .primary-color-white hr.break-small.break-double.background-primary:before, .primary-color-white hr.break-small.break-double.background-primary:after {
   background: #fff;
 }
-hr.break-small.break-double.background-yellow:before, hr.break-small.break-double.background-yellow:after, 
+hr.break-small.break-double.background-yellow:before, hr.break-small.break-double.background-yellow:after,
 .primary-color-yellow hr.break-small.break-double.background-primary:before, .primary-color-yellow hr.break-small.break-double.background-primary:after {
   background: #F1D529;
 }
@@ -331,10 +331,10 @@ hr.break-small.break-double.background-red:before, hr.break-small.break-double.b
 .primary-color-red hr.break-small.break-double.background-primary:before, .primary-color-red hr.break-small.break-double.background-primary:after {
   background: #C81010;
 }
-hr.break-small.break-double.background-pink:before, hr.break-small.break-double.background-pink:after, 
+hr.break-small.break-double.background-pink:before, hr.break-small.break-double.background-pink:after,
 .primary-color-pink hr.break-small.break-double.background-primary:before, .primary-color-pink hr.break-small.break-double.background-primary:after {
   background: #DE1E5E;
-} 
+}
 hr.break-small.break-double.background-purple:before, hr.break-small.break-double.background-purple:after,
 .primary-color-purple hr.break-small.break-double.background-primary:before, .primary-color-purple hr.break-small.break-double.background-primary:after {
   background: #913fd9;
@@ -347,7 +347,7 @@ hr.break-small.break-double.background-light-blue:before, hr.break-small.break-d
 .primary-color-light-blue hr.break-small.break-double.background-primary:before, .primary-color-light-blue hr.break-small.break-double.background-primary:after {
   background: #28a5df;
 }
-hr.break-small.break-double.background-aqua:before, hr.break-small.break-double.background-aqua:after, 
+hr.break-small.break-double.background-aqua:before, hr.break-small.break-double.background-aqua:after,
 .primary-color-aqua hr.break-small.break-double.background-primary:before, .primary-color-aqua hr.break-small.break-double.background-primary:after {
   background: #00B5A6;
 }
@@ -419,7 +419,7 @@ hr.break-small.break-double.background-green:before, hr.break-small.break-double
 
 video {
   display: block;
-} 
+}
 
 /* Top Nav */
 .top-nav li a, .background-white .top-nav li a {
@@ -433,7 +433,7 @@ nav {
   padding: 1.7rem 0;
   position: relative;
   z-index: 2;
-}  
+}
 .top-nav ul ul {
   background: #002633 none repeat scroll 0 0;
 }
@@ -527,19 +527,19 @@ aside.aside-left {
 .aside-nav.background-white-hightlight > ul > li > a:hover, .aside-nav.background-white-hightlight > ul > li.active-item > a:link, .aside-nav.background-white-hightlight > ul > li.active-item > a:visited,
 .primary-color-white .aside-nav.background-primary-hightlight > ul > li > a:hover, .primary-color-white .aside-nav.background-primary-hightlight > ul > li.active-item > a:link, .primary-color-white .aside-nav.background-primary-hightlight > ul > li.active-item > a:visited {
   border-color: #fff;
-} 
+}
 .aside-nav.background-yellow-hightlight > ul > li > a:hover, .aside-nav.background-yellow-hightlight > ul > li.active-item > a:link, .aside-nav.background-yellow-hightlight > ul > li.active-item > a:visited,
 .primary-color-yellow .aside-nav.background-primary-hightlight > ul > li > a:hover, .primary-color-yellow .aside-nav.background-primary-hightlight > ul > li.active-item > a:link, .primary-color-yellow .aside-nav.background-primary-hightlight > ul > li.active-item > a:visited {
   border-color: #F1D529;
-} 
+}
 .aside-nav.background-orange-hightlight > ul > li > a:hover, .aside-nav.background-orange-hightlight > ul > li.active-item > a:link, .aside-nav.background-orange-hightlight > ul > li.active-item > a:visited,
 .primary-color-orange .aside-nav.background-primary-hightlight > ul > li > a:hover, .primary-color-orange .aside-nav.background-primary-hightlight > ul > li.active-item > a:link, .primary-color-orange .aside-nav.background-primary-hightlight > ul > li.active-item > a:visited {
   border-color: #E4A600;
-} 
+}
 .aside-nav.background-red-hightlight > ul > li > a:hover, .aside-nav.background-red-hightlight > ul > li.active-item > a:link, .aside-nav.background-red-hightlight > ul > li.active-item > a:visited,
 .primary-color-red .aside-nav.background-primary-hightlight > ul > li > a:hover, .primary-color-red .aside-nav.background-primary-hightlight > ul > li.active-item > a:link, .primary-color-red .aside-nav.background-primary-hightlight > ul > li.active-item > a:visited {
   border-color: #C81010;
-} 
+}
 .aside-nav.background-pink-hightlight > ul > li > a:hover, .aside-nav.background-pink-hightlight > ul > li.active-item > a:link, .aside-nav.background-pink-hightlight > ul > li.active-item > a:visited,
 .primary-color-pink .aside-nav.background-primary-hightlight > ul > li > a:hover, .primary-color-pink .aside-nav.background-primary-hightlight > ul > li.active-item > a:link, .primary-color-pink .aside-nav.background-primary-hightlight > ul > li.active-item > a:visited {
   border-color: #DE1E5E;
@@ -547,11 +547,11 @@ aside.aside-left {
 .aside-nav.background-purple-hightlight > ul > li > a:hover, .aside-nav.background-purple-hightlight > ul > li.active-item > a:link, .aside-nav.background-purple-hightlight > ul > li.active-item > a:visited,
 .primary-color-purple .aside-nav.background-primary-hightlight > ul > li > a:hover, .primary-color-purple .aside-nav.background-primary-hightlight > ul > li.active-item > a:link, .primary-color-purple .aside-nav.background-primary-hightlight > ul > li.active-item > a:visited {
   border-color: #913fd9;
-} 
+}
 .aside-nav.background-blue-hightlight > ul > li > a:hover, .aside-nav.background-blue-hightlight > ul > li.active-item > a:link, .aside-nav.background-blue-hightlight > ul > li.active-item > a:visited,
 .primary-color-blue .aside-nav.background-primary-hightlight > ul > li > a:hover, .primary-color-blue .aside-nav.background-primary-hightlight > ul > li.active-item > a:link, .primary-color-blue .aside-nav.background-primary-hightlight > ul > li.active-item > a:visited {
   border-color: #005881;
-} 
+}
 .aside-nav.background-light-blue-hightlight > ul > li > a:hover, .aside-nav.background-light-blue-hightlight > ul > li.active-item > a:link, .aside-nav.background-light-blue-hightlight > ul > li.active-item > a:visited,
 .primary-color-light-blue .aside-nav.background-primary-hightlight > ul > li > a:hover, .primary-color-light-blue .aside-nav.background-primary-hightlight > ul > li.active-item > a:link, .primary-color-light-blue .aside-nav.background-primary-hightlight > ul > li.active-item > a:visited {
   border-color: #28a5df;
@@ -559,11 +559,11 @@ aside.aside-left {
 .aside-nav.background-aqua-hightlight > ul > li > a:hover, .aside-nav.background-aqua-hightlight > ul > li.active-item > a:link, .aside-nav.background-aqua-hightlight > ul > li.active-item > a:visited,
 .primary-color-aqua .aside-nav.background-primary-hightlight > ul > li > a:hover, .primary-color-aqua .aside-nav.background-primary-hightlight > ul > li.active-item > a:link, .primary-color-aqua .aside-nav.background-primary-hightlight > ul > li.active-item > a:visited {
   border-color: #00B5A6;
-} 
+}
 .aside-nav.background-green-hightlight > ul > li > a:hover, .aside-nav.background-green-hightlight > ul > li.active-item > a:link, .aside-nav.background-green-hightlight > ul > li.active-item > a:visited,
 .primary-color-green .aside-nav.background-primary-hightlight > ul > li > a:hover, .primary-color-green .aside-nav.background-primary-hightlight > ul > li.active-item > a:link, .primary-color-green .aside-nav.background-primary-hightlight > ul > li.active-item > a:visited {
   border-color: #49BF4C;
-}  
+}
 .aside-nav.background-dark-hightlight > ul > li > a:hover, .aside-nav.background-dark-hightlight > ul > li.active-item > a:link, .aside-nav.background-dark-hightlight > ul > li.active-item > a:visited,
 .primary-color-dark .aside-nav.background-primary-hightlight > ul > li > a:hover, .primary-color-dark .aside-nav.background-primary-hightlight > ul > li.active-item > a:link, .primary-color-dark .aside-nav.background-primary-hightlight > ul > li.active-item > a:visited {
   border-color: #002633;
@@ -572,13 +572,13 @@ aside.aside-left {
 /* Font colors */
 .background-white, .background-white p, a.background-white, .background-white a, .background-white a:link, .background-white a:visited, .background-white a:hover, .background-white a:active {
   color: #777;
-} 
+}
 .background-dark, .background-dark p, a.background-dark, a.background-dark:visited, a.background-dark:link, .background-dark a, .background-dark a:link, .background-dark a:visited, .background-dark a:hover, .background-dark a:active,
 .primary-color-dark .background-primary, .primary-color-dark .background-primary p, .primary-color-dark a.background-primary, .primary-color-dark a.background-primary:visited, .primary-color-dark a.background-primary:link, .primary-color-dark a.background-primary:visited, .primary-color-dark .background-primary a, .primary-color-dark .background-primary a:link, .primary-color-dark .background-primary a:visited, .primary-color-dark .background-primary a:hover, .primary-color-dark .background-primary a:active {
   color: #7697A2;
 }
 .background-white h1, .background-white h2, .background-white h3, .background-white h4, .background-white h5, .background-white h6,
-.background-white .h1, .background-white .h2, .background-white .h3, .background-white .h4, .background-white .h5, .background-white .h6, 
+.background-white .h1, .background-white .h2, .background-white .h3, .background-white .h4, .background-white .h5, .background-white .h6,
 .primary-color-white .background-primary h1, .primary-color-white .background-primary h2, .primary-color-white .background-primary h3, .primary-color-white .background-primary h4, .primary-color-white .background-primary h5, .primary-color-white .background-primary h6,
 .primary-color-white .background-primary .h1, .primary-color-white .background-primary .h2, .primary-color-white .background-primary .h3, .primary-color-white .background-primary .h4, .primary-color-white .background-primary .h5, .primary-color-white .background-primary .h6,
 .background-yellow h1, .background-yellow h2, .background-yellow h3, .background-yellow h4, .background-yellow h5, .background-yellow h6,
@@ -588,7 +588,7 @@ aside.aside-left {
 .background-yellow, .background-yellow p, a.background-yellow, a.background-yellow:visited, a.background-yellow:link, .background-yellow a, .background-yellow a:link, .background-yellow a:visited, .background-yellow a:hover, .background-yellow a:active,
 .primary-color-yellow .background-primary, .primary-color-yellow .background-primary p, .primary-color-yellow a.background-primary, .primary-color-yellow a.background-primary:visited, .primary-color-yellow a.background-primary:link, .primary-color-yellow .background-primary a, .primary-color-yellow .background-primary a:link, .primary-color-yellow .background-primary a:visited, .primary-color-yellow .background-primary a:hover, .primary-color-yellow .background-primary a:active {
   color: #002633;
-} 
+}
 .image-hover-overlay-content *,
 .background-orange, .background-orange p, a.background-orange, a.background-orange:visited, a.background-orange:link, .background-orange a, .background-orange a:link, .background-orange a:visited, .background-orange a:hover, .background-orange a:active,
 .primary-color-orange .background-primary, .primary-color-orange .background-primary p, .primary-color-orange a.background-primary, .primary-color-orange a.background-primary:visited, .primary-color-orange a.background-primary:link, .primary-color-orange .background-primary a, .primary-color-orange .background-primary a:link, .primary-color-orange .background-primary a:visited, .primary-color-orange .background-primary a:hover, .primary-color-orange .background-primary a:active,
@@ -596,52 +596,52 @@ aside.aside-left {
 .primary-color-red .background-primary, .primary-color-red .background-primary p, .primary-color-red a.background-primary, .primary-color-red a.background-primary:visited, .primary-color-red a.background-primary:link, .primary-color-red .background-primary a, .primary-color-red .background-primary a:link, .primary-color-red .background-primary a:visited, .primary-color-red .background-primary a:hover, .primary-color-red .background-primary a:active,
 .background-pink, .background-pink p, a.background-pink, a.background-pink:visited, a.background-pink:link, .background-pink a, .background-pink a:link, .background-pink a:visited, .background-pink a:hover, .background-pink a:active,
 .primary-color-pink .background-primary, .primary-color-pink .background-primary p, .primary-color-pink a.background-primary, .primary-color-pink a.background-primary:visited, .primary-color-pink a.background-primary:link, .primary-color-pink .background-primary a, .primary-color-pink .background-primary a:link, .primary-color-pink .background-primary a:visited, .primary-color-pink .background-primary a:hover, .primary-color-pink .background-primary a:active,
-.background-purple, .background-purple p, a.background-purple, a.background-purple:visited, a.background-purple:link, .background-purple a, .background-purple a:link, .background-purple a:visited, .background-purple a:hover, .background-purple a:active, 
+.background-purple, .background-purple p, a.background-purple, a.background-purple:visited, a.background-purple:link, .background-purple a, .background-purple a:link, .background-purple a:visited, .background-purple a:hover, .background-purple a:active,
 .primary-color-purple .background-primary, .primary-color-purple .background-primary p, .primary-color-purple a.background-primary, .primary-color-purple a.background-primary:visited, .primary-color-purple a.background-primary:link, .primary-color-purple .background-primary a, .primary-color-purple .background-primary a:link, .primary-color-purple .background-primary a:visited, .primary-color-purple .background-primary a:hover, .primary-color-purple .background-primary a:active,
 .background-blue, .background-blue p, a.background-blue, a.background-blue:visited, a.background-blue:link, .background-blue a, .background-blue a:link, .background-blue a:visited, .background-blue a:hover, .background-blue a:active,
 .primary-color-blue .background-primary, .primary-color-blue .background-primary p, .primary-color-blue a.background-primary, .primary-color-blue a.background-primary:visited, .primary-color-blue a.background-primary:link, .primary-color-blue .background-primary a, .primary-color-blue .background-primary a:link, .primary-color-blue .background-primary a:visited, .primary-color-blue .background-primary a:hover, .primary-color-blue .background-primary a:active,
-.background-light-blue, .background-light-blue p, a.background-light-blue, a.background-light-blue:visited, a.background-light-blue:link, .background-light-blue a, .background-light-blue a:link, .background-light-blue a:visited, .background-light-blue a:hover, .background-light-blue a:active, 
+.background-light-blue, .background-light-blue p, a.background-light-blue, a.background-light-blue:visited, a.background-light-blue:link, .background-light-blue a, .background-light-blue a:link, .background-light-blue a:visited, .background-light-blue a:hover, .background-light-blue a:active,
 .primary-color-light-blue .background-primary, .primary-color-light-blue .background-primary p, .primary-color-light-blue a.background-primary, .primary-color-light-blue a.background-primary:visited, .primary-color-light-blue a.background-primary:link, .primary-color-light-blue .background-primary a, .primary-color-light-blue .background-primary a:link, .primary-color-light-blue .background-primary a:visited, .primary-color-light-blue .background-primary a:hover, .primary-color-light-blue .background-primary a:active,
-.background-aqua, .background-aqua p, a.background-aqua, a.background-aqua:visited, a.background-aqua:link, .background-aqua a, .background-aqua a:link, .background-aqua a:visited, .background-aqua a:hover, .background-aqua a:active, 
+.background-aqua, .background-aqua p, a.background-aqua, a.background-aqua:visited, a.background-aqua:link, .background-aqua a, .background-aqua a:link, .background-aqua a:visited, .background-aqua a:hover, .background-aqua a:active,
 .primary-color-aqua .background-primary, .primary-color-aqua .background-primary p, .primary-color-aqua a.background-primary, .primary-color-aqua a.background-primary:visited, .primary-color-aqua a.background-primary:link, .primary-color-aqua .background-primary a, .primary-color-aqua .background-primary a:link, .primary-color-aqua .background-primary a:visited, .primary-color-aqua .background-primary a:hover, .primary-color-aqua .background-primary a:active,
-.background-green, .background-green p, a.background-green, a.background-green:visited, a.background-green:link, .background-green a, .background-green a:link, .background-green a:visited, .background-green a:hover, .background-green a:active, 
+.background-green, .background-green p, a.background-green, a.background-green:visited, a.background-green:link, .background-green a, .background-green a:link, .background-green a:visited, .background-green a:hover, .background-green a:active,
 .primary-color-green .background-primary, .primary-color-green .background-primary p, .primary-color-green a.background-primary, .primary-color-green a.background-primary:visited, .primary-color-green a.background-primary:link, .primary-color-green .background-primary a, .primary-color-green .background-primary a:link, .primary-color-green .background-primary a:visited, .primary-color-green .background-primary a:hover, .primary-color-green .background-primary a:active {
   color: rgba(255,255,255, 0.75);
 }
 .background-dark h1, .background-dark h2, .background-dark h3, .background-dark h4, .background-dark h5, .background-dark h6,
-.background-dark .h1, .background-dark .h2, .background-dark .h3, .background-dark .h4, .background-dark .h5, .background-dark .h6, 
+.background-dark .h1, .background-dark .h2, .background-dark .h3, .background-dark .h4, .background-dark .h5, .background-dark .h6,
 .primary-color-dark .background-primary h1, .primary-color-dark .background-primary h2, .primary-color-dark .background-primary h3, .primary-color-dark .background-primary h4, .primary-color-dark .background-primary h5, .primary-color-dark .background-primary h6,
-.primary-color-dark .background-primary .h1, .primary-color-dark .background-primary .h2, .primary-color-dark .background-primary .h3, .primary-color-dark .background-primary .h4, .primary-color-dark .background-primary .h5, .primary-color-dark .background-primary .h6, 
+.primary-color-dark .background-primary .h1, .primary-color-dark .background-primary .h2, .primary-color-dark .background-primary .h3, .primary-color-dark .background-primary .h4, .primary-color-dark .background-primary .h5, .primary-color-dark .background-primary .h6,
 .background-orange h1, .background-orange h2, .background-orange h3, .background-orange h4, .background-orange h5, .background-orange h6,
 .background-orange .h1, .background-orange .h2, .background-orange .h3, .background-orange .h4, .background-orange .h5, .background-orange .h6,
 .primary-color-orange .background-primary h1, .primary-color-orange .background-primary h2, .primary-color-orange .background-primary h3, .primary-color-orange .background-primary h4, .primary-color-orange .background-primary h5, .primary-color-orange .background-primary h6,
-.primary-color-orange .background-primary .h1, .primary-color-orange .background-primary .h2, .primary-color-orange .background-primary .h3, .primary-color-orange .background-primary .h4, .primary-color-orange .background-primary .h5, .primary-color-orange .background-primary .h6, 
+.primary-color-orange .background-primary .h1, .primary-color-orange .background-primary .h2, .primary-color-orange .background-primary .h3, .primary-color-orange .background-primary .h4, .primary-color-orange .background-primary .h5, .primary-color-orange .background-primary .h6,
 .background-red h1, .background-red h2, .background-red h3, .background-red h4, .background-red h5, .background-red h6,
 .background-red .h1, .background-red .h2, .background-red .h3, .background-red .h4, .background-red .h5, .background-red .h6,
 .primary-color-red .background-primary h1, .primary-color-red .background-primary h2, .primary-color-red .background-primary h3, .primary-color-red .background-primary h4, .primary-color-red .background-primary h5, .primary-color-red .background-primary h6,
-.primary-color-red .background-primary .h1, .primary-color-red .background-primary .h2, .primary-color-red .background-primary .h3, .primary-color-red .background-primary .h4, .primary-color-red .background-primary .h5, .primary-color-red .background-primary .h6, 
+.primary-color-red .background-primary .h1, .primary-color-red .background-primary .h2, .primary-color-red .background-primary .h3, .primary-color-red .background-primary .h4, .primary-color-red .background-primary .h5, .primary-color-red .background-primary .h6,
 .background-pink h1, .background-pink h2, .background-pink h3, .background-pink h4, .background-pink h5, .background-pink h6,
 .background-pink .h1, .background-pink .h2, .background-pink .h3, .background-pink .h4, .background-pink .h5, .background-pink .h6,
 .primary-color-pink .background-primary h1, .primary-color-pink .background-primary h2, .primary-color-pink .background-primary h3, .primary-color-pink .background-primary h4, .primary-color-pink .background-primary h5, .primary-color-pink .background-primary h6,
-.primary-color-pink .background-primary .h1, .primary-color-pink .background-primary .h2, .primary-color-pink .background-primary .h3, .primary-color-pink .background-primary .h4, .primary-color-pink .background-primary .h5, .primary-color-pink .background-primary .h6, 
+.primary-color-pink .background-primary .h1, .primary-color-pink .background-primary .h2, .primary-color-pink .background-primary .h3, .primary-color-pink .background-primary .h4, .primary-color-pink .background-primary .h5, .primary-color-pink .background-primary .h6,
 .background-purple h1, .background-purple h2, .background-purple h3, .background-purple h4, .background-purple h5, .background-purple h6,
 .background-purple .h1, .background-purple .h2, .background-purple .h3, .background-purple .h4, .background-purple .h5, .background-purple .h6,
 .primary-color-purple .background-primary h1, .primary-color-purple .background-primary h2, .primary-color-purple .background-primary h3, .primary-color-purple .background-primary h4, .primary-color-purple .background-primary h5, .primary-color-purple .background-primary h6,
-.primary-color-purple .background-primary .h1, .primary-color-purple .background-primary .h2, .primary-color-purple .background-primary .h3, .primary-color-purple .background-primary .h4, .primary-color-purple .background-primary .h5, .primary-color-purple .background-primary .h6, 
+.primary-color-purple .background-primary .h1, .primary-color-purple .background-primary .h2, .primary-color-purple .background-primary .h3, .primary-color-purple .background-primary .h4, .primary-color-purple .background-primary .h5, .primary-color-purple .background-primary .h6,
 .background-blue h1, .background-blue h2, .background-blue h3, .background-blue h4, .background-blue h5, .background-blue h6,
 .background-blue .h1, .background-blue .h2, .background-blue .h3, .background-blue .h4, .background-blue .h5, .background-blue .h6,
 .primary-color-blue .background-primary h1, .primary-color-blue .background-primary h2, .primary-color-blue .background-primary h3, .primary-color-blue .background-primary h4, .primary-color-blue .background-primary h5, .primary-color-blue .background-primary h6,
-.primary-color-blue .background-primary .h1, .primary-color-blue .background-primary .h2, .primary-color-blue .background-primary .h3, .primary-color-blue .background-primary .h4, .primary-color-blue .background-primary .h5, .primary-color-blue .background-primary .h6, 
+.primary-color-blue .background-primary .h1, .primary-color-blue .background-primary .h2, .primary-color-blue .background-primary .h3, .primary-color-blue .background-primary .h4, .primary-color-blue .background-primary .h5, .primary-color-blue .background-primary .h6,
 .background-light-blue h1, .background-light-blue h2, .background-light-blue h3, .background-light-blue h4, .background-light-blue h5, .background-light-blue h6,
 .background-light-blue .h1, .background-light-blue .h2, .background-light-blue .h3, .background-light-blue .h4, .background-light-blue .h5, .background-light-blue .h6,
 .primary-color-light-blue .background-primary h1, .primary-color-light-blue .background-primary h2, .primary-color-light-blue .background-primary h3, .primary-color-light-blue .background-primary h4, .primary-color-light-blue .background-primary h5, .primary-color-light-blue .background-primary h6,
-.primary-color-light-blue .background-primary .h1, .primary-color-light-blue .background-primary .h2, .primary-color-light-blue .background-primary .h3, .primary-color-light-blue .background-primary .h4, .primary-color-light-blue .background-primary .h5, .primary-color-light-blue .background-primary .h6, 
+.primary-color-light-blue .background-primary .h1, .primary-color-light-blue .background-primary .h2, .primary-color-light-blue .background-primary .h3, .primary-color-light-blue .background-primary .h4, .primary-color-light-blue .background-primary .h5, .primary-color-light-blue .background-primary .h6,
 .background-aqua h1, .background-aqua h2, .background-aqua h3, .background-aqua h4, .background-aqua h5, .background-aqua h6,
 .background-aqua .h1, .background-aqua .h2, .background-aqua .h3, .background-aqua .h4, .background-aqua .h5, .background-aqua .h6,
 .primary-color-aqua .background-primary h1, .primary-color-aqua .background-primary h2, .primary-color-aqua .background-primary h3, .primary-color-aqua .background-primary h4, .primary-color-aqua .background-primary h5, .primary-color-aqua .background-primary h6,
-.primary-color-aqua .background-primary .h1, .primary-color-aqua .background-primary .h2, .primary-color-aqua .background-primary .h3, .primary-color-aqua .background-primary .h4, .primary-color-aqua .background-primary .h5, .primary-color-aqua .background-primary .h6, 
+.primary-color-aqua .background-primary .h1, .primary-color-aqua .background-primary .h2, .primary-color-aqua .background-primary .h3, .primary-color-aqua .background-primary .h4, .primary-color-aqua .background-primary .h5, .primary-color-aqua .background-primary .h6,
 .background-green h1, .background-green h2, .background-green h3, .background-green h4, .background-green h5, .background-green h6,
-.background-green .h1, .background-green .h2, .background-green .h3, .background-green .h4, .background-green .h5, .background-green .h6, 
+.background-green .h1, .background-green .h2, .background-green .h3, .background-green .h4, .background-green .h5, .background-green .h6,
 .primary-color-green .background-primary h1, .primary-color-green .background-primary h2, .primary-color-green .background-primary h3, .primary-color-green .background-primary h4, .primary-color-green .background-primary h5, .primary-color-green .background-primary h6,
 .primary-color-green .background-primary .h1, .primary-color-green .background-primary .h2, .primary-color-green .background-primary .h3, .primary-color-green .background-primary .h4, .primary-color-green .background-primary .h5, .primary-color-green .background-primary .h6 {
   color: #fff;
@@ -678,7 +678,7 @@ aside.aside-left {
 }
 .text-dark, .text-dark *, .primary-color-dark .text-primary, .primary-color-dark .text-primary * {
   color: #002633 !important;
-} 
+}
 .text-primary-hover, .text-white-hover, .text-yellow-hover, .text-orange-hover, .text-red-hover, .text-pink-hover, .text-purple, .text-blue-hover, .text-light-blue, .text-aqua-hover, .text-green-hover, .text-dark-hover {
   transition: color 0.20s linear 0s;
   -o-transition: color 0.20s linear 0s;
@@ -718,7 +718,7 @@ aside.aside-left {
 }
 .text-dark-hover:hover, .primary-color-dark .text-primary-hover:hover {
   color: #002633 !important;
-} 
+}
 
 /* Background Colors */
 .background-white, .primary-color-white .background-primary {
@@ -737,13 +737,13 @@ aside.aside-left {
   background-color: #DE1E5E !important;
 }
 .background-purple, .primary-color-purple .background-primary {
-  background-color: #913fd9 !important; 
+  background-color: #913fd9 !important;
 }
 .background-blue, .primary-color-blue .background-primary {
   background-color: #005881 !important;
 }
 .background-light-blue, .primary-color-light-blue .background-primary {
-  background-color: #28a5df !important; 
+  background-color: #28a5df !important;
 }
 .background-aqua, .primary-color-aqua .background-primary {
   background-color: #00B5A6 !important;
@@ -752,13 +752,13 @@ aside.aside-left {
   background-color: #49BF4C !important;
 }
 .background-dark, .primary-color-dark .background-primary {
-  background-color: #002633 !important; 
+  background-color: #002633 !important;
 }
 .background-grey {
   background-color: #f5f5f5 !important;
 }
 .background-sand {
-  background-color: #f9f2e2 !important; 
+  background-color: #f9f2e2 !important;
 }
 /* Background Opacity */
 .background-white.background-transparent, .primary-color-white .background-primary.background-transparent {
@@ -908,7 +908,7 @@ aside.aside-left {
 .background-parallax-container {
   position:relative;
   overflow:hidden;
- }    
+ }
 .background-parallax {
   position:absolute;
   top:0;
@@ -916,7 +916,7 @@ aside.aside-left {
   left:0;
   right:0;
   z-index:-2;
-  background-repeat: no-repeat; 
+  background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
   -webkit-background-size: cover;
@@ -933,17 +933,17 @@ aside.aside-left {
 }
 video.video {
   position: absolute;
-  right: 0; 
+  right: 0;
   top: 0;
-  min-width: 100%; 
+  min-width: 100%;
   min-height: 100%;
-  width: auto; 
+  width: auto;
   height: auto;
   z-index: -100;
 }
 .video-overlay {
   position: absolute;
-  right: 0; 
+  right: 0;
   bottom: 0;
   left: 0;
   top: 0;
@@ -983,7 +983,7 @@ video.video {
 .button:hover, a.button:hover, a.button:link:hover, a.button:visited:hover {
   box-shadow: 0 0 100px 100px rgba(255, 255, 255, 0.25) inset;
 }
-/* Stroke Buttons */ 
+/* Stroke Buttons */
 .button.button-white-stroke, a.button.button-white-stroke, a.button.button-white-stroke:link, a.button.button-white-stroke:visited,
 .primary-color-white .button.button-primary-stroke, .primary-color-white a.button.button-primary-stroke, .primary-color-white a.button.button-primary-stroke:link, .primary-color-white a.button.button-primary-stroke:visited {
   background: none;
@@ -1118,16 +1118,16 @@ video.video {
 }
 
 /* Containers */
-.section  { 
+.section  {
   padding: 6rem 1.25rem;
 }
-.section-small-padding  { 
+.section-small-padding  {
   padding: 2.5rem 1.25rem;
 }
-.section-top-padding  { 
+.section-top-padding  {
   padding: 6rem 1.25rem 0  1.25rem;
 }
-.section-top-small-padding  { 
+.section-top-small-padding  {
   padding: 2.5rem  1.25rem 0  1.25rem;
 }
 .float-left {
@@ -1153,7 +1153,7 @@ height:0;
 line-height:0;
 visibility:hidden;
 }
-.position-fixed  { 
+.position-fixed  {
   position: fixed;
   top: 0;
   width: 100%;
@@ -1161,14 +1161,14 @@ visibility:hidden;
 .center {
   display: block!important;
 }
-.border-radius  { 
+.border-radius  {
   border-radius: 3px;
 }
 .content-center-vertical {
   position: absolute;
   left: 0;
   right: 0;
-  top: 50%; 
+  top: 50%;
   transform: translateY(-50%);
   -o-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
@@ -1182,21 +1182,21 @@ visibility:hidden;
 .grayscale {
   filter: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="g"><feColorMatrix type="matrix" values="0.3 0.3 0.3 0 0 0.3 0.3 0.3 0 0 0.3 0.3 0.3 0 0 0 0 0 1 0"/></filter></svg>#g');
   -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);    
+  filter: grayscale(100%);
   filter: progid:DXImageTransform.Microsoft.BasicImage(grayScale=1);
 }
 
 .image-grayscale {
   filter: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="g"><feColorMatrix type="matrix" values="0.3 0.3 0.3 0 0 0.3 0.3 0.3 0 0 0.3 0.3 0.3 0 0 0 0 0 1 0"/></filter></svg>#g');
   -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);    
+  filter: grayscale(100%);
   filter: progid:DXImageTransform.Microsoft.BasicImage(grayScale=1);
   position: relative;
 }
 *:hover > .image-grayscale {
   filter: none;
   -webkit-filter: grayscale(0%);
-  filter: grayscale(0%);    
+  filter: grayscale(0%);
   filter: progid:DXImageTransform.Microsoft.BasicImage(grayScale=0);
 }
 
@@ -1224,9 +1224,9 @@ visibility:hidden;
 .margin-top-bottom-0,.margin-top-bottom-10,.margin-top-bottom-15,.margin-top-bottom-20,.margin-top-bottom-30,.margin-top-bottom-40,.margin-top-bottom-50,.margin-top-bottom-60,.margin-top-bottom-70,.margin-top-bottom-80 {display: block;}
 .margin-top-0 {margin-top: 0 !important;}
 .margin-top-10 {margin-top: 10px !important;}
-.margin-top-15 {margin-top: 15px !important;} 
-.margin-top-20 {margin-top: 20px !important;} 
-.margin-top-30 {margin-top: 30px !important;} 
+.margin-top-15 {margin-top: 15px !important;}
+.margin-top-20 {margin-top: 20px !important;}
+.margin-top-30 {margin-top: 30px !important;}
 .margin-top-40 {margin-top: 40px !important;}
 .margin-top-50 {margin-top: 50px !important;}
 .margin-top-60 {margin-top: 60px !important;}
@@ -1234,9 +1234,9 @@ visibility:hidden;
 .margin-top-80 {margin-top: 80px !important;}
 .margin-bottom-0 {margin-bottom: 0 !important;}
 .margin-bottom-10 {margin-bottom: 10px !important;}
-.margin-bottom-15 {margin-bottom: 15px !important;} 
-.margin-bottom-20 {margin-bottom: 20px !important;} 
-.margin-bottom-30 {margin-bottom: 30px !important;} 
+.margin-bottom-15 {margin-bottom: 15px !important;}
+.margin-bottom-20 {margin-bottom: 20px !important;}
+.margin-bottom-30 {margin-bottom: 30px !important;}
 .margin-bottom-40 {margin-bottom: 40px !important;}
 .margin-bottom-50 {margin-bottom: 50px !important;}
 .margin-bottom-60 {margin-bottom: 60px !important;}
@@ -1253,15 +1253,15 @@ visibility:hidden;
 .margin-top-bottom-15 {
   margin-top: 15px !important;
   margin-bottom: 15px !important;
-} 
+}
 .margin-top-bottom-20 {
   margin-top: 20px !important;
   margin-bottom: 20px !important;
-} 
+}
 .margin-top-bottom-30 {
   margin-top: 30px !important;
   margin-bottom: 30px !important;
-} 
+}
 .margin-top-bottom-40 {
   margin-top: 40px !important;
   margin-bottom: 40px !important;
@@ -1273,11 +1273,11 @@ visibility:hidden;
 .margin-top-bottom-60 {
   margin-top: 60px !important;
   margin-bottom: 60px !important;
-} 
+}
 .margin-top-bottom-70 {
   margin-top: 70px !important;
   margin-bottom: 70px !important;
-} 
+}
 .margin-top-bottom-80 {
   margin-top: 80px !important;
   margin-bottom: 80px !important;
@@ -1285,9 +1285,9 @@ visibility:hidden;
 
 .margin-left-0 {margin-left: 0 !important;}
 .margin-left-10 {margin-left: 10px !important;}
-.margin-left-15 {margin-left: 15px !important;} 
-.margin-left-20 {margin-left: 20px !important;} 
-.margin-left-30 {margin-left: 30px !important;} 
+.margin-left-15 {margin-left: 15px !important;}
+.margin-left-20 {margin-left: 20px !important;}
+.margin-left-30 {margin-left: 30px !important;}
 .margin-left-40 {margin-left: 40px !important;}
 .margin-left-50 {margin-left: 50px !important;}
 .margin-left-60 {margin-left: 60px !important;}
@@ -1295,14 +1295,14 @@ visibility:hidden;
 .margin-left-80 {margin-left: 80px !important;}
 .margin-right-0 {margin-right: 0 !important;}
 .margin-right-10 {margin-right: 10px !important;}
-.margin-right-15 {margin-right: 15px !important;} 
-.margin-right-20 {margin-right: 20px !important;} 
-.margin-right-30 {margin-right: 30px !important;} 
+.margin-right-15 {margin-right: 15px !important;}
+.margin-right-20 {margin-right: 20px !important;}
+.margin-right-30 {margin-right: 30px !important;}
 .margin-right-40 {margin-right: 40px !important;}
 .margin-right-50 {margin-right: 50px !important;}
 .margin-right-60 {margin-right: 60px !important;}
 .margin-right-70 {margin-right: 70px !important;}
-.margin-right-80 {margin-right: 80px !important;}    
+.margin-right-80 {margin-right: 80px !important;}
 
 /* More info button */
 a.text-more-info {
@@ -1344,7 +1344,7 @@ a.text-more-info:hover:after {
 }
 .top-bar-social i {
   color: rgba(170, 170, 170, 0.20);
-  font-size: 18px; 
+  font-size: 18px;
 }
 
 /* Icon blocks */
@@ -1491,7 +1491,7 @@ h3.pricing-title {
   padding: 0;
   position: absolute;
   text-align: center;
-  top: 50%;    
+  top: 50%;
   width: 40px;
 }
 .carousel-bottom-arrows.owl-carousel .owl-nav div {
@@ -1499,7 +1499,7 @@ h3.pricing-title {
   top: auto;
 }
 .owl-carousel .owl-nav .owl-prev {
-  left: 0;    
+  left: 0;
 }
 .owl-carousel .owl-nav .owl-next {
   right: 0;
@@ -1531,7 +1531,7 @@ h3.pricing-title {
 }
 .owl-dots {
   margin-top: 0.625rem;
-} 
+}
 .carousel-main .owl-dots {
   bottom: 0;
   padding: 1.25rem 0;
@@ -1601,7 +1601,7 @@ a:link.text-social:hover {
 .flickr, a:link.flickr {background: #ff0084 none repeat scroll 0 0;}
 
 /* Typed */
-.typed-cursor{  
+.typed-cursor{
   display:none;
   opacity: 1;
   -webkit-animation: blink 0.7s infinite;
@@ -1765,26 +1765,26 @@ a.captcha-button i,.full-name-field {
     .margin-xl-top-bottom-0,.margin-xl-top-bottom-10,.margin-xl-top-bottom-15,.margin-xl-top-bottom-20,.margin-xl-top-bottom-30,.margin-xl-top-bottom-40,.margin-xl-top-bottom-50,.margin-xl-top-bottom-60,.margin-xl-top-bottom-70,.margin-xl-top-bottom-80 {display: block;}
     .margin-xl-top-0 {margin-top: 0 !important;}
     .margin-xl-top-10 {margin-top: 10px !important;}
-    .margin-xl-top-15 {margin-top: 15px !important;} 
-    .margin-xl-top-20 {margin-top: 20px !important;} 
-    .margin-xl-top-30 {margin-top: 30px !important;} 
+    .margin-xl-top-15 {margin-top: 15px !important;}
+    .margin-xl-top-20 {margin-top: 20px !important;}
+    .margin-xl-top-30 {margin-top: 30px !important;}
     .margin-xl-top-40 {margin-top: 40px !important;}
     .margin-xl-top-50 {margin-top: 50px !important;}
     .margin-xl-top-60 {margin-top: 60px !important;}
     .margin-xl-top-70 {margin-top: 70px !important; }
     .margin-xl-top-80 {margin-top: 80px !important;}
-    
+
     .margin-xl-bottom-0 {margin-bottom: 0 !important;}
     .margin-xl-bottom-10 {margin-bottom: 10px !important;}
-    .margin-xl-bottom-15 {margin-bottom: 15px !important;} 
-    .margin-xl-bottom-20 {margin-bottom: 20px !important;} 
-    .margin-xl-bottom-30 {margin-bottom: 30px !important;} 
+    .margin-xl-bottom-15 {margin-bottom: 15px !important;}
+    .margin-xl-bottom-20 {margin-bottom: 20px !important;}
+    .margin-xl-bottom-30 {margin-bottom: 30px !important;}
     .margin-xl-bottom-40 {margin-bottom: 40px !important;}
     .margin-xl-bottom-50 {margin-bottom: 50px !important;}
     .margin-xl-bottom-60 {margin-bottom: 60px !important;}
     .margin-xl-bottom-70 {margin-bottom: 70px !important;}
     .margin-xl-bottom-80 {margin-bottom: 80px !important;}
-    
+
     .margin-xl-top-bottom-0 {
         margin-top: 0 !important;
         margin-bottom: 0 !important;
@@ -1795,19 +1795,19 @@ a.captcha-button i,.full-name-field {
     }
     .margin-xl-top-bottom-15 {
         margin-top: 15px !important;
-        margin-bottom: 15px !important; 
-    } 
+        margin-bottom: 15px !important;
+    }
     .margin-xl-top-bottom-20 {
         margin-top: 20px !important;
-        margin-bottom: 20px !important; 
-    } 
+        margin-bottom: 20px !important;
+    }
     .margin-xl-top-bottom-30 {
         margin-top: 30px !important;
-        margin-bottom: 30px !important; 
-    } 
+        margin-bottom: 30px !important;
+    }
     .margin-xl-top-bottom-40 {
         margin-top: 40px !important;
-        margin-bottom: 40px !important; 
+        margin-bottom: 40px !important;
     }
     .margin-xl-top-bottom-50 {
         margin-top: 50px !important;
@@ -1815,22 +1815,22 @@ a.captcha-button i,.full-name-field {
     }
     .margin-xl-top-bottom-60 {
         margin-top: 60px !important;
-        margin-bottom: 60px !important; 
-    } 
+        margin-bottom: 60px !important;
+    }
     .margin-xl-top-bottom-70 {
         margin-top: 70px !important;
         margin-bottom: 70px !important;
-    } 
+    }
     .margin-xl-top-bottom-80 {
         margin-top: 80px !important;
         margin-bottom: 80px !important;
     }
-    
+
     .margin-xl-left-0 {margin-left: 0 !important;}
     .margin-xl-left-10 {margin-left: 10px !important;}
-    .margin-xl-left-15 {margin-left: 15px !important;} 
-    .margin-xl-left-20 {margin-left: 20px !important;} 
-    .margin-xl-left-30 {margin-left: 30px !important;} 
+    .margin-xl-left-15 {margin-left: 15px !important;}
+    .margin-xl-left-20 {margin-left: 20px !important;}
+    .margin-xl-left-30 {margin-left: 30px !important;}
     .margin-xl-left-40 {margin-left: 40px !important;}
     .margin-xl-left-50 {margin-left: 50px !important;}
     .margin-xl-left-60 {margin-left: 60px !important;}
@@ -1838,15 +1838,15 @@ a.captcha-button i,.full-name-field {
     .margin-xl-left-80 {margin-left: 80px !important;}
     .margin-xl-right-0 {margin-right: 0 !important;}
     .margin-xl-right-10 {margin-right: 10px !important;}
-    .margin-xl-right-15 {margin-right: 15px !important;} 
-    .margin-xl-right-20 {margin-right: 20px !important;} 
-    .margin-xl-right-30 {margin-right: 30px !important;} 
+    .margin-xl-right-15 {margin-right: 15px !important;}
+    .margin-xl-right-20 {margin-right: 20px !important;}
+    .margin-xl-right-30 {margin-right: 30px !important;}
     .margin-xl-right-40 {margin-right: 40px !important;}
     .margin-xl-right-50 {margin-right: 50px !important;}
     .margin-xl-right-60 {margin-right: 60px !important;}
     .margin-xl-right-70 {margin-right: 70px !important;}
     .margin-xl-right-80 {margin-right: 80px !important;}
-    
+
     .text-xl-size-12,.text-xl-size-16,.text-xl-size-20,.text-xl-size-25,.text-xl-size-30,.text-xl-size-40,.text-xl-size-50,.text-xl-size-60,.text-xl-size-70,.text-xl-size-80,.text-xl-size-90.text-xl-size-100 {line-height: 1.4;}
     .text-xl-size-12 {font-size: 12px !important;}
     .text-xl-size-16 {font-size: 16px !important;}
@@ -1856,10 +1856,10 @@ a.captcha-button i,.full-name-field {
     .text-xl-size-40 {font-size: 40px !important;}
     .text-xl-size-50 {font-size: 50px !important;}
     .text-xl-size-60 {font-size: 60px !important;}
-    .text-xl-size-70 {font-size: 70px !important;}    
+    .text-xl-size-70 {font-size: 70px !important;}
     .text-xl-size-80 {font-size: 80px !important;}
     .text-xl-size-90 {font-size: 90px !important;}
-    .text-xl-size-100 {font-size: 100px !important;}  
+    .text-xl-size-100 {font-size: 100px !important;}
 }
 @media screen and (max-width:1140px) {
     .margin-l-bottom {
@@ -1886,26 +1886,26 @@ a.captcha-button i,.full-name-field {
     .margin-l-top-bottom-0,.margin-l-top-bottom-10,.margin-l-top-bottom-15,.margin-l-top-bottom-20,.margin-l-top-bottom-30,.margin-l-top-bottom-40,.margin-l-top-bottom-50,.margin-l-top-bottom-60,.margin-l-top-bottom-70,.margin-l-top-bottom-80 {display: block;}
     .margin-l-top-0 {margin-top: 0 !important;}
     .margin-l-top-10 {margin-top: 10px !important;}
-    .margin-l-top-15 {margin-top: 15px !important;} 
-    .margin-l-top-20 {margin-top: 20px !important;} 
-    .margin-l-top-30 {margin-top: 30px !important;} 
+    .margin-l-top-15 {margin-top: 15px !important;}
+    .margin-l-top-20 {margin-top: 20px !important;}
+    .margin-l-top-30 {margin-top: 30px !important;}
     .margin-l-top-40 {margin-top: 40px !important;}
     .margin-l-top-50 {margin-top: 50px !important;}
     .margin-l-top-60 {margin-top: 60px !important;}
     .margin-l-top-70 {margin-top: 70px !important; }
     .margin-l-top-80 {margin-top: 80px !important;}
-    
+
     .margin-l-bottom-0 {margin-bottom: 0 !important;}
     .margin-l-bottom-10 {margin-bottom: 10px !important;}
-    .margin-l-bottom-15 {margin-bottom: 15px !important;} 
-    .margin-l-bottom-20 {margin-bottom: 20px !important;} 
-    .margin-l-bottom-30 {margin-bottom: 30px !important;} 
+    .margin-l-bottom-15 {margin-bottom: 15px !important;}
+    .margin-l-bottom-20 {margin-bottom: 20px !important;}
+    .margin-l-bottom-30 {margin-bottom: 30px !important;}
     .margin-l-bottom-40 {margin-bottom: 40px !important;}
     .margin-l-bottom-50 {margin-bottom: 50px !important;}
     .margin-l-bottom-60 {margin-bottom: 60px !important;}
     .margin-l-bottom-70 {margin-bottom: 70px !important;}
     .margin-l-bottom-80 {margin-bottom: 80px !important;}
-    
+
     .margin-l-top-bottom-0 {
         margin-top: 0 !important;
         margin-bottom: 0 !important;
@@ -1916,19 +1916,19 @@ a.captcha-button i,.full-name-field {
     }
     .margin-l-top-bottom-15 {
         margin-top: 15px !important;
-        margin-bottom: 15px !important; 
-    } 
+        margin-bottom: 15px !important;
+    }
     .margin-l-top-bottom-20 {
         margin-top: 20px !important;
-        margin-bottom: 20px !important; 
-    } 
+        margin-bottom: 20px !important;
+    }
     .margin-l-top-bottom-30 {
         margin-top: 30px !important;
-        margin-bottom: 30px !important; 
-    } 
+        margin-bottom: 30px !important;
+    }
     .margin-l-top-bottom-40 {
         margin-top: 40px !important;
-        margin-bottom: 40px !important; 
+        margin-bottom: 40px !important;
     }
     .margin-l-top-bottom-50 {
         margin-top: 50px !important;
@@ -1936,22 +1936,22 @@ a.captcha-button i,.full-name-field {
     }
     .margin-l-top-bottom-60 {
         margin-top: 60px !important;
-        margin-bottom: 60px !important; 
-    } 
+        margin-bottom: 60px !important;
+    }
     .margin-l-top-bottom-70 {
         margin-top: 70px !important;
         margin-bottom: 70px !important;
-    } 
+    }
     .margin-l-top-bottom-80 {
         margin-top: 80px !important;
         margin-bottom: 80px !important;
     }
-    
+
     .margin-l-left-0 {margin-left: 0 !important;}
     .margin-l-left-10 {margin-left: 10px !important;}
-    .margin-l-left-15 {margin-left: 15px !important;} 
-    .margin-l-left-20 {margin-left: 20px !important;} 
-    .margin-l-left-30 {margin-left: 30px !important;} 
+    .margin-l-left-15 {margin-left: 15px !important;}
+    .margin-l-left-20 {margin-left: 20px !important;}
+    .margin-l-left-30 {margin-left: 30px !important;}
     .margin-l-left-40 {margin-left: 40px !important;}
     .margin-l-left-50 {margin-left: 50px !important;}
     .margin-l-left-60 {margin-left: 60px !important;}
@@ -1959,15 +1959,15 @@ a.captcha-button i,.full-name-field {
     .margin-l-left-80 {margin-left: 80px !important;}
     .margin-l-right-0 {margin-right: 0 !important;}
     .margin-l-right-10 {margin-right: 10px !important;}
-    .margin-l-right-15 {margin-right: 15px !important;} 
-    .margin-l-right-20 {margin-right: 20px !important;} 
-    .margin-l-right-30 {margin-right: 30px !important;} 
+    .margin-l-right-15 {margin-right: 15px !important;}
+    .margin-l-right-20 {margin-right: 20px !important;}
+    .margin-l-right-30 {margin-right: 30px !important;}
     .margin-l-right-40 {margin-right: 40px !important;}
     .margin-l-right-50 {margin-right: 50px !important;}
     .margin-l-right-60 {margin-right: 60px !important;}
     .margin-l-right-70 {margin-right: 70px !important;}
     .margin-l-right-80 {margin-right: 80px !important;}
-    
+
     .text-l-size-12,.text-l-size-16,.text-l-size-20,.text-l-size-25,.text-l-size-30,.text-l-size-40,.text-l-size-50,.text-l-size-60,.text-l-size-70,.text-l-size-80,.text-l-size-90.text-l-size-100 {line-height: 1.4;}
     .text-l-size-12 {font-size: 12px !important;}
     .text-l-size-16 {font-size: 16px !important;}
@@ -1977,10 +1977,10 @@ a.captcha-button i,.full-name-field {
     .text-l-size-40 {font-size: 40px !important;}
     .text-l-size-50 {font-size: 50px !important;}
     .text-l-size-60 {font-size: 60px !important;}
-    .text-l-size-70 {font-size: 70px !important;}    
+    .text-l-size-70 {font-size: 70px !important;}
     .text-l-size-80 {font-size: 80px !important;}
     .text-l-size-90 {font-size: 90px !important;}
-    .text-l-size-100 {font-size: 100px !important;}   
+    .text-l-size-100 {font-size: 100px !important;}
 }
 
 
@@ -2068,26 +2068,26 @@ a.captcha-button i,.full-name-field {
     .margin-m-top-bottom-0,.margin-m-top-bottom-10,.margin-m-top-bottom-15,.margin-m-top-bottom-20,.margin-m-top-bottom-30,.margin-m-top-bottom-40,.margin-m-top-bottom-50,.margin-m-top-bottom-60,.margin-m-top-bottom-70,.margin-m-top-bottom-80 {display: block;}
     .margin-m-top-0 {margin-top: 0 !important;}
     .margin-m-top-10 {margin-top: 10px !important;}
-    .margin-m-top-15 {margin-top: 15px !important;} 
-    .margin-m-top-20 {margin-top: 20px !important;} 
-    .margin-m-top-30 {margin-top: 30px !important;} 
+    .margin-m-top-15 {margin-top: 15px !important;}
+    .margin-m-top-20 {margin-top: 20px !important;}
+    .margin-m-top-30 {margin-top: 30px !important;}
     .margin-m-top-40 {margin-top: 40px !important;}
     .margin-m-top-50 {margin-top: 50px !important;}
     .margin-m-top-60 {margin-top: 60px !important;}
     .margin-m-top-70 {margin-top: 70px !important; }
     .margin-m-top-80 {margin-top: 80px !important;}
-    
+
     .margin-m-bottom-0 {margin-bottom: 0 !important;}
     .margin-m-bottom-10 {margin-bottom: 10px !important;}
-    .margin-m-bottom-15 {margin-bottom: 15px !important;} 
-    .margin-m-bottom-20 {margin-bottom: 20px !important;} 
-    .margin-m-bottom-30 {margin-bottom: 30px !important;} 
+    .margin-m-bottom-15 {margin-bottom: 15px !important;}
+    .margin-m-bottom-20 {margin-bottom: 20px !important;}
+    .margin-m-bottom-30 {margin-bottom: 30px !important;}
     .margin-m-bottom-40 {margin-bottom: 40px !important;}
     .margin-m-bottom-50 {margin-bottom: 50px !important;}
     .margin-m-bottom-60 {margin-bottom: 60px !important;}
     .margin-m-bottom-70 {margin-bottom: 70px !important;}
     .margin-m-bottom-80 {margin-bottom: 80px !important;}
-    
+
     .margin-m-top-bottom-0 {
         margin-top: 0 !important;
         margin-bottom: 0 !important;
@@ -2098,19 +2098,19 @@ a.captcha-button i,.full-name-field {
     }
     .margin-m-top-bottom-15 {
         margin-top: 15px !important;
-        margin-bottom: 15px !important; 
-    } 
+        margin-bottom: 15px !important;
+    }
     .margin-m-top-bottom-20 {
         margin-top: 20px !important;
-        margin-bottom: 20px !important; 
-    } 
+        margin-bottom: 20px !important;
+    }
     .margin-m-top-bottom-30 {
         margin-top: 30px !important;
-        margin-bottom: 30px !important; 
-    } 
+        margin-bottom: 30px !important;
+    }
     .margin-m-top-bottom-40 {
         margin-top: 40px !important;
-        margin-bottom: 40px !important; 
+        margin-bottom: 40px !important;
     }
     .margin-m-top-bottom-50 {
         margin-top: 50px !important;
@@ -2118,22 +2118,22 @@ a.captcha-button i,.full-name-field {
     }
     .margin-m-top-bottom-60 {
         margin-top: 60px !important;
-        margin-bottom: 60px !important; 
-    } 
+        margin-bottom: 60px !important;
+    }
     .margin-m-top-bottom-70 {
         margin-top: 70px !important;
         margin-bottom: 70px !important;
-    } 
+    }
     .margin-m-top-bottom-80 {
         margin-top: 80px !important;
         margin-bottom: 80px !important;
     }
-    
+
     .margin-m-left-0 {margin-left: 0 !important;}
     .margin-m-left-10 {margin-left: 10px !important;}
-    .margin-m-left-15 {margin-left: 15px !important;} 
-    .margin-m-left-20 {margin-left: 20px !important;} 
-    .margin-m-left-30 {margin-left: 30px !important;} 
+    .margin-m-left-15 {margin-left: 15px !important;}
+    .margin-m-left-20 {margin-left: 20px !important;}
+    .margin-m-left-30 {margin-left: 30px !important;}
     .margin-m-left-40 {margin-left: 40px !important;}
     .margin-m-left-50 {margin-left: 50px !important;}
     .margin-m-left-60 {margin-left: 60px !important;}
@@ -2141,15 +2141,15 @@ a.captcha-button i,.full-name-field {
     .margin-m-left-80 {margin-left: 80px !important;}
     .margin-m-right-0 {margin-right: 0 !important;}
     .margin-m-right-10 {margin-right: 10px !important;}
-    .margin-m-right-15 {margin-right: 15px !important;} 
-    .margin-m-right-20 {margin-right: 20px !important;} 
-    .margin-m-right-30 {margin-right: 30px !important;} 
+    .margin-m-right-15 {margin-right: 15px !important;}
+    .margin-m-right-20 {margin-right: 20px !important;}
+    .margin-m-right-30 {margin-right: 30px !important;}
     .margin-m-right-40 {margin-right: 40px !important;}
     .margin-m-right-50 {margin-right: 50px !important;}
     .margin-m-right-60 {margin-right: 60px !important;}
     .margin-m-right-70 {margin-right: 70px !important;}
     .margin-m-right-80 {margin-right: 80px !important;}
-    
+
     .text-m-size-12,.text-m-size-16,.text-m-size-20,.text-m-size-25,.text-m-size-30,.text-m-size-40,.text-m-size-50,.text-m-size-60,.text-m-size-70,.text-m-size-80,.text-m-size-90.text-m-size-100 {line-height: 1.4;}
     .text-m-size-12 {font-size: 12px !important;}
     .text-m-size-16 {font-size: 16px !important;}
@@ -2159,17 +2159,17 @@ a.captcha-button i,.full-name-field {
     .text-m-size-40 {font-size: 40px !important;}
     .text-m-size-50 {font-size: 50px !important;}
     .text-m-size-60 {font-size: 60px !important;}
-    .text-m-size-70 {font-size: 70px !important;}    
+    .text-m-size-70 {font-size: 70px !important;}
     .text-m-size-80 {font-size: 80px !important;}
     .text-m-size-90 {font-size: 90px !important;}
-    .text-m-size-100 {font-size: 100px !important;}    
+    .text-m-size-100 {font-size: 100px !important;}
     .owl-nav {
       display: none;
     }
     .carousel-blocks, .carousel-3-blocks, .carousel-5-blocks {
       padding: 0;
     }
-}  
+}
 
 /* -480px version */
 @media screen and (max-width:480px) {
@@ -2194,7 +2194,7 @@ a.captcha-button i,.full-name-field {
         display: block;
     }
     .margin-s-bottom {
-        margin-bottom: 1.25rem !important; 
+        margin-bottom: 1.25rem !important;
         display: block;
     }
     .margin-s-left {
@@ -2217,26 +2217,26 @@ a.captcha-button i,.full-name-field {
     .margin-s-top-bottom-0,.margin-s-top-bottom-10,.margin-s-top-bottom-15,.margin-s-top-bottom-20,.margin-s-top-bottom-30,.margin-s-top-bottom-40,.margin-s-top-bottom-50,.margin-s-top-bottom-60,.margin-s-top-bottom-70,.margin-s-top-bottom-80 {display: block;}
     .margin-s-top-0 {margin-top: 0 !important;}
     .margin-s-top-10 {margin-top: 10px !important;}
-    .margin-s-top-15 {margin-top: 15px !important;} 
-    .margin-s-top-20 {margin-top: 20px !important;} 
-    .margin-s-top-30 {margin-top: 30px !important;} 
+    .margin-s-top-15 {margin-top: 15px !important;}
+    .margin-s-top-20 {margin-top: 20px !important;}
+    .margin-s-top-30 {margin-top: 30px !important;}
     .margin-s-top-40 {margin-top: 40px !important;}
     .margin-s-top-50 {margin-top: 50px !important;}
     .margin-s-top-60 {margin-top: 60px !important;}
     .margin-s-top-70 {margin-top: 70px !important; }
     .margin-s-top-80 {margin-top: 80px !important;}
-    
+
     .margin-s-bottom-0 {margin-bottom: 0 !important;}
     .margin-s-bottom-10 {margin-bottom: 10px !important;}
-    .margin-s-bottom-15 {margin-bottom: 15px !important;} 
-    .margin-s-bottom-20 {margin-bottom: 20px !important;} 
-    .margin-s-bottom-30 {margin-bottom: 30px !important;} 
+    .margin-s-bottom-15 {margin-bottom: 15px !important;}
+    .margin-s-bottom-20 {margin-bottom: 20px !important;}
+    .margin-s-bottom-30 {margin-bottom: 30px !important;}
     .margin-s-bottom-40 {margin-bottom: 40px !important;}
     .margin-s-bottom-50 {margin-bottom: 50px !important;}
     .margin-s-bottom-60 {margin-bottom: 60px !important;}
     .margin-s-bottom-70 {margin-bottom: 70px !important;}
     .margin-s-bottom-80 {margin-bottom: 80px !important;}
-    
+
     .margin-s-top-bottom-0 {
         margin-top: 0 !important;
         margin-bottom: 0 !important;
@@ -2247,19 +2247,19 @@ a.captcha-button i,.full-name-field {
     }
     .margin-s-top-bottom-15 {
         margin-top: 15px !important;
-        margin-bottom: 15px !important; 
-    } 
+        margin-bottom: 15px !important;
+    }
     .margin-s-top-bottom-20 {
         margin-top: 20px !important;
-        margin-bottom: 20px !important; 
-    } 
+        margin-bottom: 20px !important;
+    }
     .margin-s-top-bottom-30 {
         margin-top: 30px !important;
-        margin-bottom: 30px !important; 
-    } 
+        margin-bottom: 30px !important;
+    }
     .margin-s-top-bottom-40 {
         margin-top: 40px !important;
-        margin-bottom: 40px !important; 
+        margin-bottom: 40px !important;
     }
     .margin-s-top-bottom-50 {
         margin-top: 50px !important;
@@ -2267,22 +2267,22 @@ a.captcha-button i,.full-name-field {
     }
     .margin-s-top-bottom-60 {
         margin-top: 60px !important;
-        margin-bottom: 60px !important; 
-    } 
+        margin-bottom: 60px !important;
+    }
     .margin-s-top-bottom-70 {
         margin-top: 70px !important;
         margin-bottom: 70px !important;
-    } 
+    }
     .margin-s-top-bottom-80 {
         margin-top: 80px !important;
         margin-bottom: 80px !important;
     }
-    
+
     .margin-s-left-0 {margin-left: 0 !important;}
     .margin-s-left-10 {margin-left: 10px !important;}
-    .margin-s-left-15 {margin-left: 15px !important;} 
-    .margin-s-left-20 {margin-left: 20px !important;} 
-    .margin-s-left-30 {margin-left: 30px !important;} 
+    .margin-s-left-15 {margin-left: 15px !important;}
+    .margin-s-left-20 {margin-left: 20px !important;}
+    .margin-s-left-30 {margin-left: 30px !important;}
     .margin-s-left-40 {margin-left: 40px !important;}
     .margin-s-left-50 {margin-left: 50px !important;}
     .margin-s-left-60 {margin-left: 60px !important;}
@@ -2290,15 +2290,15 @@ a.captcha-button i,.full-name-field {
     .margin-s-left-80 {margin-left: 80px !important;}
     .margin-s-right-0 {margin-right: 0 !important;}
     .margin-s-right-10 {margin-right: 10px !important;}
-    .margin-s-right-15 {margin-right: 15px !important;} 
-    .margin-s-right-20 {margin-right: 20px !important;} 
-    .margin-s-right-30 {margin-right: 30px !important;} 
+    .margin-s-right-15 {margin-right: 15px !important;}
+    .margin-s-right-20 {margin-right: 20px !important;}
+    .margin-s-right-30 {margin-right: 30px !important;}
     .margin-s-right-40 {margin-right: 40px !important;}
     .margin-s-right-50 {margin-right: 50px !important;}
     .margin-s-right-60 {margin-right: 60px !important;}
     .margin-s-right-70 {margin-right: 70px !important;}
     .margin-s-right-80 {margin-right: 80px !important;}
-    
+
     .text-s-size-12,.text-s-size-16,.text-s-size-20,.text-s-size-25,.text-s-size-30,.text-s-size-40,.text-s-size-50,.text-s-size-60,.text-s-size-70,.text-s-size-80,.text-s-size-90.text-s-size-100 {line-height: 1.4;}
     .text-s-size-12 {font-size: 12px !important;}
     .text-s-size-16 {font-size: 16px !important;}
@@ -2308,11 +2308,11 @@ a.captcha-button i,.full-name-field {
     .text-s-size-40 {font-size: 40px !important;}
     .text-s-size-50 {font-size: 50px !important;}
     .text-s-size-60 {font-size: 60px !important;}
-    .text-s-size-70 {font-size: 70px !important;}    
+    .text-s-size-70 {font-size: 70px !important;}
     .text-s-size-80 {font-size: 80px !important;}
     .text-s-size-90 {font-size: 90px !important;}
-    .text-s-size-100 {font-size: 100px !important;}  
-}  
+    .text-s-size-100 {font-size: 100px !important;}
+}
 
 /* Typography */
 .text-uppercase {
@@ -2325,7 +2325,7 @@ a.captcha-button i,.full-name-field {
 
 
 /* Custom Template Styles */
-/* Containers */ 
+/* Containers */
 .section-same-height {
   display: table;
   clear: both;
@@ -2336,16 +2336,16 @@ a.captcha-button i,.full-name-field {
   height: 100%;
   float: none!important
 }
-.section  { 
+.section  {
   padding: 7rem 1.25rem;
 }
-.section-top-padding  { 
+.section-top-padding  {
   padding: 7rem 1.25rem 0  1.25rem;
 }
-.section-block { 
+.section-block {
   padding: 7rem 2.5rem;
 }
-.section-block-2x { 
+.section-block-2x {
   padding: 7rem 5rem;
 }
 .text-padding {
@@ -2355,7 +2355,7 @@ a.captcha-button i,.full-name-field {
 .text-padding-small {
   display: inline-block !important;
   padding: 7px 10px;
-}               
+}
 .hlavicka-uvod {
   background-repeat: no-repeat;
   background-size: cover;
@@ -2369,10 +2369,10 @@ a.captcha-button i,.full-name-field {
   .block-same-height {
     display: block;
   }
-  .section-block-2x { 
+  .section-block-2x {
     padding: 7rem 2.5rem;
   }
-}  
+}
 .margin-left-150 {
   margin-left: 150px;
 }
@@ -2382,16 +2382,16 @@ a.captcha-button i,.full-name-field {
 
 /* Fade Out Overlay */
 @keyframes fadeInOut {
-    0% {           
+    0% {
         opacity: 1;
         visibility: visible;
     }
-    100% {        
+    100% {
        opacity: 0;
        visibility: hidden;
     }
 }
-#page-overlay { 
+#page-overlay {
   position: fixed;
   top: 0;
   bottom: 0;
@@ -2402,12 +2402,12 @@ a.captcha-button i,.full-name-field {
 
 
 
-body, p { 
+body, p {
   color: #999;
   font-weight: 300;
-  font-family: "Poppins"; 
-  font-size: 0.92rem;  
-} 
+  font-family: "Poppins";
+  font-size: 0.92rem;
+}
 .background-white, .background-white p, a.background-white, .background-white a, .background-white a:link, .background-white a:visited, .background-white a:hover, .background-white a:active {
   color: #999;
 }
@@ -2455,7 +2455,7 @@ hr.break {
   border-top: 2px dotted #454545;
   background: none!important;
   background-color: none!important;
-}  
+}
 
 /* Breaks */
 hr.break-small.break-center {
@@ -2555,7 +2555,7 @@ nav.fixed, .fixed nav {
   padding: 0 2em;
 }
 nav.fixed .top-nav li a, .fixed nav .top-nav li a {
-  color: #444;  
+  color: #444;
 }
 nav.fixed .logo-white, .fixed nav .logo-white {
   display:none;
@@ -2563,13 +2563,13 @@ nav.fixed .logo-white, .fixed nav .logo-white {
 nav.fixed .logo-dark, .fixed nav .logo-dark {
   display:block;
   width: 60px;
-}  
+}
 nav.fixed .left-menu, nav.fixed .right-menu {
     padding: 0;
 }
 .background-transparent {
   background: none;
-}  
+}
 .custom-button {
   margin-top: 200px;
   margin-bottom: -20px;
@@ -2582,21 +2582,21 @@ a.text-tag:link:hover {
   background: #454545 none repeat scroll 0 0;
   border: 1px solid #454545;
 }
-.background-white-hightlight .top-nav .active-item > a, .background-white-hightlight .top-nav li a:hover, .background-white-hightlight .aside-nav li a:hover, 
+.background-white-hightlight .top-nav .active-item > a, .background-white-hightlight .top-nav li a:hover, .background-white-hightlight .aside-nav li a:hover,
 .background-white-hightlight .aside-nav > ul > li.active-item > a:link, .background-white-hightlight .aside-nav > ul > li.active-item > a:visited,
-.primary-color-white .background-primary-hightlight .top-nav .active-item > a, .primary-color-white .background-primary-hightlight .top-nav li a:hover, .primary-color-white .background-primary-hightlight .aside-nav li a:hover, 
+.primary-color-white .background-primary-hightlight .top-nav .active-item > a, .primary-color-white .background-primary-hightlight .top-nav li a:hover, .primary-color-white .background-primary-hightlight .aside-nav li a:hover,
 .primary-color-white .background-primary-hightlight .aside-nav > ul > li.active-item > a:link, .primary-color-white .background-primary-hightlight .aside-nav > ul > li.active-item > a:visited {
   color: #454545;
 }
-.background-yellow-hightlight .top-nav .active-item > a, .background-yellow-hightlight .top-nav li a:hover, .background-yellow-hightlight .aside-nav li a:hover, 
+.background-yellow-hightlight .top-nav .active-item > a, .background-yellow-hightlight .top-nav li a:hover, .background-yellow-hightlight .aside-nav li a:hover,
 .background-yellow-hightlight .aside-nav > ul > li.active-item > a:link, .background-yellow-hightlight .aside-nav > ul > li.active-item > a:visited,
-.primary-color-yellow .background-primary-hightlight .top-nav .active-item > a, .primary-color-yellow .background-primary-hightlight .top-nav li a:hover, .primary-color-yellow .background-primary-hightlight .aside-nav li a:hover, 
+.primary-color-yellow .background-primary-hightlight .top-nav .active-item > a, .primary-color-yellow .background-primary-hightlight .top-nav li a:hover, .primary-color-yellow .background-primary-hightlight .aside-nav li a:hover,
 .primary-color-yellow .background-primary-hightlight .aside-nav > ul > li.active-item > a:link, .primary-color-yellow .background-primary-hightlight .aside-nav > ul > li.active-item > a:visited {
   color: #454545;
 }
-.background-dark-hightlight .top-nav .active-item > a, .background-dark-hightlight .top-nav li a:hover, .background-dark-hightlight .aside-nav li a:hover, 
+.background-dark-hightlight .top-nav .active-item > a, .background-dark-hightlight .top-nav li a:hover, .background-dark-hightlight .aside-nav li a:hover,
 .background-dark-hightlight .aside-nav > ul > li.active-item > a:link, .background-dark-hightlight .aside-nav > ul > li.active-item > a:visited,
-.primary-color-dark .background-primary-hightlight .top-nav .active-item > a, .primary-color-dark .background-primary-hightlight .top-nav li a:hover, .primary-color-dark .background-primary-hightlight .aside-nav li a:hover, 
+.primary-color-dark .background-primary-hightlight .top-nav .active-item > a, .primary-color-dark .background-primary-hightlight .top-nav li a:hover, .primary-color-dark .background-primary-hightlight .aside-nav li a:hover,
 .primary-color-dark .background-primary-hightlight .aside-nav > ul > li.active-item > a:link, .primary-color-dark .background-primary-hightlight .aside-nav > ul > li.active-item > a:visited {
   background: #454545 none repeat scroll 0 0;
 }
@@ -2605,7 +2605,7 @@ a.text-tag:link:hover {
   border-color: #454545;
 }
 .background-white h1, .background-white h2, .background-white h3, .background-white h4, .background-white h5, .background-white h6,
-.background-white .h1, .background-white .h2, .background-white .h3, .background-white .h4, .background-white .h5, .background-white .h6, 
+.background-white .h1, .background-white .h2, .background-white .h3, .background-white .h4, .background-white .h5, .background-white .h6,
 .primary-color-white .background-primary h1, .primary-color-white .background-primary h2, .primary-color-white .background-primary h3, .primary-color-white .background-primary h4, .primary-color-white .background-primary h5, .primary-color-white .background-primary h6,
 .primary-color-white .background-primary .h1, .primary-color-white .background-primary .h2, .primary-color-white .background-primary .h3, .primary-color-white .background-primary .h4, .primary-color-white .background-primary .h5, .primary-color-white .background-primary .h6,
 .background-yellow h1, .background-yellow h2, .background-yellow h3, .background-yellow h4, .background-yellow h5, .background-yellow h6,
@@ -2613,13 +2613,13 @@ a.text-tag:link:hover {
 .primary-color-yellow .background-primary h1, .primary-color-yellow .background-primary h2, .primary-color-yellow .background-primary h3, .primary-color-yellow .background-primary h4, .primary-color-yellow .background-primary h5, .primary-color-yellow .background-primary h6,
 .primary-color-yellow .background-primary .h1, .primary-color-yellow .background-primary .h2, .primary-color-yellow .background-primary .h3, .primary-color-yellow .background-primary .h4, .primary-color-yellow .background-primary .h5, .primary-color-yellow .background-primary .h6,
 .background-yellow, .background-yellow p, a.background-yellow, a.background-yellow:visited, a.background-yellow:link, .background-yellow a, .background-yellow a:link, .background-yellow a:visited, .background-yellow a:hover, .background-yellow a:active,
-.primary-color-yellow .background-primary, .primary-color-yellow .background-primary p, .primary-color-yellow a.background-primary, .primary-color-yellow a.background-primary:visited, .primary-color-yellow a.background-primary:link, .primary-color-yellow .background-primary a, .primary-color-yellow .background-primary a:link, .primary-color-yellow .background-primary a:visited, .primary-color-yellow .background-primary a:hover, .primary-color-yellow .background-primary a:active {color: #454545;} 
-.text-dark, .text-dark *, .primary-color-dark .text-primary, .primary-color-dark .text-primary * {color: #454545 !important;} 
-.text-dark-hover:hover, .primary-color-dark .text-primary-hover:hover {color: #454545 !important;} 
+.primary-color-yellow .background-primary, .primary-color-yellow .background-primary p, .primary-color-yellow a.background-primary, .primary-color-yellow a.background-primary:visited, .primary-color-yellow a.background-primary:link, .primary-color-yellow .background-primary a, .primary-color-yellow .background-primary a:link, .primary-color-yellow .background-primary a:visited, .primary-color-yellow .background-primary a:hover, .primary-color-yellow .background-primary a:active {color: #454545;}
+.text-dark, .text-dark *, .primary-color-dark .text-primary, .primary-color-dark .text-primary * {color: #454545 !important;}
+.text-dark-hover:hover, .primary-color-dark .text-primary-hover:hover {color: #454545 !important;}
 .background-dark, .primary-color-dark .background-primary {
-  background-color: #454545 !important;   
-  color: #fff;  
-}  
+  background-color: #454545 !important;
+  color: #fff;
+}
 .background-dark h1, .background-dark h2, .background-dark h3, .background-dark h4, .background-dark h5, .background-dark h6, .background-dark .h1, .background-dark .h2, .background-dark .h3, .background-dark .h4, .background-dark .h5, .background-dark .h6, .primary-color-dark .background-primary h1, .primary-color-dark .background-primary h2, .primary-color-dark .background-primary h3, .primary-color-dark .background-primary h4, .primary-color-dark .background-primary h5, .primary-color-dark .background-primary h6, .primary-color-dark .background-primary .h1, .primary-color-dark .background-primary .h2, .primary-color-dark .background-primary .h3, .primary-color-dark .background-primary .h4, .primary-color-dark .background-primary .h5, .primary-color-dark .background-primary .h6 {color: #fff;}
 .button.button-white-stroke:hover, a.button.button-white-stroke:hover,
 .primary-color-white .button.button-primary-stroke:hover, .primary-color-white a.button.button-primary-stroke:hover {color: #454545;}
@@ -2677,7 +2677,7 @@ a.tab-label.active-btn, a.tab-label:hover, .background-white-hightlight a.tab-la
 -ms-transition: all 0.20s linear 0s;
 -moz-transition: all 0.20s linear 0s;
 -webkit-transition: all 0.20s linear 0s;
-} 
+}
 
 .top-nav ul ul {
   background: #fff none repeat scroll 0 0;
@@ -2726,8 +2726,8 @@ a.tab-label.active-btn, a.tab-label:hover, .background-white-hightlight a.tab-la
 .background-red-dott .top-nav > ul > li > a::before, .primary-color-red .background-primary-dott .top-nav > ul > li > a::before {background: #C81010 none repeat scroll 0 0;}
 .background-pink-dott .top-nav > ul > li > a::before, .primary-color-pink .background-primary-dott .top-nav > ul > li > a::before {background: #DE1E5E none repeat scroll 0 0;}
 .background-purple-dott .top-nav > ul > li > a::before, .primary-color-purple .background-primary-dott .top-nav > ul > li > a::before {background: #913fd9 none repeat scroll 0 0;}
-.background-blue-dott .top-nav > ul > li > a::before, .primary-color-blue .background-primary-dott .top-nav > ul > li > a::before {background: #005881 none repeat scroll 0 0;} 
-.background-light-blue-dott .top-nav > ul > li > a::before, .primary-color-light-blue .background-primary-dott .top-nav > ul > li > a::before {background: #28a5df none repeat scroll 0 0;} 
+.background-blue-dott .top-nav > ul > li > a::before, .primary-color-blue .background-primary-dott .top-nav > ul > li > a::before {background: #005881 none repeat scroll 0 0;}
+.background-light-blue-dott .top-nav > ul > li > a::before, .primary-color-light-blue .background-primary-dott .top-nav > ul > li > a::before {background: #28a5df none repeat scroll 0 0;}
 .background-aqua-dott .top-nav > ul > li > a::before, .primary-color-aqua .background-primary-dott .top-nav > ul > li > a::before {background: #00B5A6 none repeat scroll 0 0;}
 .background-green-dott .top-nav > ul > li > a::before, .primary-color-green .background-primary-dott .top-nav > ul > li > a::before {background: #49BF4C none repeat scroll 0 0;}
 .background-dark-dott .top-nav > ul > li > a::before, .primary-color-dark .background-primary-dott .top-nav > ul > li > a::before {background: #434343 none repeat scroll 0 0;}
@@ -2735,7 +2735,7 @@ a.tab-label.active-btn, a.tab-label:hover, .background-white-hightlight a.tab-la
 /* Menu font color */
 .background-white-dott .top-nav > ul ul li.active-item > a, .primary-color-white .background-primary-dott .top-nav > ul ul li.active-item > a,
 .background-white-dott .top-nav > ul ul li > a:hover, .primary-color-white .background-primary-dott .top-nav > ul ul li > a:hover {color: #fff !important;}
-.background-yellow-dott .top-nav > ul ul li.active-item > a, .primary-color-yellow .background-primary-dott .top-nav > ul ul li.active-item > a, 
+.background-yellow-dott .top-nav > ul ul li.active-item > a, .primary-color-yellow .background-primary-dott .top-nav > ul ul li.active-item > a,
 .background-yellow-dott .top-nav > ul ul li > a:hover, .primary-color-yellow .background-primary-dott .top-nav > ul ul li > a:hover {color: #F1D529 !important;}
 .background-orange-dott .top-nav > ul ul li.active-item > a, .primary-color-orange .background-primary-dott .top-nav > ul ul li.active-item > a,
 .background-orange-dott .top-nav > ul ul li > a:hover, .primary-color-orange .background-primary-dott .top-nav > ul ul li > a:hover {color: #E4A600 !important;}
@@ -2746,9 +2746,9 @@ a.tab-label.active-btn, a.tab-label:hover, .background-white-hightlight a.tab-la
 .background-purple-dott .top-nav > ul ul li.active-item > a, .primary-color-purple .background-primary-dott .top-nav > ul ul li.active-item > a,
 .background-purple-dott .top-nav > ul ul li > a:hover, .primary-color-purple .background-primary-dott .top-nav > ul ul li > a:hover {color: #913fd9 !important;}
 .background-blue-dott .top-nav > ul ul li.active-item > a, .primary-color-blue .background-primary-dott .top-nav > ul ul li.active-item > a,
-.background-blue-dott .top-nav > ul ul li > a:hover, .primary-color-blue .background-primary-dott .top-nav > ul ul li > a:hover {color: #005881 !important;} 
+.background-blue-dott .top-nav > ul ul li > a:hover, .primary-color-blue .background-primary-dott .top-nav > ul ul li > a:hover {color: #005881 !important;}
 .background-light-blue-dott .top-nav > ul ul li.active-item > a, .primary-color-light-blue .background-primary-dott .top-nav > ul ul li.active-item > a,
-.background-light-blue-dott .top-nav > ul ul li > a:hover, .primary-color-light-blue .background-primary-dott .top-nav > ul ul li > a:hover {color: #28a5df !important;} 
+.background-light-blue-dott .top-nav > ul ul li > a:hover, .primary-color-light-blue .background-primary-dott .top-nav > ul ul li > a:hover {color: #28a5df !important;}
 .background-aqua-dott .top-nav > ul ul li.active-item > a, .primary-color-aqua .background-primary-dott .top-nav > ul ul li.active-item > a,
 .background-aqua-dott .top-nav > ul ul li > a:hover, .primary-color-aqua .background-primary-dott .top-nav > ul ul li > a:hover {color: #00B5A6 !important;}
 .background-green-dott .top-nav > ul ul li.active-item > a, .primary-color-green .background-primary-dott .top-nav > ul ul li.active-item > a,
@@ -2784,7 +2784,7 @@ section, header {
   bottom: -1px;
   width: 100%;
   left: 0;
-} 
+}
 @media screen and (max-width:480px) {
   .aside-nav li a {text-align: left;}
 }
@@ -2803,14 +2803,14 @@ a.tab-label, a.tab-label:link, a.tab-label:visited, a.tab-label:hover, .backgrou
 .owl-dots {
   margin-top: 1.25rem;
 }
-.owl-carousel .owl-dot span { 
+.owl-carousel .owl-dot span {
   background: #434343;
   height: 7px;
   margin: 0 3px;
   width: 7px;
   border-radius: 10px;
   filter: Alpha(Opacity=30);
-  opacity: 0.3;  
+  opacity: 0.3;
 }
 .background-dark .owl-carousel .owl-dot span {
   background: #fff;
@@ -2846,7 +2846,7 @@ a.tab-label, a.tab-label:link, a.tab-label:visited, a.tab-label:hover, .backgrou
   bottom: 0;
   width: 100%;
   right: 0;
-  left: 0; 
+  left: 0;
   z-index: -1;
 }
 .owl-item .background-image-zoom-out .background-image.background-image-object {
@@ -2889,7 +2889,7 @@ a.tab-label, a.tab-label:link, a.tab-label:visited, a.tab-label:hover, .backgrou
 }
 
 /* Hover Zoom */
-.hover-zoom {  
+.hover-zoom {
   display: inline-block;
   width: 100%;
 	transform: scale(1, 1);
@@ -2902,7 +2902,7 @@ a.tab-label, a.tab-label:link, a.tab-label:visited, a.tab-label:hover, .backgrou
 	-ms-transition: all 0.2s ease-in-out 0s;
 	-moz-transition: all 0.2s ease-in-out 0s;
 	-webkit-transition: all 0.2s ease-in-out 0s;
-  
+
 }
 .hover-zoom:hover {
 	transform: scale(1.03, 1.03);
@@ -2986,7 +2986,7 @@ h3.pricing-title {
 }
 video {
   width: 100%;
-} 
+}
 
 /* Tabs */
 a.tab-label.active-btn {
@@ -3039,7 +3039,7 @@ margin-right: 10px
 .percent {
 	display: inline-block;
 	font-size: 35px;
-	font-weight: 100; 
+	font-weight: 100;
   color: #fff;
 	line-height: 127px;
 	z-index: 2;
@@ -3129,7 +3129,7 @@ margin-right: 10px
     background: #f5f5f5!important;
   }
   nav.fixed .top-nav li a, .fixed nav .top-nav li a, .top-nav li a:hover {
-    color: #777;  
+    color: #777;
   }
   nav.fixed, .fixed nav {
     padding: 0;
@@ -3153,10 +3153,15 @@ margin-right: 10px
   .padding-3x {
     padding: 30px !important;
   }
-} 
+}
 .link {
   text-decoration: underline;
   font-weight: bold;
+}
+.sponsorContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 /* START members.html */
 .teamParent {
