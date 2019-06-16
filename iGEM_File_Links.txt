@@ -44,5 +44,5 @@ More Images
 arrow-object-white.svg		https://2019.igem.org/wiki/images/e/e8/T--CMUQ--wikiarrowobjectwhite.svg
 img-cmuq.png			https://2019.igem.org/wiki/images/0/0d/T--CMUQ--wikiimagecmuq.png
 img-random.png			https://2019.igem.org/wiki/images/0/0c/T--CMUQ--wikiimgrandom.png
-img-qf.png			https://2019.igem.org/File:T--CMUQ--wikiimgqf.png
+img-qf.png			https://2019.igem.org/wiki/images/9/9b/T--CMUQ--wikiimgqf.png
 img-lab.jpg			https://2019.igem.org/wiki/images/f/fc/T--CMUQ--wikiimglab.jpeg
