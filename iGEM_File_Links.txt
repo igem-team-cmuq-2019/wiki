@@ -27,3 +27,15 @@ https://2019.igem.org/Team:CMUQ/owlcarousel		owl-carousel/owl.carousel.css
 https://2019.igem.org/Team:CMUQ/owlcarouseljs		owl-carousel/owl.carousel.js
 https://2019.igem.org/Team:CMUQ/owlthemejs		owl-carousel/owl.carousel.min.js
 https://2019.igem.org/Team:CMUQ/owltheme		owl-carousel/owl.theme.css
+
+Images
+
+Andrew      https://2019.igem.org/wiki/images/3/32/T--CMUQ--wikiandrew.jpeg
+Joana       https://2019.igem.org/wiki/images/0/0f/T--CMUQ--wikijoana.jpeg
+Kaan        https://2019.igem.org/wiki/images/e/e6/T--CMUQ--wikikaan.jpeg
+Omar        https://2019.igem.org/wiki/images/6/6b/T--CMUQ--wikiomar.jpeg
+Rameez      https://2019.igem.org/wiki/images/8/8e/T--CMUQ--wikirameez.jpeg
+Reema       https://2019.igem.org/wiki/images/0/04/T--CMUQ--wikireema.jpeg
+Vincent     https://2019.igem.org/wiki/images/0/0f/T--CMUQ--wikivincent.jpeg
+Weilin      https://2019.igem.org/wiki/images/b/ba/T--CMUQ--wikiweilin.jpeg
+Team        https://2019.igem.org/wiki/images/a/af/T--CMUQ--wikiteam.jpg
