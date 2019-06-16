@@ -39,3 +39,10 @@ Reema       https://2019.igem.org/wiki/images/0/04/T--CMUQ--wikireema.jpeg
 Vincent     https://2019.igem.org/wiki/images/0/0f/T--CMUQ--wikivincent.jpeg
 Weilin      https://2019.igem.org/wiki/images/b/ba/T--CMUQ--wikiweilin.jpeg
 Team        https://2019.igem.org/wiki/images/a/af/T--CMUQ--wikiteam.jpg
+
+More Images
+arrow-object-white.svg		https://2019.igem.org/wiki/images/e/e8/T--CMUQ--wikiarrowobjectwhite.svg
+img-cmuq.png			https://2019.igem.org/wiki/images/0/0d/T--CMUQ--wikiimagecmuq.png
+img-random.png			https://2019.igem.org/wiki/images/0/0c/T--CMUQ--wikiimgrandom.png
+img-qf.png			https://2019.igem.org/File:T--CMUQ--wikiimgqf.png
+img-lab.jpg			https://2019.igem.org/wiki/images/f/fc/T--CMUQ--wikiimglab.jpeg
