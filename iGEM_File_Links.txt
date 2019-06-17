@@ -54,3 +54,14 @@ Footer		https://2019.igem.org/wiki/index.php?title=Team:CMUQ/footer&action=raw&c
 iGEM photos
 igem-org.png		https://2019.igem.org/wiki/images/8/81/T--CMUQ--wikiigemorg.png
 Igem-white.png		https://2019.igem.org/wiki/images/4/4b/T--CMUQ--wikiigemwhite.png
+
+Fonts
+
+mfglabsiconset-webfont.eot	https://2019.igem.org/wiki/images/e/e3/T--CMUQ--mfglabsiconset-webfont.eot
+mfglabsiconset-webfont.svg	https://2019.igem.org/wiki/images/3/3c/T--CMUQ--mfglabsiconset-webfontsvg.svg
+mfglabsiconset-webfont.ttf	https://2019.igem.org/wiki/images/e/e0/T--CMUQ--mfglabsiconset-webfontttf.ttf
+mfglabsiconset-webfont.woff	https://2019.igem.org/wiki/images/b/b6/T--CMUQ--mfglabsiconset-webfontwoff.woff
+Simple-Line-Icons.eot		https://2019.igem.org/wiki/images/4/42/T--CMUQ--simplelineiconseot.eot
+Simple-Line-Icons.svg		https://2019.igem.org/wiki/images/1/19/T--CMUQ--simplelineiconssvg.svg
+Simple-Line-Icons.ttf		https://2019.igem.org/wiki/images/8/85/T--CMUQ--simplelineiconsttf.ttf
+Simple-Line-Icons.woff		https://2019.igem.org/wiki/images/b/b6/T--CMUQ--simplelineiconswoff.woff
