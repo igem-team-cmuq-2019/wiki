@@ -664,6 +664,9 @@ body {
   .text-purple, .text-purple *, .primary-color-purple .text-primary, .primary-color-purple .text-primary * {
     color: #913fd9 !important;
   }
+  .text-pompadour, .text-pompadour *, .primary-color-pompadour .text-primary, .primary-color-pompadour .text-primary * {
+    color: #73194B !important;
+  }
   .text-blue, .text-blue *, .primary-color-blue .text-primary, .primary-color-blue .text-primary * {
     color: #fff !important;
   }
@@ -739,6 +742,9 @@ body {
   .background-purple, .primary-color-purple .background-primary {
     background-color: #913fd9 !important;
   }
+  .background-pompadour, .primary-color-pompadour .background-primary {
+    background-color: #73194D !important;
+  }
   .background-blue, .primary-color-blue .background-primary {
     background-color: #61429B !important;
   }
@@ -778,6 +784,9 @@ body {
   }
   .background-purple.background-transparent, .primary-color-purple .background-primary.background-transparent {
     background-color: rgba(145, 63, 217, 0.85) !important;
+  }
+  .background-pompadour.background-transparent, .primary-color-pompadour .background-primary.background-transparent {
+    background-color: #8F4771 !important;
   }
   .background-blue.background-transparent, .primary-color-blue .background-primary.background-transparent {
     background-color: rgba(0, 88, 129, 0.85) !important;
@@ -1662,6 +1671,11 @@ body {
     background: #913fd9 none repeat scroll 0 0;
     color: #fff;
   }
+  .background-pompadour-hightlight a.tab-label.active-btn, .background-pompadour-hightlight a.tab-label:hover,
+  .primary-color-purple .background-primary-hightlight a.tab-label.active-btn, .primary-color-purple .background-primary-hightlight a.tab-label:hover {
+    background: #73194B none repeat scroll 0 0;
+    color: #fff;
+  }
   .background-blue-hightlight a.tab-label.active-btn, .background-blue-hightlight a.tab-label:hover,
   .primary-color-blue .background-primary-hightlight a.tab-label.active-btn, .primary-color-blue .background-primary-hightlight a.tab-label:hover {
     background: #005881 none repeat scroll 0 0;
@@ -2505,6 +2519,11 @@ body {
     background-color: none!important;
     border-top: 2px dotted #913fd9;
   }
+  hr.break.background-pompadour, .primary-color-purple hr.break.background-primary {
+    background: none!important;
+    background-color: none!important;
+    border-top: 2px dotted #73194B;
+  }
   hr.break.background-blue, .primary-color-blue hr.break.background-primary {
     background: none!important;
     background-color: none!important;
@@ -3208,4 +3227,16 @@ body {
   .igem_2019_team_mobile_bar {
       display: none !important;
   }
-  
+  .text-ubuntu {
+    font-family: 'Ubuntu';
+  }
+  .small-icon {
+    width: 30%;
+    height: 30%;
+  }
+  .arrow-pompadour:hover {
+    color: black;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
