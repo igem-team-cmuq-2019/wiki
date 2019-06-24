@@ -39,6 +39,7 @@ Reema       https://2019.igem.org/wiki/images/0/04/T--CMUQ--wikireema.jpeg
 Vincent     https://2019.igem.org/wiki/images/0/0f/T--CMUQ--wikivincent.jpeg
 Weilin      https://2019.igem.org/wiki/images/b/ba/T--CMUQ--wikiweilin.jpeg
 Team        https://2019.igem.org/wiki/images/a/af/T--CMUQ--wikiteam.jpg
+Dorde	    https://2019.igem.org/wiki/images/b/be/T--CMUQ--wikidorde.jpeg
 
 More Images
 arrow-object-white.svg		https://2019.igem.org/wiki/images/e/e8/T--CMUQ--wikiarrowobjectwhite.svg
@@ -65,3 +66,10 @@ Simple-Line-Icons.eot		https://2019.igem.org/wiki/images/4/42/T--CMUQ--simplelin
 Simple-Line-Icons.svg		https://2019.igem.org/wiki/images/1/19/T--CMUQ--simplelineiconssvg.svg
 Simple-Line-Icons.ttf		https://2019.igem.org/wiki/images/8/85/T--CMUQ--simplelineiconsttf.ttf
 Simple-Line-Icons.woff		https://2019.igem.org/wiki/images/b/b6/T--CMUQ--simplelineiconswoff.woff
+
+Resumes
+
+Dorde		https://2019.igem.org/wiki/images/e/e8/T--CMUQ--wikidorderesume.pdf
+Omar		https://2019.igem.org/wiki/images/e/ea/T--CMUQ--wikiomarresume.pdf
+Reema		https://2019.igem.org/wiki/images/d/d3/T--CMUQ--wikireemaresume.pdf
+Andrew		https://2019.igem.org/wiki/images/7/78/T--CMUQ--wikiandrewresume.pdf
