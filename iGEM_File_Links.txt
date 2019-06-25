@@ -1,32 +1,32 @@
 CSS
 
-https://2019.igem.org/Team:CMUQ/components	css/components.css
-https://2019.igem.org/Team:CMUQ/icons		css/icons.css
-https://2019.igem.org/Team:CMUQ/lightcase	css/lightcase.css
-https://2019.igem.org/Team:CMUQ/responsee	css/responsee.css
+https://2019.igem.org/Team:CMUQ/components		css/components.css
+https://2019.igem.org/Team:CMUQ/icons			css/icons.css
+https://2019.igem.org/Team:CMUQ/lightcase		css/lightcase.css
+https://2019.igem.org/Team:CMUQ/responsee		css/responsee.css
 https://2019.igem.org/Team:CMUQ/template-style	css/template-style.css
 
 JS
 
-https://2019.igem.org/Team:CMUQ/validation		js/validation.js
-https://2019.igem.org/Team:CMUQ/typed			js/typed.min.js
+https://2019.igem.org/Team:CMUQ/validation			js/validation.js
+https://2019.igem.org/Team:CMUQ/typed				js/typed.min.js
 https://2019.igem.org/Team:CMUQ/template-scripts	js/template-scripts.js
-https://2019.igem.org/Team:CMUQ/responseejs		js/responsee.js
-https://2019.igem.org/Team:CMUQ/plugins			js/plugins.min.js
-https://2019.igem.org/Team:CMUQ/parallax		js/parallax.min.js
-https://2019.igem.org/Team:CMUQ/lightcasejs		js/lightcase.js
+https://2019.igem.org/Team:CMUQ/responseejs			js/responsee.js
+https://2019.igem.org/Team:CMUQ/plugins				js/plugins.min.js
+https://2019.igem.org/Team:CMUQ/parallax			js/parallax.min.js
+https://2019.igem.org/Team:CMUQ/lightcasejs			js/lightcase.js
 https://2019.igem.org/Team:CMUQ/jqueryeventstouch	js/jquery.events.touch.js
 https://2019.igem.org/Team:CMUQ/jqueryeasypiechart	js/jquery.easypiechart.min.js
 https://2019.igem.org/Team:CMUQ/jquerycountto		js/jquery.countTo.js
-https://2019.igem.org/Team:CMUQ/jqueryui		js/jquery-ui.min.js
-https://2019.igem.org/Team:CMUQ/jquery			js/jquery-1.8.3.min.js
+https://2019.igem.org/Team:CMUQ/jqueryui			js/jquery-ui.min.js
+https://2019.igem.org/Team:CMUQ/jquery				js/jquery-1.8.3.min.js
 
 owl-carousel
 
-https://2019.igem.org/Team:CMUQ/owlcarousel		owl-carousel/owl.carousel.css
+https://2019.igem.org/Team:CMUQ/owlcarousel			owl-carousel/owl.carousel.css
 https://2019.igem.org/Team:CMUQ/owlcarouseljs		owl-carousel/owl.carousel.js
-https://2019.igem.org/Team:CMUQ/owlthemejs		owl-carousel/owl.carousel.min.js
-https://2019.igem.org/Team:CMUQ/owltheme		owl-carousel/owl.theme.css
+https://2019.igem.org/Team:CMUQ/owlthemejs			owl-carousel/owl.carousel.min.js
+https://2019.igem.org/Team:CMUQ/owltheme			owl-carousel/owl.theme.css
 
 Images
 
@@ -39,12 +39,23 @@ Reema       	https://2019.igem.org/wiki/images/0/04/T--CMUQ--wikireema.jpeg
 Vincent     	https://2019.igem.org/wiki/images/0/0f/T--CMUQ--wikivincent.jpeg
 Weilin      	https://2019.igem.org/wiki/images/b/ba/T--CMUQ--wikiweilin.jpeg
 Team        	https://2019.igem.org/wiki/images/a/af/T--CMUQ--wikiteam.jpg
-DordE		https://2019.igem.org/wiki/images/b/be/T--CMUQ--wikidorde.jpeg (UPDATE THIS TO THE NEW ONE)
-Nahin		ON THE DRIVE
-Dona		ON THE DRIVE
-Jenan		-
-Dania		-
+DordE			https://2019.igem.org/wiki/images/b/be/T--CMUQ--wikidorde.jpeg (UPDATE THIS TO THE NEW ONE)
+Nahin			ON THE DRIVE
+Dona			ON THE DRIVE
+Jenan	        -
+Dania		    -
 
+Andrew      https://2019.igem.org/wiki/images/3/32/T--CMUQ--wikiandrew.jpeg
+Joana       https://2019.igem.org/wiki/images/0/0f/T--CMUQ--wikijoana.jpeg
+Kaan        https://2019.igem.org/wiki/images/e/e6/T--CMUQ--wikikaan.jpeg
+Omar        https://2019.igem.org/wiki/images/6/6b/T--CMUQ--wikiomar.jpeg
+Rameez      https://2019.igem.org/wiki/images/8/8e/T--CMUQ--wikirameez.jpeg
+Reema       https://2019.igem.org/wiki/images/0/04/T--CMUQ--wikireema.jpeg
+Vincent     https://2019.igem.org/wiki/images/0/0f/T--CMUQ--wikivincent.jpeg
+Weilin      https://2019.igem.org/wiki/images/b/ba/T--CMUQ--wikiweilin.jpeg
+Team        https://2019.igem.org/wiki/images/a/af/T--CMUQ--wikiteam.jpg
+Dorde	    https://2019.igem.org/wiki/images/b/be/T--CMUQ--wikidorde.jpeg
+Radu	    https://2019.igem.org/wiki/images/e/e7/T--CMUQ--wikiradu.jpeg
 
 More Images
 arrow-object-white.svg		https://2019.igem.org/wiki/images/e/e8/T--CMUQ--wikiarrowobjectwhite.svg
@@ -73,7 +84,6 @@ Simple-Line-Icons.svg		https://2019.igem.org/wiki/images/1/19/T--CMUQ--simplelin
 Simple-Line-Icons.ttf		https://2019.igem.org/wiki/images/8/85/T--CMUQ--simplelineiconsttf.ttf
 Simple-Line-Icons.woff		https://2019.igem.org/wiki/images/b/b6/T--CMUQ--simplelineiconswoff.woff
 
-_______________________________________________________________________________________________________
 Resumes
 
 Dorde		https://2019.igem.org/wiki/images/e/e8/T--CMUQ--wikidorderesume.pdf
@@ -87,10 +97,10 @@ Nahin		ON THE DRIVE
 Rameez		ON THE DRIVE
 Jenan		-
 Dania		-
-Radu		Add it to the drive, omar
 Joana		-
+Radu		https://2019.igem.org/wiki/images/a/a4/T--CMUQ--wikiraduresume.pdf
 
-_______________________________________________________________________________________________________
+
 LinkedIn
 
 Prof. Vincent		-
@@ -106,4 +116,7 @@ Dania			-
 Dona			https://www.linkedin.com/in/dona-ferdinando-ba6a20188/
 Jenan			https://www.linkedin.com/in/jenan-azem-46737914b/
 Nahin			https://www.linkedin.com/in/mnahinkhan/
+Dona			-
+Jinan			-
+Nahin			-
 Radu			https://www.linkedin.com/in/radu-revutchi-aaba38132/
