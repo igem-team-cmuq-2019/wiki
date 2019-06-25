@@ -40,6 +40,7 @@ Vincent     https://2019.igem.org/wiki/images/0/0f/T--CMUQ--wikivincent.jpeg
 Weilin      https://2019.igem.org/wiki/images/b/ba/T--CMUQ--wikiweilin.jpeg
 Team        https://2019.igem.org/wiki/images/a/af/T--CMUQ--wikiteam.jpg
 Dorde	    https://2019.igem.org/wiki/images/b/be/T--CMUQ--wikidorde.jpeg
+Radu	    https://2019.igem.org/wiki/images/e/e7/T--CMUQ--wikiradu.jpeg
 
 More Images
 arrow-object-white.svg		https://2019.igem.org/wiki/images/e/e8/T--CMUQ--wikiarrowobjectwhite.svg
@@ -74,6 +75,7 @@ Omar		https://2019.igem.org/wiki/images/e/ea/T--CMUQ--wikiomarresume.pdf
 Reema		https://2019.igem.org/wiki/images/d/d3/T--CMUQ--wikireemaresume.pdf
 Andrew		https://2019.igem.org/wiki/images/7/78/T--CMUQ--wikiandrewresume.pdf
 Kaan		https://2019.igem.org/wiki/images/f/f5/T--CMUQ--wikikaanresume.pdf
+Radu		https://2019.igem.org/wiki/images/a/a4/T--CMUQ--wikiraduresume.pdf
 
 LinkedIn
 
@@ -90,4 +92,4 @@ Dania			-
 Dona			-
 Jinan			-
 Nahin			-
-Radu			-
+Radu			https://www.linkedin.com/in/radu-revutchi-aaba38132/
