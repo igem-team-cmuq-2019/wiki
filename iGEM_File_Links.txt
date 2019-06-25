@@ -40,10 +40,10 @@ Vincent     	https://2019.igem.org/wiki/images/0/0f/T--CMUQ--wikivincent.jpeg
 Weilin      	https://2019.igem.org/wiki/images/b/ba/T--CMUQ--wikiweilin.jpeg
 Team        	https://2019.igem.org/wiki/images/a/af/T--CMUQ--wikiteam.jpg
 DordE		https://2019.igem.org/wiki/images/b/be/T--CMUQ--wikidorde.jpeg (UPDATE THIS TO THE NEW ONE)
-Nahin		
-Dona
-Jenan
-Dania
+Nahin		ON THE DRIVE
+Dona		ON THE DRIVE
+Jenan		-
+Dania		-
 
 
 More Images
@@ -61,6 +61,7 @@ iGEM photos
 igem-org.png		https://2019.igem.org/wiki/images/8/81/T--CMUQ--wikiigemorg.png
 Igem-white.png		https://2019.igem.org/wiki/images/4/4b/T--CMUQ--wikiigemwhite.png
 
+_______________________________________________________________________________________________________
 Fonts
 
 mfglabsiconset-webfont.eot	https://2019.igem.org/wiki/images/e/e3/T--CMUQ--mfglabsiconset-webfont.eot
@@ -72,6 +73,7 @@ Simple-Line-Icons.svg		https://2019.igem.org/wiki/images/1/19/T--CMUQ--simplelin
 Simple-Line-Icons.ttf		https://2019.igem.org/wiki/images/8/85/T--CMUQ--simplelineiconsttf.ttf
 Simple-Line-Icons.woff		https://2019.igem.org/wiki/images/b/b6/T--CMUQ--simplelineiconswoff.woff
 
+_______________________________________________________________________________________________________
 Resumes
 
 Dorde		https://2019.igem.org/wiki/images/e/e8/T--CMUQ--wikidorderesume.pdf
@@ -82,11 +84,13 @@ Kaan		https://2019.igem.org/wiki/images/f/f5/T--CMUQ--wikikaanresume.pdf
 Dona		ON THE DRIVE
 Weilin		ON THE DRIVE
 Nahin		ON THE DRIVE
+Rameez		ON THE DRIVE
 Jenan		-
 Dania		-
 Radu		Add it to the drive, omar
-Joanna		-
+Joana		-
 
+_______________________________________________________________________________________________________
 LinkedIn
 
 Prof. Vincent		-
