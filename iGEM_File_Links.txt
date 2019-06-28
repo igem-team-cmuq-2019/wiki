@@ -1,23 +1,23 @@
 CSS
 
-https://2019.igem.org/Team:CMUQ/components		css/components.css
-https://2019.igem.org/Team:CMUQ/icons			css/icons.css
-https://2019.igem.org/Team:CMUQ/lightcase		css/lightcase.css
-https://2019.igem.org/Team:CMUQ/responsee		css/responsee.css
-https://2019.igem.org/Team:CMUQ/template-style	css/template-style.css
+https://2019.igem.org/Team:CMUQ/components			css/components.css
+https://2019.igem.org/Team:CMUQ/icons				css/icons.css
+https://2019.igem.org/Team:CMUQ/lightcase			css/lightcase.css
+https://2019.igem.org/Team:CMUQ/responsee			css/responsee.css
+https://2019.igem.org/Team:CMUQ/template-style			css/template-style.css
 
 JS
 
 https://2019.igem.org/Team:CMUQ/validation			js/validation.js
 https://2019.igem.org/Team:CMUQ/typed				js/typed.min.js
-https://2019.igem.org/Team:CMUQ/template-scripts	js/template-scripts.js
+https://2019.igem.org/Team:CMUQ/template-scripts		js/template-scripts.js
 https://2019.igem.org/Team:CMUQ/responseejs			js/responsee.js
 https://2019.igem.org/Team:CMUQ/plugins				js/plugins.min.js
 https://2019.igem.org/Team:CMUQ/parallax			js/parallax.min.js
 https://2019.igem.org/Team:CMUQ/lightcasejs			js/lightcase.js
-https://2019.igem.org/Team:CMUQ/jqueryeventstouch	js/jquery.events.touch.js
-https://2019.igem.org/Team:CMUQ/jqueryeasypiechart	js/jquery.easypiechart.min.js
-https://2019.igem.org/Team:CMUQ/jquerycountto		js/jquery.countTo.js
+https://2019.igem.org/Team:CMUQ/jqueryeventstouch		js/jquery.events.touch.js
+https://2019.igem.org/Team:CMUQ/jqueryeasypiechart		js/jquery.easypiechart.min.js
+https://2019.igem.org/Team:CMUQ/jquerycountto			js/jquery.countTo.js
 https://2019.igem.org/Team:CMUQ/jqueryui			js/jquery-ui.min.js
 https://2019.igem.org/Team:CMUQ/jquery				js/jquery-1.8.3.min.js
 
