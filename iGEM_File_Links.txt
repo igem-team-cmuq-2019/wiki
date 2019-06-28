@@ -24,7 +24,7 @@ https://2019.igem.org/Team:CMUQ/jquery				js/jquery-1.8.3.min.js
 owl-carousel
 
 https://2019.igem.org/Team:CMUQ/owlcarousel			owl-carousel/owl.carousel.css
-https://2019.igem.org/Team:CMUQ/owlcarouseljs		owl-carousel/owl.carousel.js
+https://2019.igem.org/Team:CMUQ/owlcarouseljs			owl-carousel/owl.carousel.js
 https://2019.igem.org/Team:CMUQ/owlthemejs			owl-carousel/owl.carousel.min.js
 https://2019.igem.org/Team:CMUQ/owltheme			owl-carousel/owl.theme.css
 
