@@ -52,6 +52,7 @@ img-cmuq.png			https://2019.igem.org/wiki/images/0/0d/T--CMUQ--wikiimagecmuq.png
 img-random.png			https://2019.igem.org/wiki/images/0/0c/T--CMUQ--wikiimgrandom.png
 img-qf.png			https://2019.igem.org/File:T--CMUQ--wikiimgqf.png
 img-lab.jpg			https://2019.igem.org/wiki/images/f/fc/T--CMUQ--wikiimglab.jpeg
+descillustration.png		https://2019.igem.org/wiki/images/d/d0/T--CMUQ--descillustration.png
 
 Header and Footer
 Header		https://2019.igem.org/wiki/index.php?title=Team:CMUQ/header&action=raw&ctype=text/html
