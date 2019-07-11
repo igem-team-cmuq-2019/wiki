@@ -19,153 +19,6 @@
             margin: 0;
         }
 
-        /* START header styles */
-        header {
-            position: fixed;
-            top: 18px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: fixed;
-            width: 100%;
-            height: 75px;
-            background-color: #fff;
-            box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2);
-            z-index: 3;
-        }
-        header .logo {
-            height: 60px;
-        }
-        header .headerLink {
-            display: inline-block;
-            text-decoration: none !important;
-            color: #000 !important;
-            height: 40px;
-            line-height: 40px;
-            cursor: pointer;
-            font-size: 16px !important;
-        }
-        header .dropdownContent a {
-            text-decoration: none !important;
-            color: #000 !important;
-        }
-        header .left, .right {
-            display: flex;
-            height: 40px;
-            width: 40%;
-            margin: 0 30px;
-        }
-        header .left {
-            justify-content: flex-end;
-        }
-        header .right {
-            justify-content: flex-start;
-        }
-        header .hDiv {
-            display: block;
-            height: 20px;
-            width: 1px;
-            background-color: #ddd;
-            margin: 10px 10px 0 10px;
-        }
-        header .caret {
-            width: 10px;
-        }
-        header .dropdownButton {
-            font-size: 16px;  
-            border: none;
-            outline: none;
-            color: #000;
-            background-color: inherit;
-            font-family: inherit;
-            cursor: pointer;
-        }
-        header .dropdown:hover .dropdownContent {
-            display: block;
-        }
-        header .dropdownContent {
-            display: none;
-            position: absolute;
-            background-color: #f9f9f9;
-            min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
-            z-index: 1;
-        }
-        header .dropdownContent a {
-            float: none;
-            color: black;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-            text-align: left;
-        }
-        header .dropdownContent a:hover {
-            background-color: rgba(0, 0, 0, 0.04) !important;
-        }
-        header .mobileHamburger {
-            display: none;
-            cursor: pointer;
-            padding: 5px 10px;
-            box-shadow: 0 0 5px 0 #ccc;
-            border-radius: 5px;
-        }
-        header .mobileHamburger div {
-            width: 30px;
-            height: 3px;
-            background-color: #888;
-            margin: 6px 0;
-            border-radius: 30px;
-        }
-        header .mobileHeaderLinks {
-            display: none;
-            position: absolute;
-            top: 75px;
-            width: 100%;
-            height: calc(100vh - 75px);
-            background-color: #fff;
-            border-bottom: 1px solid #ddd;
-            overflow: scroll;
-        }
-        header .mobileHeaderLinks a {
-            display: block;
-            text-decoration: none;
-            color: inherit;
-        }
-        header .mobileHeaderLinks a:not(.hasChildren):not(.div):not(.indent) {
-            padding: 0 20px 0 20px;
-        }
-        header .mobileHeaderLinks a:last-child {
-            padding-bottom: 20px !important;
-        }
-        header .mobileHeaderLinks .hasChildren {
-            padding: 0 20px 10px 20px;
-        }
-        header .mobileHeaderLinks .div {
-            display: block;
-            width: 100%;
-            height: 1px;
-            background-color: #ddd;
-            margin: 20px 0;
-        }
-        header .mobileHeaderLinks .indent {
-            padding: 0 0 0 50px;
-        }
-        @media (min-width : 320px) and (max-width : 1065px) {
-            header .left {
-                display: none;
-            }
-            header .right {
-                display: none;
-            }
-            header .mobileHamburger {
-                display: block;
-                position: absolute;
-                top: 16px;
-                right: 16px;
-            }
-        }
-        /* END header styles */
-
         /* START jumbotron styles */
         .jumbotron {
             display: flex;
@@ -197,166 +50,39 @@
         }
         /* END jumbotron styles */
 
-        /*START illustration Styles */
-        .illustration {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            max-width: 100%;
-            height: 400px;
-        }
-        
-        .illustration .image {
+        /* START description styles */
+        .description #projectPicture {
             display: block;
-            width: 800px;
-            object-fit: fill;
-            border-radius: 3px;
+            width: 100%;
+            max-width: 600px;
+            margin: 30px auto;
         }
-        /*END illustration Styles */
-
-        
-        /*START descBody Styles */
-        .descBody {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            max-width: 100%;
-            height: 400px;
+        .description .blockContainer {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .description .purpleBackground {
             background-color: var(--purple-color);
         }
-        .descBody .white {
-            background-color: white;
+        .description .block.purpleBackground p, .description .block.purpleBackground h1 {
+            color: #fff;
+        }
+        .description .block {
+            padding: 50px;
+        }
+        .description .block .blockContent {
+            line-height: 28pt !important;
+            font-size: 16pt !important;
+        }
+        .description .block .blockTitle {
+            line-height: 28pt !important;
+            font-size: 22pt !important;
+        }
+        .description .block:not(.purpleBackground) p, .description .block:not(.purpleBackground) h1 {
             color: var(--purple-color);
         }
-        .descbody .par {
-            display: block;
-            padding: 300px;
-        }
-        .descBody .purple {
-            background-color: var(--purple-color);
-            color: white;
-        } 
-
-        .descBody .sectionTitle {
-            font-size: 20pt !important;
-            
-        }
-        .descBody .sectionText {
-            font-size: 16pt !important;
-            white-space: normal;
-
-        }
-        /*END desc-body Styles */
-
-
-        /* START team styles */
-        .team .members {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-        .team .member {
-            margin: 20px;
-        }
-        .team .member .memberPicture {
-            display: block;
-            width: 300px;
-            height: 300px;
-            object-fit: cover;
-            border-radius: 3px;
-        }
-        .team .member .memberName {
-            display: inline-block;
-            margin: 10px 0 10px 0;
-            line-height: 20px;
-            padding: 0;
-            font-size: 20px !important;
-        }
-        .team .member .memberLinkedIn {
-            position: absolute;
-            display: inline-block;
-            height: 18px;
-            margin: 10px 0 0 10px;
-        }
-        .team .member .memberTitle {
-            display: block;
-            margin: 0;
-            color: #888;
-            font-size: 14px !important;
-        }
-        .team .member .overlayContainer {
-            position: relative;
-            width: 100%;
-        }
-        .team .member .overlayContainer:hover .overlay, .team .member .overlayContainer:active .overlay {
-            opacity: 1;
-        }
-        .team .member .overlay {
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            max-height: 100%;
-            max-width: 100%;
-            opacity: 0;
-            transition: .5s ease;
-            background-color: rgba(255, 255, 255, 0.8);
-            padding: 10px 20px;
-        }
-        .team .member .overlayText {
-            color: #000;
-            font-size: 12pt !important;
-            line-height: 1.5rem;
-        }
-        .team .member .viewResume {
-            text-decoration: none;
-            color: var(--burgundy-color);
-        }
-        /* END team styles */
-
-        /* START team picture styles */
-        .teamPicture {
-            width: 100%;
-            height: 500px;
-            background-image: url(https://2019.igem.org/wiki/images/a/af/T--CMUQ--wikiteam.jpg);
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-            background-attachment: fixed;
-            
-        }
-        /* END team picture styles */
-
-        /* START sponsor styles */
-        .sponsorContainer {
-            display: flex;
-            justify-content: center;
-        }
-        .sponsorContainer img {
-            height: 100px;
-        }
-        /* END sponsor styles */
-
-        /* START footer styles */
-        footer {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            width: 100%;
-            height: 250px;
-            background-color: var(--grey-color);
-        }
-        footer .sectionTitle {
-            font-family: 'Ubuntu' !important;
-            color: #fff !important;
-            font-size: 16pt !important;
-        }
-        footer img {
-            width: 20px;
-        }
-        /* END footer styles */
+        /* END description styles */
 
         /* START misc. styles */
         @font-face {
@@ -366,9 +92,6 @@
         .text-ubuntu {
             font-family: 'Ubuntu' !important;
         }
-        section {
-            margin-bottom: 50px;
-        }
         .sectionTitle {
             font-family: 'Ubuntu' !important;
             color: #000 !important;
@@ -376,9 +99,6 @@
             font-size: 26pt !important;
             margin-bottom: 30px !important;
             line-height: 26pt !important;
-        }
-        .fakeHeader {
-            height: 75px;
         }
         .padding-bottom-10 {
             padding-bottom: 10px !important;
@@ -394,373 +114,66 @@
             .jumbotron {
                 background-attachment: inherit;
             }
-
-            .teamPicture {
-                background-attachment: inherit;
-                background-size: contain;
+            .description .block .blockContent {
+                line-height: 18pt !important;
+                font-size: 12pt !important;
+            }
+            .description .block .blockTitle {
+                line-height: 18pt !important;
+                font-size: 20pt !important;
             }
         }
         /* END media queries */
     </style>
 </head>
 <body>
-    <div class="fakeHeader"></div>
-    <header class="text-ubuntu">
-        <div class="left">
-            <a class="headerLink">Home</a>
-            <span class="hDiv"></span>
-            <div class="dropdown">
-                <a class="dropdownButton headerLink">Team
-                    <img class="caret" src="https://2019.igem.org/wiki/images/8/85/T--CMUQ--wikicaret.png" alt="caret">
-                </a>
-                <div class="dropdownContent">
-                    <a href="">Members</a>
-                    <a href="">Collaborations</a>
-                    <a href="">Sponsors</a>
-                    <a href="">Attributions</a>
-                </div>
-            </div>
-            <span class="hDiv"></span>
-            <div class="dropdown">
-                <a class="dropdownButton headerLink">Project
-                    <img class="caret" src="https://2019.igem.org/wiki/images/8/85/T--CMUQ--wikicaret.png" alt="caret">
-                </a>
-                <div class="dropdownContent">
-                    <a href="https://2019.igem.org/Team:CMUQ/Description">Description</a>
-                    <a href="">Details</a>
-                    <a href="">Hardware</a>
-                    <a href="">Software</a>
-                    <a href="">Interlab</a>
-                    <a href="">Model</a>
-                    <a href="">Results</a>
-                    <a href="">Lab Notebook</a>
-                </div>
-            </div>
-            <span class="hDiv"></span>
-            <div class="dropdown">
-                <a class="dropdownButton headerLink">Parts
-                    <img class="caret" src="https://2019.igem.org/wiki/images/8/85/T--CMUQ--wikicaret.png" alt="caret">
-                </a>
-                <div class="dropdownContent">
-                    <a href="">Overview</a>
-                    <a href="">Basic Parts</a>
-                    <a href="">Improved Parts</a>
-                    <a href="">Composite Parts</a>
-                </div>
-            </div>
-            <span class="hDiv"></span>
-            <a class="headerLink">Human Practices</a>
-        </div>
-        <div class="mobileHamburger" onclick="showMobileMenu()">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-        <img class="logo" src="https://2019.igem.org/wiki/images/8/81/T--CMUQ--wikiigemorg.png" alt="iGEM 2019 CMUQ Logo">
-        <div class="right">
-            <a class="headerLink">Safety</a>
-            <span class="hDiv"></span>
-            <a class="headerLink">Outreach</a>
-            <span class="hDiv"></span>
-            <a class="headerLink">Video</a>
-            <span class="hDiv"></span>
-            <a class="headerLink">Awards</a>
-            <span class="hDiv"></span>
-            <a class="headerLink">Judging Form</a>
-        </div>
-    
-        <!-- MOBILE NAVIGATION BAR -->
-        <div class="mobileHeaderLinks">
-            <span class="div"></span>
-            <a href="#">Home</a>
-            <span class="div"></span>
-            <a href="#" class="hasChildren">Team</a>
-            <a href="#" class="indent padding-bottom-10">Members</a>
-            <a href="#" class="indent padding-bottom-10">Collaborations</a>
-            <a href="#" class="indent padding-bottom-10">Sponsors</a>
-            <a href="#" class="indent">Attributions</a>
-            <span class="div"></span>
-            <a href="#" class="hasChildren">Project</a>
-            <a href="https://2019.igem.org/Team:CMUQ/Description" class="indent padding-bottom-10">Description</a>
-            <a href="" class="indent padding-bottom-10">Details</a>
-            <a href="" class="indent padding-bottom-10">Hardware</a>
-            <a href="" class="indent padding-bottom-10">Software</a>
-            <a href="" class="indent padding-bottom-10">Interlab</a>
-            <a href="" class="indent padding-bottom-10">Model</a>
-            <a href="" class="indent padding-bottom-10">Results</a>
-            <a href="" class="indent">Lab Notebook</a>
-            <span class="div"></span>
-            <a href="#" class="hasChildren">Parts</a>
-            <a href="" class="indent padding-bottom-10">Overview</a>
-            <a href="" class="indent padding-bottom-10">Basic Parts</a>
-            <a href="" class="indent padding-bottom-10">Improved Parts</a>
-            <a href="" class="indent">Composite Parts</a>
-            <span class="div"></span>
-            <a href="#">Human Practices</a>
-            <span class="div"></span>
-            <a href="#">Safety</a>
-            <span class="div"></span>
-            <a href="#">Outreach</a>
-            <span class="div"></span>
-            <a href="#">Video</a>
-            <span class="div"></span>
-            <a href="#">Awards</a>
-            <span class="div"></span>
-            <a href="#">Judging Form</a>
-        </div>
-    </header>
     <main class="text-ubuntu">
         <section class="jumbotron text-ubuntu">
-            <div class="section content text-ubuntu">
-                <h1 class="text-ubuntu">Description</h1>
-            </div>
-        </section>
-        <section class="illustration text-ubuntu">
-            <div class="">
-                <img class = "image" src = "https://2019.igem.org/wiki/images/d/d0/T--CMUQ--descillustration.png">
+            <div class="content text-ubuntu">
+                <h1 class="text-ubuntu">Project Description</h1>
             </div>
         </section>
 
-        <section class="descBody">
-            <div class = "section par">
-                <h1 class = "text-ubuntu sectionTitle purple">How it all started... </h1>
-                <p class = "text-ubuntu sectionText purple">In a world where healthcare and health insurance is a primary concern for citizens and
-                policymakers, we saw a need to create an equal opportunity for one of the most important and
-                relatively expensive tests worldwide. Testing for genetic disorders, although taken for granted in
-                some countries, is a major gap in others. Whether it is the lack of awareness, equipment,
-                expertise or simply the overpriced exams, the Middle East and many less fortunate countries
-                suffer from the spread of genetic disease. We found no better way to describe our motives than
-                by collectively extrapolating our drives to take part in this research. We believe that combining
-                our different cultural backgrounds, skills, and knowledge to realistically and passionately make
-                the slightest enhancement to the lives of those who we feel compassionate about and to
-                contribute to the scientific community is our sincere purpose. Furthermore, our trust in the
-                essentiality of the technique we are introducing allowed to participate again with a developed
-                vision of our last iGEM idea with no setbacks.
-                </p>
-            </div>
-            
-        </section>
-
-        <section class="team text-ubuntu">
-            <h1 class="sectionTitle">Our Team</h1>
-            <div class="members text-ubuntu">
-                <div class="member text-ubuntu">
-                    <div class="overlayContainer text-ubuntu" onclick="">
-                        <img class="memberPicture" src="https://2019.igem.org/wiki/images/0/0f/T--CMUQ--wikivincent.jpeg" alt="Team Member Picture">
-                        <div class="overlay text-ubuntu">
-                            <p class="overlayText text-ubuntu">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                            <a href="#" class="viewResume text-ubuntu">View Resume</a>
-                        </div>
-                    </div>
-                    <p class="memberName text-ubuntu">Dr. Annette Vincent</p>
-                    <a href="#"><img class="memberLinkedIn" src="https://2019.igem.org/wiki/images/8/83/T--CMUQ--wikilinkedin.png" alt="Member LinkedIn"></a>
-                    <p class="memberTitle text-ubuntu">TEAM MENTOR</p>
-                </div>
-
-                <div class="member">
-                    <div class="overlayContainer" onclick="">
-                        <img class="memberPicture" src="https://2019.igem.org/wiki/images/e/e6/T--CMUQ--wikikaan.jpeg" alt="Team Member Picture">
-                        <div class="overlay">
-                            <p class="overlayText text-ubuntu">Hi I'm Kaan! I'm a computer science junior from Turkey. I'm co-leading our team along with Joanna. My focus is the business and tech side of things. I like to spend my off time cooking travelling or sailing. Oh, I also love to sit down for a nice conversation, or alternatively get up for an exciting dance!</p>
-                            <a href="#" class="viewResume text-ubuntu">View Resume</a>
-                        </div>
-                    </div>
-                    <p class="memberName text-ubuntu">Kaan Aksoy</p>
-                    <a href="#"><img class="memberLinkedIn" src="https://2019.igem.org/wiki/images/8/83/T--CMUQ--wikilinkedin.png" alt="Member LinkedIn"></a>
-                    <p class="memberTitle text-ubuntu">STUDENT CO-LEADER</p>
-                </div>
-
-                <div class="member">
-                    <div class="overlayContainer" onclick="">
-                        <img class="memberPicture" src="https://2019.igem.org/wiki/images/0/0f/T--CMUQ--wikijoana.jpeg" alt="Team Member Picture">
-                        <div class="overlay">
-                            <p class="overlayText text-ubuntu">Hey, my name is Joanna. I am a rising junior majoring in biological sciences. I am co-leading our CMUQ iGEM team and I am working in the lab. I have unconditional love towards chocolate & I am very passionate about healthcare. I enjoy swimming, drawing, and playing piano.</p>
-                            <a href="#" class="viewResume text-ubuntu">View Resume</a>
-                        </div>
-                    </div>
-                    <p class="memberName text-ubuntu">Joana Khatib</p>
-                    <a href="#"><img class="memberLinkedIn" src="https://2019.igem.org/wiki/images/8/83/T--CMUQ--wikilinkedin.png" alt="Member LinkedIn"></a>
-                    <p class="memberTitle text-ubuntu">STUDENT CO-LEADER</p>
-                </div>
-
-                <div class="member">
-                    <div class="overlayContainer" onclick="">
-                        <img class="memberPicture" src="https://2019.igem.org/wiki/images/3/32/T--CMUQ--wikiandrew.jpeg" alt="Team Member Picture">
-                        <div class="overlay">
-                            <p class="overlayText text-ubuntu">My name is Andrew Edward, I'm a rising junior studying information systems. I'm part of the software team for this year's iGEM and I handle photography too! I enjoy music, football, and designing.</p>
-                            <a href="#" class="viewResume text-ubuntu">View Resume</a>
-                        </div>
-                    </div>
-                    <p class="memberName text-ubuntu">Andrew Edward</p>
-                    <a href="#"><img class="memberLinkedIn" src="https://2019.igem.org/wiki/images/8/83/T--CMUQ--wikilinkedin.png" alt="Member LinkedIn"></a>
-                    <p class="memberTitle text-ubuntu">SOFTWARE DEVELOPMENT TEAM</p>
-                </div>
-
-                <div class="member">
-                    <div class="overlayContainer" onclick="">
-                        <img class="memberPicture" src="https://2019.igem.org/wiki/images/8/8e/T--CMUQ--wikirameez.jpeg" alt="Team Member Picture">
-                        <div class="overlay">
-                            <p class="overlayText text-ubuntu">Yo! My name's Rameez Saiyid, and I'm a Computer Science student at CMUQ. I'm leading the hardware department and am responsible for building and developing the biotech sensor we're working on. I enjoy stargazing and MC-ing.</p>
-                            <a href="#" class="viewResume text-ubuntu">View Resume</a>
-                        </div>
-                    </div>
-                    <p class="memberName text-ubuntu">Rameez Saiyid</p>
-                    <a href="#"><img class="memberLinkedIn" src="https://2019.igem.org/wiki/images/8/83/T--CMUQ--wikilinkedin.png" alt="Member LinkedIn"></a>
-                    <p class="memberTitle text-ubuntu">HARDWARE DEVELOPMENT TEAM</p>
-                </div>
-
-                <div class="member">
-                    <div class="overlayContainer" onclick="">
-                        <img class="memberPicture" src="https://2019.igem.org/wiki/images/0/04/T--CMUQ--wikireema.jpeg" alt="Team Member Picture">
-                        <div class="overlay">
-                            <p class="overlayText text-ubuntu">Hi, I’m Reema and I’ll be doing the lab work for this year’s iGEM! Besides science, I like watching movies and tweeting nonsense!</p>
-                            <a href="#" class="viewResume text-ubuntu">View Resume</a>
-                        </div>
-                    </div>
-                    <p class="memberName text-ubuntu">Reema Subeh</p>
-                    <a href="#"><img class="memberLinkedIn" src="https://2019.igem.org/wiki/images/8/83/T--CMUQ--wikilinkedin.png" alt="Member LinkedIn"></a>
-                    <p class="memberTitle text-ubuntu">WET LAB AND RESEARCH TEAM</p>
-                </div>
-
-                <div class="member">
-                    <div class="overlayContainer" onclick="">
-                        <img class="memberPicture" src="https://2019.igem.org/wiki/images/b/ba/T--CMUQ--wikiweilin.jpeg" alt="Team Member Picture">
-                        <div class="overlay">
-                            <p class="overlayText text-ubuntu">Hello there, my name is Weilin, and I am a rising junior majoring Biological Sciences who is responsible for the bench work for our project this year. I love reading, painting, traveling and exploring the beauty of the science!</p>
-                            <a href="#" class="viewResume text-ubuntu">View Resume</a>
-                        </div>
-                    </div>
-                    <p class="memberName text-ubuntu">Weilin Li</p>
-                    <a href="#"><img class="memberLinkedIn" src="https://2019.igem.org/wiki/images/8/83/T--CMUQ--wikilinkedin.png" alt="Member LinkedIn"></a>
-                    <p class="memberTitle text-ubuntu">WET LAB AND RESEARCH TEAM</p>
-                </div>
-
-                <div class="member">
-                    <div class="overlayContainer" onclick="">
-                        <img class="memberPicture" src="https://2019.igem.org/wiki/images/6/6b/T--CMUQ--wikiomar.jpeg" alt="Team Member Picture">
-                        <div class="overlay">
-                            <p class="overlayText text-ubuntu">Hi! My name is Omar Sinan, I am a Computer Science sophomore. I'll be working on the software side of things in this year's iGEM. I enjoy running and coding up little side projects.</p>
-                            <a href="#" class="viewResume text-ubuntu">View Resume</a>
-                        </div>
-                    </div>
-                    <p class="memberName text-ubuntu">Omar Sinan</p>
-                    <a href="#"><img class="memberLinkedIn" src="https://2019.igem.org/wiki/images/8/83/T--CMUQ--wikilinkedin.png" alt="Member LinkedIn"></a>
-                    <p class="memberTitle text-ubuntu">SOFTWARE DEVELOPMENT TEAM</p>
-                </div>
-
-                <div class="member">
-                    <div class="overlayContainer" onclick="">
-                        <img class="memberPicture" src="https://2019.igem.org/wiki/images/thumb/e/e7/T--CMUQ--wikidorde.jpg/600px-T--CMUQ--wikidorde.jpg" alt="Team Member Picture">
-                        <div class="overlay">
-                            <p class="overlayText text-ubuntu">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                            <a href="#" class="viewResume text-ubuntu">View Resume</a>
-                        </div>
-                    </div>
-                    <p class="memberName text-ubuntu">Djordje Popovic</p>
-                    <a href="#"><img class="memberLinkedIn" src="https://2019.igem.org/wiki/images/8/83/T--CMUQ--wikilinkedin.png" alt="Member LinkedIn"></a>
-                    <p class="memberTitle text-ubuntu">BUSINESS & ORGANISATION TEAM</p>
-                </div>
-
-                <div class="member">
-                    <div class="overlayContainer" onclick="">
-                        <img class="memberPicture" src="https://2019.igem.org/wiki/images/e/e7/T--CMUQ--wikiradu.jpeg" alt="Team Member Picture">
-                        <div class="overlay">
-                            <p class="overlayText text-ubuntu">Hey guys, my name's Radu, I'm working with the software team this year. We're building the phone apps, webapp, and Bluetooth connection for our biological device! I'm really excited about the work we're doing. I love traveling, programming, and just experiencing new cultures!</p>
-                            <a href="#" class="viewResume text-ubuntu">View Resume</a>
-                        </div>
-                    </div>
-                    <p class="memberName text-ubuntu">Radu Revutchi</p>
-                    <a href="#"><img class="memberLinkedIn" src="https://2019.igem.org/wiki/images/8/83/T--CMUQ--wikilinkedin.png" alt="Member LinkedIn"></a>
-                    <p class="memberTitle text-ubuntu">SOFTWARE DEVELOPMENT TEAM</p>
-                </div>
-
-                <div class="member">
-                    <div class="overlayContainer" onclick="">
-                        <img class="memberPicture" src="https://2019.igem.org/wiki/images/9/97/T--CMUQ--wikidona.png" alt="Team Member Picture">
-                        <div class="overlay">
-                            <p class="overlayText text-ubuntu">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                            <a href="#" class="viewResume text-ubuntu">View Resume</a>
-                        </div>
-                    </div>
-                    <p class="memberName text-ubuntu">Dona Ferdinando</p>
-                    <a href="#"><img class="memberLinkedIn" src="https://2019.igem.org/wiki/images/8/83/T--CMUQ--wikilinkedin.png" alt="Member LinkedIn"></a>
-                    <p class="memberTitle text-ubuntu">OUTREACH TEAM</p>
-                </div>
-
-                <div class="member">
-                    <div class="overlayContainer" onclick="">
-                        <img class="memberPicture" src="https://2019.igem.org/wiki/images/thumb/1/1f/T--CMUQ--wikinahin.jpg/600px-T--CMUQ--wikinahin.jpg" alt="Team Member Picture">
-                        <div class="overlay">
-                            <p class="overlayText text-ubuntu">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                            <a href="#" class="viewResume text-ubuntu">View Resume</a>
-                        </div>
-                    </div>
-                    <p class="memberName text-ubuntu">Muhammad Nahin Khan</p>
-                    <a href="#"><img class="memberLinkedIn" src="https://2019.igem.org/wiki/images/8/83/T--CMUQ--wikilinkedin.png" alt="Member LinkedIn"></a>
-                    <p class="memberTitle text-ubuntu">WET LAB AND RESEARCH TEAM</p>
-                </div>
-
-                <div class="member">
-                    <div class="overlayContainer" onclick="">
-                        <img class="memberPicture" src="https://2019.igem.org/wiki/images/0/0c/T--CMUQ--wikiimgrandom.png" alt="Team Member Picture">
-                        <div class="overlay">
-                            <p class="overlayText text-ubuntu">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                            <a href="#" class="viewResume text-ubuntu">View Resume</a>
-                        </div>
-                    </div>
-                    <p class="memberName text-ubuntu">Dania Kaddoura</p>
-                    <a href="#"><img class="memberLinkedIn" src="https://2019.igem.org/wiki/images/8/83/T--CMUQ--wikilinkedin.png" alt="Member LinkedIn"></a>
-                    <p class="memberTitle text-ubuntu">OUTREACH TEAM</p>
-                </div>
-
-                <div class="member">
-                    <div class="overlayContainer" onclick="">
-                        <img class="memberPicture" src="https://2019.igem.org/wiki/images/0/0c/T--CMUQ--wikiimgrandom.png" alt="Team Member Picture">
-                        <div class="overlay">
-                            <p class="overlayText text-ubuntu">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                            <a href="#" class="viewResume text-ubuntu">View Resume</a>
-                        </div>
-                    </div>
-                    <p class="memberName text-ubuntu">Jenan Azem</p>
-                    <a href="#"><img class="memberLinkedIn" src="https://2019.igem.org/wiki/images/8/83/T--CMUQ--wikilinkedin.png" alt="Member LinkedIn"></a>
-                    <p class="memberTitle text-ubuntu">BUSINESS & ORGANISATION TEAM</p>
+        <section class="description text-ubuntu">
+            <img id="projectPicture" src="https://2019.igem.org/wiki/images/d/d0/T--CMUQ--descillustration.png">
+            <div class="block purpleBackground">
+                <div class="blockContainer">
+                    <h1 class="blockTitle text-ubuntu">How it all started..</h1>
+                    <p class="blockContent text-ubuntu">In a world where healthcare and health insurance is a primary concern for citizens and policymakers, we saw a need to create an equal opportunity for one of the most important and relatively expensive tests worldwide. Testing for genetic disorders, although taken for granted in some countries, is a major gap in others. Whether it is the lack of awareness, equipment, expertise or simply the overpriced exams, the Middle East and many less fortunate countries suffer from the spread of genetic disease. We found no better way to describe our motives than by collectively extrapolating our drives to take part in this research. We believe that combining our different cultural backgrounds, skills, and knowledge to realistically and passionately make the slightest enhancement to the lives of those who we feel compassionate about and to contribute to the scientific community is our sincere purpose. Furthermore, our trust in the essentiality of the technique we are introducing allowed to participate again with a developed vision of our last iGEM idea with no setbacks.</p>
                 </div>
             </div>
-        </section>
 
-        <section class="teamPicture text-ubuntu">
-        </section>
+            <div class="block">
+                <div class="blockContainer">
+                    <h1 class="blockTitle text-ubuntu">What inspired us?</h1>
+                    <p class="blockContent text-ubuntu">Inspired by Dr. Doudna’s published work “CRISPR- Cas12a target binding unleashes indiscriminate single-stranded DNase activity”, we are utilizing CRISPR for purposes other than gene editing to create a novel, field-ready, diagnostic technique for carriers of recessive traits. Cas12a proteins are DNA targeting enzymes that recognize DNA based on a guide RNA (gRNA) sequence designed to match a target. The binding initiates non-specific single-stranded DNA (ssDNA) cleavage activity in Cas12a sufficient to degrade linear and circular ssDNA within minutes. Through this, ssDNA attached to fluorescent dye and quencher, serving as reporters, will undergo degradation. Upon cleavage, the quencher is released and fluorescence is emitted. This mechanism will be used where a complementary gRNA of a specific recessive genetic disease will be integrated into the Cas12a protein such when the target DNA is processed by Cas12a and bound to the gRNA, cleavage activity proceeds to eventually emit fluorescence. Afterward, using a device we built and programmed, the fluorescence will be detected with high-sensitivity and algorithmic analysis of the measurement will determine a +/- result for the disease.</p>
+                </div>
+            </div>
 
-        <section class="sponsors text-ubuntu">
-            <h1 class="sectionTitle text-ubuntu">Our Sponsors</h1>
-            <div class="sponsorContainer">
-                <a href="https://www.qatar.cmu.edu/"><img src="https://2019.igem.org/wiki/images/0/0d/T--CMUQ--wikiimagecmuq.png" alt="Sponsor picture"></a>
-                <a href="https://www.qf.org.qa/"><img src="https://2019.igem.org/wiki/images/9/9b/T--CMUQ--wikiimgqf.png" alt="Sponsor picture"></a>
+            <div class="block purpleBackground">
+                <div class="blockContainer">
+                    <h1 class="blockTitle text-ubuntu">What is new this year?</h1>
+                    <p class="blockContent text-ubuntu">Although the bases of our research project have been presented by our team in the iGEM 2018 round, this year we are integrating the judges and other experts feedback to optimize the sensitivity of our device, broaden our technique to identify other similar genetic diseases and to provide a pre-counseling prediction calculation. Our endeavor will be achievable by measuring the fluorescence emitted in the processing of a template DNA by Cas12a in comparison with double-blinded DNA samples. Moreover, we are designing gRNAs for locally and internationally common genetic diseases, other than the Sickle cell anemia one which we worked on earlier, including Cystic Fibrosis, and Gaucher disease. As for our technical part of the team, the software and hardware team are working on integrating Bayesian Statistical analysis of genetic diseases into a software connected to the hand-held device created earlier and a lab-desktop device.</p>
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="blockContainer">
+                    <h1 class="blockTitle text-ubuntu">Biology + Technology coming together!</h1>
+                    <p class="blockContent text-ubuntu">At last, the combination of the biological technique along with the programmed software and built devices will provide an on-field and in-lab genetic testing method that overcomes the limitations of sequencing, it being a cost-ineffective and labor-intensive. It will also eliminate the biohazard use of blood where DNA will be efficiently extracted from saliva samples making our technique less invasive. Finally, our project introduces an eye-opening perspective of the broader uses of CRISPR in the field of synthetic biology and raises the challenge of beneficially and ethically exploiting these uses.</p>
+                </div>
+            </div>
+
+            <div class="block purpleBackground">
+                <div class="blockContainer">
+                    <h1 class="blockTitle text-ubuntu">References</h1>
+                    <p class="blockContent text-ubuntu">Biolabs, N. E. (n.d.). EnGen® Lba Cas12a (Cpf1). Retrieved from https://international.neb.com/products/m0653-engen-lba-cas12a-cpf1#Product Information_Notes</p>
+                    <p class="blockContent text-ubuntu">Chen, J. S., Ma, E., Harrington, L. B., Da Costa, M., Tian, X., Palefsky, J. M., & Doudna, J. A. (2018). CRISPR-Cas12a target binding unleashes indiscriminate single-stranded DNase activity. Science, 360(6387), 436-439.</p>
+                </div>
             </div>
         </section>
     </main>
 
-    <footer class="text-ubuntu">
-        <h1 class="sectionTitle text-ubuntu">Contact Us</h1>
-        <a href="https://www.instagram.com/cmuq.igem/"><img src="https://2019.igem.org/wiki/images/3/39/T--CMUQ--wikiinstagram.png" alt="Instagram account"></a>
-    </footer>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script>
-        //$('#header').load('https://2019.igem.org/wiki/index.php?title=Team:CMUQ/header&action=raw&ctype=text/html')
-        //$('#footer').load('https://2019.igem.org/wiki/index.php?title=Team:CMUQ/footer&action=raw&ctype=text/html')
-
-        function showMobileMenu() {
-            var x = document.querySelector(".mobileHeaderLinks");
-            if (x.style.display === "block") {
-                x.style.display = "none";
-                document.body.style.overflow = "scroll";
-            } else {
-                x.style.display = "block";
-                document.body.style.overflow = "hidden";
-                document.body.scroll = "no";
-            }
-        }
-    </script>
+    <script src="https://2019.igem.org/wiki/index.php?title=Team:CMUQ/jquery&action=raw&ctype=text/javascript"></script>
 </body>
 </html>
