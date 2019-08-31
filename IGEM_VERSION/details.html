@@ -18,7 +18,9 @@
             width: 100%;
             margin: 0;
         }
-
+        /* * {
+            border: 1px solid red;
+        } */
         /* START jumbotron styles */
         .jumbotron {
             display: flex;
@@ -51,62 +53,138 @@
         /* END jumbotron styles */
 
         /* START details styles */
-        .description #projectPicture {
-            display: block;
+        .details {
             width: 100%;
-            max-width: 600px;
-            margin: 30px auto;
-        }
-        .description .blockContainer {
-            width: 100%;
-            max-width: 800px;
+            max-width: 1300px;
             margin: 0 auto;
         }
-
-        .description .boxContainer {
-            max-width: 800px;
-            margin: 0 auto;
+        .details .members {
             display: flex;
+            flex-direction: column;
             justify-content: center;
+            flex-wrap: wrap;
         }
-
-
-        .description .purpleBackground {
+        .details .members .member:nth-child(odd) {
+            background-color: #f2f2f2;
+        }
+        .details .member {
+            /* margin: 20px; */
+            padding: 30px;
+        }
+        .details .member {
+            display: flex;
+            flex-direction: row;
+            align-items: top;
+        }
+        .details .member .memberPicture {
+            display: block;
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 3px;
+            margin-right : 100px;
+        }
+        .details .member .memberPosition {
+            flex-basis: 3em;
+            flex-shrink: 0;
+            width: 75px;
+            height: 75px;
+            background-color: var(--purple-color);
+            color: #fff;
+            text-align: center;
+            line-height: 75px;
+            font-size: 22pt !important;
+            display: block;
+            margin-right: 40px;
+        }
+        .details .member .memberName {
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+            font-size: 25pt !important;
+            font-weight: bold;
+            color: var(--purple-color);
+        }
+        .details .member .memberNumbers {
+            font-size: 28pt !important;
+            line-height: 28pt;
+            font-weight: bold;
+            margin: 10px auto;
+        }
+        .details .member .memberDesc {
+            font-size: 16pt !important;
+            line-height: 30pt;
+        }
+        .details .member .memberLinkedIn {
+            position: absolute;
+            display: inline-block;
+            height: 18px;
+            margin: 10px 0 0 10px;
+        }
+        .details .member .memberTitle {
+            display: block;
+            margin: 0;
+            color: #888;
+            font-size: 14px !important;
+        }
+        .details .member .overlayContainer:hover .overlay, .details .member .overlayContainer:active .overlay {
+            opacity: 1;
+        }
+        .details .purpleBackground {
             background-color: var(--purple-color);
         }
-        .description .block.purpleBackground p, .description .block.purpleBackground h1 {
+        .details .member .overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            max-height: 100%;
+            max-width: 100%;
+            opacity: 0;
+            transition: .5s ease;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 10px 20px;
+        }
+        .details .member .overlayText {
+            color: #000;
+            font-size: 12pt !important;
+            line-height: 1.5rem;
+        }
+        .details .member .viewResume {
+            text-decoration: none;
+            color: var(--burgundy-color);
+        }
+        /* END team styles */
+
+        /* START references styles */
+        .references {
+            margin: 50px auto 0 auto;
+        }
+        .references .blockContainer {
+            max-width: 1300px;
+            margin: 0 auto;
+        }
+        .references .purpleBackground {
+            width: 100%;
+            background-color: var(--purple-color);
+        }
+        .references .block.purpleBackground p, .references .block.purpleBackground h1 {
             color: #fff;
         }
-        .description .block {
-            padding: 50px;
+        .references .block {
+            padding: 50px 0;
         }
-
-        .description .block .blockContent {
+        .references .block .blockContent {
             line-height: 28pt !important;
             font-size: 16pt !important;
+            margin-bottom: 30px;
         }
-        .description .block .blockTitle {
+        .references .block .blockTitle {
             line-height: 28pt !important;
             font-size: 22pt !important;
         }
-        .description .block:not(.purpleBackground) p, .description .block:not(.purpleBackground) h1 {
-            color: var(--purple-color);
-        }
-
-        .menu-container {
-            display: flex;
-            justify-content: center;
-            color: #fff;
-            background-color: #5995DA;  /* Blue */
-            padding: 20px 0;
-        }
-
-        .menu {
-            border: 1px solid #fff;  /* For debugging */
-            width: 900px;
-            display: flex;
-        }
-        /* END details styles */
+        /* END references styles */
 
         /* START misc. styles */
         @font-face {
@@ -120,12 +198,15 @@
             font-family: 'Ubuntu' !important;
             color: #000 !important;
             text-align: center;
-            font-size: 26pt !important;
+            font-size: 35pt !important;
             margin-bottom: 30px !important;
             line-height: 26pt !important;
         }
         .padding-bottom-10 {
             padding-bottom: 10px !important;
+        }
+        .purpleColor {
+            color: var(--purple-color);
         }
         /* END misc. styles */
 
@@ -147,6 +228,14 @@
                 font-size: 20pt !important;
             }
         }
+        @media (min-width : 320px) and (max-width : 1050px) {
+            .details .member {
+                flex-direction: column;
+            }
+            .details .member .memberPicture {
+                margin: 0 auto 20px auto;
+            }
+        }
         /* END media queries */
     </style>
 </head>
@@ -158,50 +247,95 @@
             </div>
         </section>
 
-        <section class="description text-ubuntu">
-            <img id="projectPicture" src="https://2019.igem.org/wiki/images/d/d0/T--CMUQ--descillustration.png">
-             <div class='boxContainer'>
-                <div class='box'>
-                    <div class='date'>Aug 14, 2016</div>
-                    <div class='signup'>Sign Up</div>
-                    <div class='login'>Login</div>
+        <section class="details text-ubuntu">
+            <h1 class="sectionTitle">Target Diseases</h1>
+            <div class="members text-ubuntu">
+                <div class="member text-ubuntu">
+                        <div class="memberPosition text-ubuntu">1</div>
+                    <!-- <img class="memberPicture" src="https://2019.igem.org/wiki/images/7/7d/T--CMUQ--bacteria.png" alt="Team Member Picture"> -->
+                    <div class="memberContent">
+                            <p class="memberName text-ubuntu">Sickle Cell Anemia</p>
+                        <p class="memberDesc text-ubuntu">Sickle Cell Anemia is one of the most common, severe, monogenic disorders
+                                in the world. Genetic studies indicate that this condition is inherited in an autosomal
+                                recessive pattern where parents, often showing no symptoms of the condition, each
+                                contributes one copy of the mutated gene. This genetic disease is mainly caused by
+                                rs334, a single nucleotide polymorphism (SNP) located in the Hemoglobin-
+                                coding gene (HBB). Prevalence of sickle cell trait varies greatly between different
+                                regions but reaches levels as high as 40 percent in some areas of sub-Saharan Africa,
+                                eastern Saudi Arabia, and central India.</p> 
+                                
+                            <p class="memberNumbers text-ubuntu">14.63% of the population are
+                                    suffering from sickle cell anemia in Qatar.</p>
+                            <p class="memberDesc">Current treatment might include antibiotics, vitamins, Blood transfusions, pain-relieving medicines, other medications and possibly surgery, suchas to correct vision problems or to remove a damaged spleen.</p>
+                    </div>
                 </div>
-            </div>
-                        
-            <div class="block purpleBackground">
-                <div class="blockContainer">
-                    <h1 class="blockTitle text-ubuntu">Target Diseases</h1>
-                    <h2></h2>
-                    <p class="blockContent text-ubuntu">In a world where healthcare and health insurance is a primary concern for citizens and policymakers, we saw a need to create an equal opportunity for one of the most important and relatively expensive tests worldwide. Testing for genetic disorders, although taken for granted in some countries, is a major gap in others. Whether it is the lack of awareness, equipment, expertise or simply the overpriced exams, the Middle East and many less fortunate countries suffer from the spread of genetic disease. We found no better way to describe our motives than by collectively extrapolating our drives to take part in this research. We believe that combining our different cultural backgrounds, skills, and knowledge to realistically and passionately make the slightest enhancement to the lives of those who we feel compassionate about and to contribute to the scientific community is our sincere purpose. Furthermore, our trust in the essentiality of the technique we are introducing allowed to participate again with a developed vision of our last iGEM idea with no setbacks.</p>
-                </div>
-            </div>
 
-            <div class="block">
-                <div class="blockContainer">
-                    <h1 class="blockTitle text-ubuntu">What inspired us?</h1>
-                    <p class="blockContent text-ubuntu">Inspired by Dr. Doudna’s published work “CRISPR- Cas12a target binding unleashes indiscriminate single-stranded DNase activity”, we are utilizing CRISPR for purposes other than gene editing to create a novel, field-ready, diagnostic technique for carriers of recessive traits. Cas12a proteins are DNA targeting enzymes that recognize DNA based on a guide RNA (gRNA) sequence designed to match a target. The binding initiates non-specific single-stranded DNA (ssDNA) cleavage activity in Cas12a sufficient to degrade linear and circular ssDNA within minutes. Through this, ssDNA attached to fluorescent dye and quencher, serving as reporters, will undergo degradation. Upon cleavage, the quencher is released and fluorescence is emitted. This mechanism will be used where a complementary gRNA of a specific recessive genetic disease will be integrated into the Cas12a protein such when the target DNA is processed by Cas12a and bound to the gRNA, cleavage activity proceeds to eventually emit fluorescence. Afterward, using a device we built and programmed, the fluorescence will be detected with high-sensitivity and algorithmic analysis of the measurement will determine a +/- result for the disease.</p>
-                </div>
-            </div>
+                <div class="member text-ubuntu">
+                    <!-- <img class="memberPicture" src="https://2019.igem.org/wiki/images/7/7d/T--CMUQ--bacteria.png" alt="Team Member Picture"> -->
+                    <div class="memberPosition text-ubuntu">2</div>
+                    <div class="memberContent">
+                        <p class="memberName text-ubuntu">Cystic fibrosis</p>
+                        <p class="memberDesc text-ubuntu">Cystic fibrosis is caused by mutations in the CFTR which is responsible for
+                                coding for chloride channel into and out of cells. Chloride ion is important in cells as it
+                                regulates the movement of water in tissues (osmolarity), which is necessary for the
+                                production of thin, freely flowing mucus. The phenotype observed are difficulty
+                                breathing and coughing up mucus as a result of frequent lung infections. Other signs
+                                and symptoms may include sinus infections, poor growth, fatty stool, clubbing of the
+                                fingers and toes, and infertility in most males. There is no known statistics for the
+                                detection rate in Qatar.</p>
 
-            <div class="block purpleBackground">
-                <div class="blockContainer">
-                    <h1 class="blockTitle text-ubuntu">What is new this year?</h1>
-                    <p class="blockContent text-ubuntu">Although the bases of our research project have been presented by our team in the iGEM 2018 round, this year we are integrating the judges and other experts feedback to optimize the sensitivity of our device, broaden our technique to identify other similar genetic diseases and to provide a pre-counseling prediction calculation. Our endeavor will be achievable by measuring the fluorescence emitted in the processing of a template DNA by Cas12a in comparison with double-blinded DNA samples. Moreover, we are designing gRNAs for locally and internationally common genetic diseases, other than the Sickle cell anemia one which we worked on earlier, including Cystic Fibrosis, and Gaucher disease. As for our technical part of the team, the software and hardware team are working on integrating Bayesian Statistical analysis of genetic diseases into a software connected to the hand-held device created earlier and a lab-desktop device.</p>
-                </div>
-            </div>
+                        <!-- IMAGE HERE -->
 
-            <div class="block">
-                <div class="blockContainer">
-                    <h1 class="blockTitle text-ubuntu">Biology + Technology coming together!</h1>
-                    <p class="blockContent text-ubuntu">At last, the combination of the biological technique along with the programmed software and built devices will provide an on-field and in-lab genetic testing method that overcomes the limitations of sequencing, it being a cost-ineffective and labor-intensive. It will also eliminate the biohazard use of blood where DNA will be efficiently extracted from saliva samples making our technique less invasive. Finally, our project introduces an eye-opening perspective of the broader uses of CRISPR in the field of synthetic biology and raises the challenge of beneficially and ethically exploiting these uses.</p>
+                        <p class="memberDesc text-ubuntu">Currently, there is no known cure for cystic fibrosis. Lung infections are treated
+                                with antibiotics which may be given intravenously, inhaled, or by mouth. Sometimes,
+                                the antibiotic azithromycin is used long term. Lung transplantation may be an option
+                                if lung function continues to worsen. Pancreatic enzyme replacement and fat-soluble
+                                vitamin supplementation is important, especially in the young.
+                                </p>
+                    </div>
                 </div>
-            </div>
 
+                <div class="member text-ubuntu">
+                    <div class="memberPosition text-ubuntu">3</div>
+                    <!-- <img class="memberPicture" src="https://2019.igem.org/wiki/images/7/7d/T--CMUQ--bacteria.png" alt="Team Member Picture"> -->
+                    <div class="memberContent">
+                        <p class="memberName text-ubuntu">Gaucher disease</p>
+                        <p class="memberDesc text-ubuntu">Gaucher disease is due to mutations in the GBA gene, which codes for an
+                                enzyme called beta-glucocerebrosidase. This enzyme breaks down a fatty substance
+                                called glucocerebroside into sugar (glucose) and a simpler fat molecule (ceramide).
+                                Mutations in the GBA gene greatly reduce or eliminate the activity of beta-
+                                glucocerebrosidase. Without enough of this enzyme, glucocerebroside and related
+                                substances can build up to toxic levels within cells. Phenotypes and symptoms of
+                                Gaucher disease varies greatly among those who have the disorder. The major clinical
+                                symptoms include hepatosplenomegaly, anemia, easy bruising, thrombocytopenia, bone pain, and fractures. Other symptoms depending on the type of
+                                Gaucher. While we don’t have statistical data for the detection rate in Qatar, however,
+                                Gaucher disease occurs in about 1 in 50,000 to 1 in 100,000 individuals in the general
+                                population. Type 1 is found more frequently among individuals who are of Ashkenazi
+                                Jewish ancestry. Type 1 Gaucher disease is present 1 in 500 to 1 in 1000 people of
+                                Ashkenazi Jewish ancestry and approximately 1 in 14 Ashkenazi Jews is a carrier.
+                                Type 2 and Type 3 Gaucher diseases are not as common. Currently, enzyme
+                                replacement therapy is now available as an effective treatment for individuals who
+                                have symptoms from Gaucher disease, which involves giving a modified form of the
+                                enzyme, glucocerebrosidase, by intravenous infusion every two weeks. Enzyme
+                                replacement therapy helps to stop progression and often reverse many of the
+                                symptoms of Gaucher disease but does not affect the nervous system involvement.
+                                treatments that have been required include: removal of the spleen (splenectomy);
+                                blood transfusions; pain medications; and joint replacement surgery. 
+                                </p>
+                    </div>
+                </div>
+        </section>
+
+        <section class="references">
             <div class="block purpleBackground">
                 <div class="blockContainer">
                     <h1 class="blockTitle text-ubuntu">References</h1>
-                    <p class="blockContent text-ubuntu">Biolabs, N. E. (n.d.). EnGen® Lba Cas12a (Cpf1). Retrieved from https://international.neb.com/products/m0653-engen-lba-cas12a-cpf1#Product Information_Notes</p>
-                    <p class="blockContent text-ubuntu">Chen, J. S., Ma, E., Harrington, L. B., Da Costa, M., Tian, X., Palefsky, J. M., & Doudna, J. A. (2018). CRISPR-Cas12a target binding unleashes indiscriminate single-stranded DNase activity. Science, 360(6387), 436-439.</p>
+                    <p class="blockContent text-ubuntu">1. Adli M. (2018). The CRISPR tool kit for genome editing and beyond. Nature communications, 9(1), 1911. doi:10.1038/s41467-018-04252-2</p>
+                    <p class="blockContent text-ubuntu">2. Diagnosis and Treatment of Sickle Cell Anemia, Mayo Clinic, retrieved from: https://www.mayoclinic.org/diseases-conditions/sickle-cell-anemia/diagnosis-treatment/drc-2035582</p>
+                    <p class="blockContent text-ubuntu">3. Z. O. Fawzi  et al(2003). Distribution of Hemoglobinopathies and Thalassemias in Qatari Nationals Seen at Hamad Hospital in Qatar. Qatar Medical Journal, Volume 2003, Issue 1, Jun 2003, DOI: https://doi.org/10.5339/qmj.2003.1.11</p>
+                    <p class="blockContent text-ubuntu">4. O'Sullivan, BP; Freedman, SD (30 May 2009). "Cystic fibrosis". Lancet. 373 (9678): 1891–904. doi:10.1016/s0140-6736(09)60327-5. PMID 19403164.</p>
+                    <p class="blockContent text-ubuntu">5. About Gaucher Disease. National Human Genome Research Institute. Retrieved from: https://www.genome.gov/Genetic-Disorders/Gaucher-Disease</p>
+                    <p class="blockContent text-ubuntu">6. Rodríguez‑Rodríguez, D.R., Ramírez‑Solís, R., Garza‑Elizondo, M.A., Garza‑Rodríguez, M.D., & Barrera‑Saldaña, H.A. (2019). Genome editing: A perspective on the application of CRISPR/Cas9 to study human diseases (Review). International Journal of Molecular Medicine, 43, 1559-1574. https://doi.org/10.3892/ijmm.2019.4112</p>
                 </div>
             </div>
         </section>
