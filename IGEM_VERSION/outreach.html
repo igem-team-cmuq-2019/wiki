@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>iGEM 2019 CMUQ</title>
 
+    <link rel="stylesheet" href="swiper.css">
+        
+
     <style>
         :root {
             --blue-color: #252D73;
@@ -108,6 +111,31 @@
         }
         /* END misc. styles */
 
+        /* START slider styles */
+        .swiper-container {
+          width: 400px;
+          height: 300px;
+        }
+        .swiper-slide {
+          text-align: center;
+          font-size: 18px;
+          background: #fff;
+          /* Center slide text vertically */
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: -webkit-flex;
+          display: flex;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          -webkit-justify-content: center;
+          justify-content: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          -webkit-align-items: center;
+          align-items: center;
+        }
+        /* END slider styles*/
+
         /* START media queries */
         /* Mobiles/Tablets */
         @media (min-width : 320px) and (max-width : 767px) {
@@ -146,7 +174,27 @@
                     <p class="text-ubuntu">The students were also introduced to iGem after the lab segment.</p>
                 </div>
                 <div class="outreachPicture">
-                    <img src="https://2019.igem.org/wiki/images/1/14/T--CMUQ--wikiqaOutreach.jpeg">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                              <img src="https://2019.igem.org/wiki/images/1/14/T--CMUQ--wikiqaOutreach.jpeg">
+                          </div>
+                          <div class="swiper-slide">
+                              <img src="https://2019.igem.org/wiki/images/f/f1/T--CMUQ--outreach-qa2.jpg">
+                          </div>
+                          <div class="swiper-slide">
+                              <img src="https://2019.igem.org/wiki/images/4/4a/T--CMUQ--outreach-qa3.jpg">
+                          </div>
+                          <div class="swiper-slide">
+                                <img src="https://2019.igem.org/wiki/images/4/43/T--CMUQ--outreach-qa4.jpg">
+                            </div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                      </div>
                 </div>
             </div>
             <div class="outreachRow">
@@ -164,12 +212,50 @@
                     <p class="text-ubuntu">dsijfdshgio dsijfdshgio dsijfdshgio dsijfdshgio dsijfdshgio dsijfdshgio dsijfdshgio dsijfdshgio dsijfdshgio dsijfdshgio dsijfdshgio dsijfdshgio dsijfdshgio dsijfdshgio dsijfdshgio dsijfdshgio </p>
                 </div>
                 <div class="outreachPicture">
-                    <img src="https://2019.igem.org/wiki/images/7/7b/T--CMUQ--wikiscppOutreach.jpeg">
+                    <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide">
+                                  <img src="https://2019.igem.org/wiki/images/7/7b/T--CMUQ--wikiscppOutreach.jpeg">
+                              </div>
+                              <div class="swiper-slide">
+                                    <img src="https://2019.igem.org/wiki/images/4/44/T--CMUQ--outreach-scpp1.jpg">
+                              </div>
+                              <div class="swiper-slide">
+                                    <img src="https://2019.igem.org/wiki/images/4/46/T--CMUQ--outreach-scpp2.jpg">
+                              </div>
+                            </div>
+                            <!-- Add Pagination -->
+                            <div class="swiper-pagination"></div>
+                            <!-- Add Arrows -->
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                          </div>
                 </div>
             </div>
         </section>
     </main>
 
     <script src="https://2019.igem.org/wiki/index.php?title=Team:CMUQ/jquery&action=raw&ctype=text/javascript"></script>
+    <script src="swiper.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
 </body>
 </html>
