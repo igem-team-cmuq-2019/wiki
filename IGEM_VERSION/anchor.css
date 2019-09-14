@@ -11,7 +11,7 @@ html, body {
   
   #nav {
     position: fixed;
-    top: 0;
+    top:400px;
     left: 0;
     background: #333;
     margin: 0;
@@ -36,22 +36,3 @@ html, body {
     padding: 30px 140px;
   }
   
-  #section-1 {
-    background: #eee;
-  }
-  
-  #section-2 {
-    background: #ddd;
-  }
-  
-  #section-3 {
-    background: #ccc;
-  }
-  
-  h1 {
-    margin: 0 0 20px 0;
-  }
-  
-  .section a {
-    color: #3399FF;
-  }

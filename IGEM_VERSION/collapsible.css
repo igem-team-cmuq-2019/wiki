@@ -33,8 +33,9 @@
   background-color: #fff;
   border-radius: 0px 0px 8px 8px;
   }
-.accordion:after {
-    content: "\2212"; 
+  '\002B'
+  .accordion:after {
+    content: '\002B'; 
     font-size: 18px;
     color: #F0F1EF;
     float: right;
