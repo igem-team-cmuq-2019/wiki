@@ -163,12 +163,9 @@
             padding-bottom: 10px !important;
         }
         .superscript-question, .superscript-question img {
-            position: relative;
-            top: -7px;
             display: inline-block;
             width: 20px;
             height: 20px;
-            margin-left: 5px;
         }
         /* END misc. styles */
 
@@ -180,6 +177,9 @@
             }
             .jumbotron {
                 background-attachment: inherit;
+            }
+            .jumbotron .content .superscript-question {
+                display: none;
             }
 
             .teamPicture {
@@ -195,15 +195,16 @@
         <section class="jumbotron text-ubuntu">
             <div class="content text-ubuntu">
                 <h1 class="text-ubuntu">Welcome to <a href="https://www.qatar.cmu.edu/">CMU-Q</a> iGEM team wiki</h1>
-                <h1 class="text-ubuntu">Introducing ... CASPRE<span class="superscript-question text-ubuntu"><img src="https://2019.igem.org/wiki/images/1/11/T--CMUQ--questionmark.svg"></span></h1>
-            </div>
-            <div class="grid ">
-                <div class="item" tabindex="1">
-                  <div class="box">
-                    <div class="diamond"><span class="superscript-question text-ubuntu"><img src="https://2019.igem.org/wiki/images/1/11/T--CMUQ--questionmark.svg"></span></div>
-                    <div class="tooltip">TEXT</div>
-                  </div>
-                </div>
+                <h1 class="text-ubuntu">Introducing ... CASPRE
+                    <span class="superscript-question text-ubuntu">
+                        <div class="item" tabindex="1">
+                            <div class="box">
+                                <div class="diamond"><span class="superscript-question text-ubuntu"><img src="https://2019.igem.org/wiki/images/1/11/T--CMUQ--questionmark.svg"></span></div>
+                                <div class="tooltip">CRISPR-Cas12a protein Preliminary Recessive Traits Genetic testing </div>
+                            </div>
+                        </div>
+                    </span>
+                </h1>
             </div>
         </section>
 
