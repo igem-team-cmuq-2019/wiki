@@ -1,38 +1,32 @@
 html, body {
-    margin: 0;
-    padding: 0;
-  }
-  
-  * {
-    box-sizing: border-box;
-    font-family: 'Lato', sans-serif;
-    font-weight: 400;
-  }
-  
-  #nav {
-    position: fixed;
-    top:400px;
+  margin: 0;
+  padding: 0;
+}
+#nav {
+    position: sticky;
+    top:0;
     left: 0;
-    background: #333;
+    color: #252D73;
     margin: 0;
     padding: 15px;
     list-style: none;
-    border-radius: 0 0 10px 0;
-    box-shadow: 0 0 8px rgba(0,0,0,0.6);
+    z-index: 1;
   }
-  
+
   #nav a {
     display: block;
     padding: 10px 10px;
-    color: #fff;
+    color: #252D73;
+    text-decoration: none;
+    font-weight: bolder;
+
   }
   
   #nav a:hover {
-    color: #ff0;
+    color: black;
   }
-  
-  .section {
-    height: 1000px;
-    padding: 30px 140px;
+
+  #nav a:focus {
+    color: #73194D;
   }
   

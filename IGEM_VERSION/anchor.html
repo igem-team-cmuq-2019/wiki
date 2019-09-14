@@ -166,11 +166,11 @@
                     <h1 class="text-ubuntu">Outreach</h1>
                 </div>
             </section>
-            <ul id="nav">
-                    <li><a href="#section-1" class="js-anchor-link">Section 1</a></li>
-                    <li><a href="#section-2" class="js-anchor-link">Section 2</a></li>
-                    <li><a href="#section-3" class="js-anchor-link">Section 3</a></li>
-                  </ul>
+            <ul id="nav" class = "scrollMenu">
+                <li class = "scrollMenu"><a href="#section-1" class="js-anchor-link">Section 1</a></li>
+                <li class = "scrollMenu"><a href="#section-2" class="js-anchor-link">Section 2</a></li>
+                <li class = "scrollMenu"><a href="#section-3" class="js-anchor-link">Section 3</a></li>
+                </ul>
                   
                   <div id="section-1" class="section">
                     <h1>Section 1</h1>
@@ -258,5 +258,15 @@
 
         <script src="https://2019.igem.org/wiki/index.php?title=Team:CMUQ/jquery&action=raw&ctype=text/javascript"></script>
         <script src="anchor.js"></script>
+        <script>
+            $(document).scroll(function() {
+                var scroll = $(this).scrollTop();
+                if (scroll > 350) {
+                    $('.scrollMenu').fadeIn();
+                } else {
+                    $('.scrollMenu').fadeOut();
+                }
+            });
+        </script>
     </body>
 </html>
