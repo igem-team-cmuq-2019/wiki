@@ -5,8 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>iGEM 2019 CMUQ</title>
 
-    <link rel="stylesheet" href="tooltip.css">
-
     <style>
         :root {
             --blue-color: #252D73;
@@ -34,6 +32,9 @@
             background-position: bottom;
             background-attachment: fixed;
         }
+        .jumbotron h1.dont-overflow {
+            overflow: visible;
+        }
         .jumbotron .content {
             text-align: center;
             color: #fff;
@@ -51,6 +52,16 @@
             line-height: 32pt !important;
         }
         /* END jumbotron styles */
+
+        /* START abstract styles */
+        .projectAbstract {
+            margin: 0 auto;
+            width: 1200px;
+            max-width: calc(100% - 100px);
+            text-align: left;
+            line-height: 22pt;
+        }
+        /* END abstract styles */
 
         /* START team styles */
         .team .members {
@@ -188,6 +199,85 @@
             }
         }
         /* END media queries */
+
+        /* START tooltip styles */
+        @supports (display: grid) {
+            
+            *,*:before,*:after {
+                box-sizing: border-box;
+            }
+            
+            .box {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            
+            .diamond {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                z-index: 2;
+                width: 50px;
+                height: 50px;
+                text-align: center;
+                transform-origin: center;
+                top: -10px;
+            }
+            
+            .diamond span {
+                font-weight: bold;
+            }
+            
+            
+            .tooltip {
+                position: absolute;
+                z-index: 1;
+                padding: 0.25rem 1rem;
+                border-radius: 5px;
+                background: #29343d;
+                opacity: 0;
+                color: #cedfe9;
+                font-size: 0.875rem;
+                transition: opacity 500ms, transform 500ms;
+                width: 500px;
+            }
+            
+            .tooltip:before {
+                content: '';
+                position: absolute;
+                top: -9px;
+                left: calc(50% - 10px);
+                width: 0;
+                height: 0;
+                border-left: 10px solid transparent;
+                border-right: 10px solid transparent;
+                border-bottom: 10px solid #29343d;
+            }
+            
+            .item:hover .tooltip,
+            .item:focus .tooltip {
+                opacity: 1;
+                transform: translateY(70px);
+            }
+            
+            .item {
+                position: relative;
+                /*padding: 1vw;*/
+                background-position:  left bottom;
+                /*background-size: 150% 100%;*/
+                transition: background 500ms, outline 500ms;
+                background-position: center;
+                outline: transparent;
+            }
+            
+            .item:hover,
+            .item:focus {
+                background-position: top right;
+            }
+        }
+        /* END tooltip styles */
     </style>
 </head>
 <body>
@@ -195,7 +285,7 @@
         <section class="jumbotron text-ubuntu">
             <div class="content text-ubuntu">
                 <h1 class="text-ubuntu">Welcome to <a href="https://www.qatar.cmu.edu/">CMU-Q</a> iGEM team wiki</h1>
-                <h1 class="text-ubuntu">Introducing ... CASPRE
+                <h1 class="text-ubuntu dont-overflow">Introducing ... CASPRE
                     <span class="superscript-question text-ubuntu">
                         <div class="item" tabindex="1">
                             <div class="box">
@@ -206,6 +296,13 @@
                     </span>
                 </h1>
             </div>
+        </section>
+
+        <section class="abstract text-ubuntu">
+            <h1 class="sectionTitle">Abstract</h1>
+            <p class="projectAbstract text-ubuntu">
+                In an effort to reduce the inequality in global healthcare, increase the efficiency of labs, and minimize biohazards, our team developed CASPRE; a synthetic biology kit that provides preliminary genetic testing for carriers of recessive traits. CASPRE’s biological mechanism utilizes CRISPR-Cas12a protein, specifically- designed guide RNA (gRNA), and fluorescing reporters to identify the presence of a disorder-causing SNP. Upon the extraction of the DNA from a saliva sample, Cas12a scans the DNA searching for a complementary sequence to the gRNA. If complementary binding occurs, a reaction complex forms and triggers an indiscriminate cleavage activity. Through this, a single-stranded DNA linking the reporter and its quencher degrades and allows the emission of fluorescence. Then, CASPRE’s developed, hand-held device and user-friendly application work in tandem to detect and interpret the emitted fluorescence producing a +/- diagnoses. Within a few minutes, we become a step closer to a more aware community.
+            </p>
         </section>
 
         <section class="team text-ubuntu">
