@@ -171,6 +171,7 @@
         }
         .references .blockContainer {
             max-width: 800px;
+            width: calc(100% - 100px);
             margin: 0 auto;
         }
         .references .purpleBackground {
@@ -239,6 +240,10 @@
         @media (min-width : 320px) and (max-width : 1050px) {
             .details .member {
                 flex-direction: column;
+            }
+            .details .member .memberPosition {
+                flex-basis: 0%;
+                margin-bottom: 15px;
             }
             .details .member .memberPicture {
                 margin: 0 auto 20px auto;
