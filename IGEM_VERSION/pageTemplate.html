@@ -1,0 +1,167 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>iGEM 2019 CMUQ</title>
+
+    <style>
+        :root {
+            --blue-color: #252D73;
+            --purple-color: #61429B;
+            --white-color: #E8E8E8;
+            --burgundy-color: #73194D;
+            --gold-color: #E4CD7D;
+            --grey-color: #454545;
+        }
+        html, body {
+            width: 100%;
+            margin: 0;
+        }
+
+        /* START jumbotron styles */
+        .jumbotron {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 100%;
+            height: 400px;
+            background-image: url(https://2019.igem.org/wiki/images/f/fc/T--CMUQ--wikiimglab.jpeg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: bottom;
+            background-attachment: fixed;
+        }
+        .jumbotron .mainHeader {
+            text-align: center;
+            color: #fff;
+            line-height: 32px;
+        }
+        .jumbotron .mainHeader h1 {
+            margin: 0;
+            font-size: 32pt;
+            color: #fff;
+        }
+        .jumbotron .mainHeader h1 a {
+            color: #fff !important;
+            text-decoration: none !important;
+            border-bottom: dotted 3px rgba(255, 255, 255, 0.5) !important;
+            line-height: 32pt !important;
+        }
+        /* END jumbotron styles */
+
+        /* START description styles */
+        .description #projectPicture {
+            display: block;
+            width: 100%;
+            max-width: 600px;
+            margin: 30px auto;
+        }
+        .description .blockContainer {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .description .purpleBackground {
+            background-color: var(--purple-color);
+        }
+        .description .block.purpleBackground p, .description .block.purpleBackground h1 {
+            color: #fff;
+        }
+        .description .block {
+            padding: 50px;
+        }
+        .description .block .blockContent {
+            line-height: 28pt !important;
+            font-size: 16pt !important;
+        }
+        .description .block .blockTitle {
+            line-height: 28pt !important;
+            font-size: 22pt !important;
+        }
+        .description .block:not(.purpleBackground) p, .description .block:not(.purpleBackground) h1 {
+            color: var(--purple-color);
+        }
+        /* END description styles */
+
+        /* START misc. styles */
+        @font-face {
+            font-family: 'Ubuntu';
+            src: url(https://2019.igem.org/wiki/images/c/c3/T--CMUQ--wikiubunturegular.ttf);
+        }
+        .text-ubuntu {
+            font-family: 'Ubuntu' !important;
+        }
+        .sectionTitle {
+            font-family: 'Ubuntu' !important;
+            color: #000 !important;
+            text-align: center;
+            font-size: 26pt !important;
+            margin-bottom: 30px !important;
+            line-height: 26pt !important;
+        }
+        .padding-bottom-10 {
+            padding-bottom: 10px !important;
+        }
+        /* END misc. styles */
+
+        /* START media queries */
+        /* Mobiles/Tablets */
+        @media (min-width : 320px) and (max-width : 767px) {
+            .jumbotron .mainHeader h1 {
+                font-size: 16pt;
+            }
+            .jumbotron {
+                background-attachment: inherit;
+            }
+            .description .block .blockContent {
+                line-height: 18pt !important;
+                font-size: 12pt !important;
+            }
+            .description .block .blockTitle {
+                line-height: 18pt !important;
+                font-size: 20pt !important;
+            }
+        }
+        /* END media queries */
+    </style>
+</head>
+<body>
+    <main class="text-ubuntu">
+        <section class="jumbotron text-ubuntu">
+            <div class="mainHeader text-ubuntu">
+                <h1 class="text-ubuntu">Project Description</h1>
+            </div>
+        </section>
+
+        <section class="description text-ubuntu">
+            <img id="projectPicture" src="https://2019.igem.org/wiki/images/d/d0/T--CMUQ--descillustration.png">
+            <div class="block purpleBackground">
+                <div class="blockContainer">
+                    <h1 class="blockTitle text-ubuntu">Header</h1>
+                    <p class="blockContent text-ubuntu">Clita sed dolores gubergren sea eos tempor duo no. Justo diam eos duo justo accusam. Amet sit dolor ea labore sed, diam rebum amet et duo accusam rebum ipsum kasd. Et erat elitr sit magna et sed sed labore. Ea sanctus eirmod takimata voluptua duo sanctus, diam sed diam magna gubergren sed tempor erat, elitr stet erat dolores eos sed, nonumy duo ipsum sit dolores sit et. Amet dolores elitr nonumy ipsum vero vero ipsum sanctus invidunt. Et dolores labore et sit gubergren ipsum dolores sed, clita duo aliquyam labore invidunt, clita lorem accusam rebum aliquyam est dolore nonumy, et dolor lorem magna no sadipscing diam, diam eos tempor kasd ipsum rebum et et amet lorem, at magna sed diam duo sit consetetur. Amet magna gubergren et et aliquyam, dolores nonumy sadipscing accusam et, kasd amet tempor ipsum et ipsum aliquyam invidunt takimata labore. No sit justo dolores gubergren voluptua et diam, dolore lorem at diam vero sea invidunt kasd erat. Elitr ut erat ipsum consetetur tempor ea et justo, ut ut at et at dolor ea sit vero et, sea sadipscing diam kasd tempor. Sea eos dolor ipsum consetetur eirmod diam vero gubergren, at accusam sanctus lorem consetetur, sadipscing.</p>
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="blockContainer">
+                    <h1 class="blockTitle text-ubuntu">Header</h1>
+                    <p class="blockContent text-ubuntu">Diam sanctus ipsum ut dolor stet sea elitr, duo sit at takimata ipsum aliquyam lorem, est lorem no clita diam voluptua duo sit rebum et, clita clita et sadipscing magna et dolores lorem dolores, sea ea tempor ipsum diam et et dolor. Sit no nonumy sit diam, diam eirmod justo ipsum invidunt dolor takimata magna, invidunt kasd et ipsum lorem tempor erat accusam. Gubergren ipsum sed dolore diam elitr at, justo stet erat elitr sea dolores dolor. Gubergren est erat sit vero, voluptua et ipsum sea ipsum amet kasd et amet sit, ipsum consetetur ipsum dolor sadipscing ipsum, dolor et diam erat et. Vero est eirmod no vero sit ipsum dolore sadipscing. Amet duo sadipscing sadipscing accusam ipsum, takimata amet sea nonumy magna et dolore diam amet dolor. Consetetur takimata rebum takimata erat kasd sadipscing. Stet gubergren amet diam consetetur, sit eos et lorem eirmod aliquyam, sit no sea magna labore, takimata dolores justo invidunt stet elitr, eirmod diam clita sit sit, lorem clita duo est sea sanctus et. Et diam magna amet sed lorem eos. Et ipsum elitr ea duo, consetetur et labore aliquyam invidunt kasd accusam takimata, clita eirmod aliquyam est dolor nonumy. Clita aliquyam dolores duo stet.</p>
+                    <img id="projectPicture" src="https://2019.igem.org/wiki/images/d/d0/T--CMUQ--descillustration.png">
+
+                </div>
+            </div>
+
+            <div class="block purpleBackground">
+                <div class="blockContainer">
+                    <h1 class="blockTitle text-ubuntu">References</h1>
+                    <p class="blockContent text-ubuntu">1. Biolabs, N. E. (n.d.). EnGen® Lba Cas12a (Cpf1). Retrieved from https://international.neb.com/products/m0653-engen-lba-cas12a-cpf1#Product Information_Notes</p>
+                    <p class="blockContent text-ubuntu">2. Chen, J. S., Ma, E., Harrington, L. B., Da Costa, M., Tian, X., Palefsky, J. M., & Doudna, J. A. (2018). CRISPR-Cas12a target binding unleashes indiscriminate single-stranded DNase activity. Science, 360(6387), 436-439.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://2019.igem.org/wiki/index.php?title=Team:CMUQ/jquery&action=raw&ctype=text/javascript"></script>
+</body>
+</html>
