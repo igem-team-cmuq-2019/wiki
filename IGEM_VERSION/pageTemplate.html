@@ -166,6 +166,68 @@
             /* END slider styles*/
 
         /* END description styles */
+        
+        /* START template styles */
+        .alignWidth {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .collapsible details summary {
+            background-color: var(--blue-color);
+            padding: 20px;
+            outline: none;
+            cursor: pointer;
+            color: #fff;
+            font-weight: bold;
+        }
+        .collapsible details p {
+            padding: 20px;
+            background-color: #eee;
+            margin: 0;
+            outline: none;
+            color: #000;
+        }
+        .collapsible details {
+            padding: 20px;
+        }
+        .collapsible summary {
+            box-shadow: 0 0 5px 0 rgba(0,0,0,0.5);
+        }
+        .collapsible details p {
+            box-shadow: 0 2px 5px 0 rgba(0,0,0,0.5);
+        }
+        .collapsible .addPadding {
+            background-color: #eee;
+        }
+        .collapsible img {
+            max-width: 100%;
+        }
+        .noHorizontalPadding {
+            padding: 20px 0 !important;
+        }
+
+        .table, table {
+            width: 100%;
+            text-align: left;
+        }
+        .table table {
+            box-shadow: 0 0 5px 0 rgba(0,0,0,0.5);
+            border-collapse: collapse;
+        }
+        .table table th {
+            background-color: var(--blue-color);
+            padding: 10px;
+            color: #fff;
+        }
+        .table table td {
+            padding: 10px;
+        }
+        .table table tr:nth-child(odd) {
+            background-color: #eee;
+        }
+        /* END template styles */
+
 
         /* START misc. styles */
         @font-face {
@@ -293,7 +355,74 @@
                         </div>
                     </div>
                 </div>
-            </div>        
+            </div>
+
+            <div class="block collapsible alignWidth text-ubuntu">
+                <details class="noHorizontalPadding text-ubuntu">
+                    <summary class="text-ubuntu">Week 1</summary>
+                    <p class="text-ubuntu">If your browser supports this element, it should allow you to expand and collapse these details.</p>
+                </details>
+                <details class="noHorizontalPadding text-ubuntu">
+                    <summary>Week 2</summary>
+                    <details class="addPadding text-ubuntu">
+                        <summary class="text-ubuntu">Day 1</summary>
+                        <p class="text-ubuntu">If your browser supports this element, it should allow you to expand and collapse these details.</p>
+                    </details>
+                    <details class="addPadding text-ubuntu">
+                        <summary class="text-ubuntu">Day 2</summary>
+                        <p class="text-ubuntu">If your browser supports this element, it should allow you to expand and collapse these details.</p>
+                    </details>
+                    <details class="addPadding text-ubuntu">
+                        <summary class="text-ubuntu">Day 3</summary>
+                        <p class="text-ubuntu">If your browser supports this element, it should allow you to expand and collapse these details.</p>
+                    </details>
+                </details>
+                <details class="noHorizontalPadding text-ubuntu">
+                    <summary class="text-ubuntu">Week 3</summary>
+                    <p class="text-ubuntu"><img src="./img/img-lab.JPG" /></p>
+                </details>
+            </div>
+
+            <div class="block table alignWidth text-ubuntu">
+                <table>
+                    <tr>
+                        <th class="text-ubuntu">Column 1</th>
+                        <th class="text-ubuntu">Column 2</th>
+                        <th class="text-ubuntu">Column 3</th>
+                        <th class="text-ubuntu">Column 4</th>
+                    </tr>
+                    <tr>
+                        <td class="text-ubuntu">Data 1</td>
+                        <td class="text-ubuntu">Data 2</td>
+                        <td class="text-ubuntu">Data 3</td>
+                        <td class="text-ubuntu">Data 4</td>
+                    </tr>
+                    <tr>
+                        <td class="text-ubuntu">Data 1</td>
+                        <td class="text-ubuntu">Data 2</td>
+                        <td class="text-ubuntu">Data 3</td>
+                        <td class="text-ubuntu">Data 4</td>
+                    </tr>
+                    <tr>
+                        <td class="text-ubuntu">Data 1</td>
+                        <td class="text-ubuntu">Data 2</td>
+                        <td class="text-ubuntu">Data 3</td>
+                        <td class="text-ubuntu">Data 4</td>
+                    </tr>
+                    <tr>
+                        <td class="text-ubuntu">Data 1</td>
+                        <td class="text-ubuntu">Data 2</td>
+                        <td class="text-ubuntu">Data 3</td>
+                        <td class="text-ubuntu">Data 4</td>
+                    </tr>
+                    <tr>
+                        <td class="text-ubuntu">Data 1</td>
+                        <td class="text-ubuntu">Data 2</td>
+                        <td class="text-ubuntu">Data 3</td>
+                        <td class="text-ubuntu">Data 4</td>
+                    </tr>
+                </table>
+            </div>
         </section>
     </main>
 
