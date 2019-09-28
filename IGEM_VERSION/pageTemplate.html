@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>iGEM 2019 CMUQ</title>
+    <link rel="stylesheet" href="swiper.css">
 
     <style>
         :root {
@@ -54,7 +55,7 @@
         .description #projectPicture {
             display: block;
             width: 100%;
-            max-width: 600px;
+            max-width: 800px;
             margin: 30px auto;
         }
         .description .blockContainer {
@@ -62,10 +63,10 @@
             max-width: 800px;
             margin: 0 auto;
         }
-        .description .purpleBackground {
-            background-color: var(--purple-color);
+        .description .blueBackground {
+            background-color: var(--blue-color);
         }
-        .description .block.purpleBackground p, .description .block.purpleBackground h1 {
+        .description .block.blueBackground p, .description .block.blueBackground h1 {
             color: #fff;
         }
         .description .block {
@@ -79,9 +80,91 @@
             line-height: 28pt !important;
             font-size: 22pt !important;
         }
-        .description .block:not(.purpleBackground) p, .description .block:not(.purpleBackground) h1 {
-            color: var(--purple-color);
+        .description .block:not(.blueBackground) p, .description .block:not(.blueBackground) h1 {
+            color: var(--blue-color);
         }
+
+        .description .button {
+            border: none;
+            border-radius: 4px;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            box-shadow: 0 0 5px grey;
+        }
+        .description .whitebutton {
+            background-color: white; /* White */
+            color: black;
+
+        }
+        .description .blackButton {
+            background-color: black; /* Black */
+            color: white;
+
+        }
+
+        .description .blueButton {
+            background-color: var(--blue-color); /* Blue */
+            color: white;
+        }
+        .description .purpleButton {
+            background-color: var(--purple-color); /* Purple */
+            color: white;
+        }
+            /* START imageSlider styles */
+
+            .description .imageSliderBlock {
+                display: flex;
+                flex-direction: column;
+                padding: 20px;
+                align-items: center;
+            }
+            .description .imageSliderBlock:nth-child(even) {
+                background-color: #f2f2f2;
+            }
+            .description .imageSliderBlock .imageSliderContent {
+                line-height: 22pt;
+            }
+            .description .imageSliderPicture img {
+                width: 800px;
+                height: 600px;
+                object-fit: cover;
+            }
+            .description .imageSliderContent.marginRight {
+                margin-right: 20px;
+            }
+            .description .imageSliderContent.marginLeft {
+                margin-left: 20px;
+            }
+            /* END imageSlider styles */
+
+            /* START slider styles */
+            .swiper-container {
+                width: 800px;
+                height: 600px;
+                }
+                .swiper-slide {
+                text-align: center;
+                font-size: 18px;
+                background: #fff;
+                /* Center slide text vertically */
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: -webkit-flex;
+                display: flex;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                -webkit-justify-content: center;
+                justify-content: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                -webkit-align-items: center;
+                align-items: center;
+                }
+            /* END slider styles*/
+
         /* END description styles */
 
         /* START misc. styles */
@@ -104,6 +187,9 @@
             padding-bottom: 10px !important;
         }
         /* END misc. styles */
+
+       
+
 
         /* START media queries */
         /* Mobiles/Tablets */
@@ -136,7 +222,7 @@
 
         <section class="description text-ubuntu">
             <img id="projectPicture" src="https://2019.igem.org/wiki/images/d/d0/T--CMUQ--descillustration.png">
-            <div class="block purpleBackground">
+            <div class="block blueBackground">
                 <div class="blockContainer">
                     <h1 class="blockTitle text-ubuntu">Header</h1>
                     <p class="blockContent text-ubuntu">Clita sed dolores gubergren sea eos tempor duo no. Justo diam eos duo justo accusam. Amet sit dolor ea labore sed, diam rebum amet et duo accusam rebum ipsum kasd. Et erat elitr sit magna et sed sed labore. Ea sanctus eirmod takimata voluptua duo sanctus, diam sed diam magna gubergren sed tempor erat, elitr stet erat dolores eos sed, nonumy duo ipsum sit dolores sit et. Amet dolores elitr nonumy ipsum vero vero ipsum sanctus invidunt. Et dolores labore et sit gubergren ipsum dolores sed, clita duo aliquyam labore invidunt, clita lorem accusam rebum aliquyam est dolore nonumy, et dolor lorem magna no sadipscing diam, diam eos tempor kasd ipsum rebum et et amet lorem, at magna sed diam duo sit consetetur. Amet magna gubergren et et aliquyam, dolores nonumy sadipscing accusam et, kasd amet tempor ipsum et ipsum aliquyam invidunt takimata labore. No sit justo dolores gubergren voluptua et diam, dolore lorem at diam vero sea invidunt kasd erat. Elitr ut erat ipsum consetetur tempor ea et justo, ut ut at et at dolor ea sit vero et, sea sadipscing diam kasd tempor. Sea eos dolor ipsum consetetur eirmod diam vero gubergren, at accusam sanctus lorem consetetur, sadipscing.</p>
@@ -152,16 +238,86 @@
                 </div>
             </div>
 
-            <div class="block purpleBackground">
+            <div class="block">
                 <div class="blockContainer">
-                    <h1 class="blockTitle text-ubuntu">References</h1>
-                    <p class="blockContent text-ubuntu">1. Biolabs, N. E. (n.d.). EnGen® Lba Cas12a (Cpf1). Retrieved from https://international.neb.com/products/m0653-engen-lba-cas12a-cpf1#Product Information_Notes</p>
-                    <p class="blockContent text-ubuntu">2. Chen, J. S., Ma, E., Harrington, L. B., Da Costa, M., Tian, X., Palefsky, J. M., & Doudna, J. A. (2018). CRISPR-Cas12a target binding unleashes indiscriminate single-stranded DNase activity. Science, 360(6387), 436-439.</p>
+                    <h1 class="blockTitle text-ubuntu">Buttons section</h1>
+                    <a href="" class="blockContent button blueButton text-ubuntu">Blue button</a>
+                    <a href="" class="blockContent button whiteButton text-ubuntu">White button</a>
+                    <a href="" class="blockContent button blackButton text-ubuntu">Black button</a>
+                    <a href="" class="blockContent button purpleButton text-ubuntu">Grey button</a>
                 </div>
             </div>
+            
+            <div class="block">
+                <div class="blockContainer">
+                    <h1 class="blockTitle text-ubuntu">Slider section</h1>
+                </div>
+            </div>
+
+            <div class="block blueBackground">
+                <div class="blockContainer">
+                    <h1 class="blockTitle text-ubuntu">References</h1>
+                    <p class="blockContent text-ubuntu">1. Et amet justo takimata invidunt clita invidunt labore nonumy, et ipsum lorem aliquyam et. Diam elitr lorem et et, sit lorem vero kasd sed. Sit voluptua labore justo sit dolor sanctus ipsum sadipscing. Diam ipsum at stet amet erat gubergren sadipscing et, justo clita dolore eirmod sanctus elitr sed invidunt.</p>
+                    <p class="blockContent text-ubuntu">2. Et takimata eirmod clita ipsum eirmod voluptua. Sed sadipscing et diam sea amet et nonumy lorem ea. Magna diam dolor clita gubergren sanctus nonumy, sit erat dolor est ipsum et kasd erat sadipscing magna, labore sit sit rebum lorem dolor ipsum, et ea consetetur kasd stet erat clita elitr elitr.</p>
+                </div>
+            </div>
+
+            <div class="block imageSliderBlock">
+                <div class="blockContainer">
+                    <div class="imageSliderContent marginRight">
+                        <h1 class="blockTitle text-ubuntu">Header</h1>
+                        <p class="blockContent text-ubuntu"><span class="purpleColor bold">Et et no sed eos ipsum amet et voluptua diam eos. Dolores et gubergren takimata justo vero nonumy, lorem sadipscing magna elitr sea amet ipsum takimata amet et. Dolor diam diam sed labore accusam justo et eos, et justo justo dolores stet, sanctus sit amet invidunt et. Et clita sed kasd amet eos dolores tempor nonumy nonumy, invidunt vero erat tempor stet. Dolores erat dolor tempor est est, sadipscing stet sit dolore no. Accusam eirmod eos dolore dolor sed et, et ut voluptua stet duo accusam aliquyam, accusam rebum takimata sed rebum sadipscing, nonumy clita no kasd dolores sed, voluptua ipsum tempor accusam takimata eos no, ipsum sadipscing diam rebum amet consetetur invidunt dolore clita invidunt. Erat amet sed sit ut clita sea, ut eos lorem sit clita ut, ipsum sadipscing consetetur dolor et rebum diam duo ipsum. Dolor sit et ea justo amet, ut eirmod est ea diam kasd magna justo, et clita accusam et ea eos amet diam ipsum, ipsum lorem erat dolore ipsum sed nonumy tempor sit consetetur. Et sadipscing eirmod sit sea diam eirmod sadipscing dolor. Vero dolor et dolor labore amet, diam ipsum lorem vero gubergren dolores lorem ipsum. Sed aliquyam rebum rebum ea duo.</p>
+                    </div>
+                    <div class="imageSliderPicture">
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="https://2019.igem.org/wiki/images/1/14/T--CMUQ--wikiqaOutreach.jpeg">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="https://2019.igem.org/wiki/images/f/f1/T--CMUQ--outreach-qa2.jpg">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="https://2019.igem.org/wiki/images/4/4a/T--CMUQ--outreach-qa3.jpg">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="https://2019.igem.org/wiki/images/4/43/T--CMUQ--outreach-qa4.jpg">
+                                    </div>
+                                </div>
+                                <!-- Add Pagination -->
+                                <div class="swiper-pagination"></div>
+                                <!-- Add Arrows -->
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>        
         </section>
     </main>
 
     <script src="https://2019.igem.org/wiki/index.php?title=Team:CMUQ/jquery&action=raw&ctype=text/javascript"></script>
-</body>
+    <script src="swiper.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+        var swiper = new Swiper('.swiper-container', {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+            },
+            pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+            },
+            navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+            },
+        });
+        </script>
+    </body>
 </html>
