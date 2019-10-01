@@ -52,17 +52,37 @@
         /* END jumbotron styles */
 
         /* START description styles */
-        .description #projectPicture {
+
+        .description .orderedList {
+            text-decoration: none;
+            color: white;
+            text-align: justify;
+
+        }
+        .description .links {
+            text-decoration: none;
+            color: var(--gold-color);
+            
+        }
+        
+        .description .links:hover {
+            text-decoration: underline;
+            color: white;
+
+        }
+        
+        .description #blockPicture {
             display: block;
             width: 100%;
-            max-width: 800px;
+            max-width: 1000px;
             margin: 30px auto;
         }
         .description .blockContainer {
             width: 100%;
-            max-width: 800px;
+            max-width: 1000px;
             margin: 0 auto;
         }
+
         .description .blueBackground {
             background-color: var(--blue-color);
         }
@@ -74,12 +94,21 @@
         }
         .description .block .blockContent {
             line-height: 28pt !important;
-            font-size: 16pt !important;
+            font-size: 12pt !important;
+            text-align:justify !important;
+
         }
+
         .description .block .blockTitle {
             line-height: 28pt !important;
             font-size: 22pt !important;
         }
+        .description .block .inlineblockTitle {
+            line-height: 28pt !important;
+            font-size: 22pt !important;
+        }
+
+
         .description .block:not(.blueBackground) p, .description .block:not(.blueBackground) h1 {
             color: var(--blue-color);
         }
@@ -93,6 +122,11 @@
             display: inline-block;
             font-size: 16px;
             box-shadow: 0 0 5px grey;
+        }
+        
+        .description .button:hover {
+            filter: brightness(85%);
+            
         }
         .description .whitebutton {
             background-color: white; /* White */
@@ -241,9 +275,10 @@
             font-family: 'Ubuntu' !important;
             color: #000 !important;
             text-align: center;
-            font-size: 26pt !important;
+            font-size: 8pt !important;
             margin-bottom: 30px !important;
             line-height: 26pt !important;
+            text-align:justify !important;
         }
         .padding-bottom-10 {
             padding-bottom: 10px !important;
@@ -264,7 +299,7 @@
             }
             .description .block .blockContent {
                 line-height: 18pt !important;
-                font-size: 12pt !important;
+                font-size: 8pt !important;
             }
             .description .block .blockTitle {
                 line-height: 18pt !important;
@@ -278,12 +313,15 @@
     <main class="text-ubuntu">
         <section class="jumbotron text-ubuntu">
             <div class="mainHeader text-ubuntu">
-                <h1 class="text-ubuntu">Project Description</h1>
+                <h1 class="text-ubuntu">Template Page</h1>
             </div>
         </section>
 
         <section class="description text-ubuntu">
-            <img id="projectPicture" src="https://2019.igem.org/wiki/images/d/d0/T--CMUQ--descillustration.png">
+            <img id="blockPicture" src="https://2019.igem.org/wiki/images/d/d0/T--CMUQ--descillustration.png">
+            
+            
+            <!--Header + Text section________________________________________________________________________________________-->
             <div class="block blueBackground">
                 <div class="blockContainer">
                     <h1 class="blockTitle text-ubuntu">Header</h1>
@@ -291,43 +329,51 @@
                 </div>
             </div>
 
+            <!--Header + Text section + Picture________________________________________________________________________________________-->
             <div class="block">
                 <div class="blockContainer">
                     <h1 class="blockTitle text-ubuntu">Header</h1>
                     <p class="blockContent text-ubuntu">Diam sanctus ipsum ut dolor stet sea elitr, duo sit at takimata ipsum aliquyam lorem, est lorem no clita diam voluptua duo sit rebum et, clita clita et sadipscing magna et dolores lorem dolores, sea ea tempor ipsum diam et et dolor. Sit no nonumy sit diam, diam eirmod justo ipsum invidunt dolor takimata magna, invidunt kasd et ipsum lorem tempor erat accusam. Gubergren ipsum sed dolore diam elitr at, justo stet erat elitr sea dolores dolor. Gubergren est erat sit vero, voluptua et ipsum sea ipsum amet kasd et amet sit, ipsum consetetur ipsum dolor sadipscing ipsum, dolor et diam erat et. Vero est eirmod no vero sit ipsum dolore sadipscing. Amet duo sadipscing sadipscing accusam ipsum, takimata amet sea nonumy magna et dolore diam amet dolor. Consetetur takimata rebum takimata erat kasd sadipscing. Stet gubergren amet diam consetetur, sit eos et lorem eirmod aliquyam, sit no sea magna labore, takimata dolores justo invidunt stet elitr, eirmod diam clita sit sit, lorem clita duo est sea sanctus et. Et diam magna amet sed lorem eos. Et ipsum elitr ea duo, consetetur et labore aliquyam invidunt kasd accusam takimata, clita eirmod aliquyam est dolor nonumy. Clita aliquyam dolores duo stet.</p>
-                    <img id="projectPicture" src="https://2019.igem.org/wiki/images/d/d0/T--CMUQ--descillustration.png">
+                    <img id="blockPicture" src="https://2019.igem.org/wiki/images/d/d0/T--CMUQ--descillustration.png">
 
                 </div>
             </div>
 
+            <!--Header + text + Picture on the side________________________________________________________________________________________-->
+
+
+
+            <!--Buttons________________________________________________________________________________________-->
             <div class="block">
                 <div class="blockContainer">
                     <h1 class="blockTitle text-ubuntu">Buttons section</h1>
                     <a href="" class="blockContent button blueButton text-ubuntu">Blue button</a>
                     <a href="" class="blockContent button whiteButton text-ubuntu">White button</a>
                     <a href="" class="blockContent button blackButton text-ubuntu">Black button</a>
-                    <a href="" class="blockContent button purpleButton text-ubuntu">Grey button</a>
-                </div>
-            </div>
-            
-            <div class="block">
-                <div class="blockContainer">
-                    <h1 class="blockTitle text-ubuntu">Slider section</h1>
+                    <a href="" class="blockContent button purpleButton text-ubuntu">Purple button</a>
                 </div>
             </div>
 
+            <!--References________________________________________________________________________________________-->
             <div class="block blueBackground">
                 <div class="blockContainer">
                     <h1 class="blockTitle text-ubuntu">References</h1>
-                    <p class="blockContent text-ubuntu">1. Et amet justo takimata invidunt clita invidunt labore nonumy, et ipsum lorem aliquyam et. Diam elitr lorem et et, sit lorem vero kasd sed. Sit voluptua labore justo sit dolor sanctus ipsum sadipscing. Diam ipsum at stet amet erat gubergren sadipscing et, justo clita dolore eirmod sanctus elitr sed invidunt.</p>
-                    <p class="blockContent text-ubuntu">2. Et takimata eirmod clita ipsum eirmod voluptua. Sed sadipscing et diam sea amet et nonumy lorem ea. Magna diam dolor clita gubergren sanctus nonumy, sit erat dolor est ipsum et kasd erat sadipscing magna, labore sit sit rebum lorem dolor ipsum, et ea consetetur kasd stet erat clita elitr elitr.</p>
+                    <ol class = "orderedList blockContent">
+                        <li>
+                            <a href="" class="links blockContent text-ubuntu">Et amet justo takimata invidunt clita invidunt labore nonumy, et ipsum lorem aliquyam et. Diam elitr lorem et et, sit lorem vero kasd sed. Sit voluptua labore justo sit dolor sanctus ipsum sadipscing. Diam ipsum at stet amet erat gubergren sadipscing et, justo clita dolore eirmod sanctus elitr sed invidunt.</a>
+                        </li>
+                        <li>
+                            <a href="" class="links blockContent text-ubuntu"> Et takimata eirmod clita ipsum eirmod voluptua. Sed sadipscing et diam sea amet et nonumy lorem ea. Magna diam dolor clita gubergren sanctus nonumy, sit erat dolor est ipsum et kasd erat sadipscing magna, labore sit sit rebum lorem dolor ipsum, et ea consetetur kasd stet erat clita elitr elitr.</a>
+                        </li>
+                    </ol>
                 </div>
             </div>
 
+            <!--Slider________________________________________________________________________________________-->
             <div class="block imageSliderBlock">
                 <div class="blockContainer">
                     <div class="imageSliderContent marginRight">
-                        <h1 class="blockTitle text-ubuntu">Header</h1>
+                        <h1 class="blockTitle text-ubuntu">Slider</h1>
                         <p class="blockContent text-ubuntu"><span class="purpleColor bold">Et et no sed eos ipsum amet et voluptua diam eos. Dolores et gubergren takimata justo vero nonumy, lorem sadipscing magna elitr sea amet ipsum takimata amet et. Dolor diam diam sed labore accusam justo et eos, et justo justo dolores stet, sanctus sit amet invidunt et. Et clita sed kasd amet eos dolores tempor nonumy nonumy, invidunt vero erat tempor stet. Dolores erat dolor tempor est est, sadipscing stet sit dolore no. Accusam eirmod eos dolore dolor sed et, et ut voluptua stet duo accusam aliquyam, accusam rebum takimata sed rebum sadipscing, nonumy clita no kasd dolores sed, voluptua ipsum tempor accusam takimata eos no, ipsum sadipscing diam rebum amet consetetur invidunt dolore clita invidunt. Erat amet sed sit ut clita sea, ut eos lorem sit clita ut, ipsum sadipscing consetetur dolor et rebum diam duo ipsum. Dolor sit et ea justo amet, ut eirmod est ea diam kasd magna justo, et clita accusam et ea eos amet diam ipsum, ipsum lorem erat dolore ipsum sed nonumy tempor sit consetetur. Et sadipscing eirmod sit sea diam eirmod sadipscing dolor. Vero dolor et dolor labore amet, diam ipsum lorem vero gubergren dolores lorem ipsum. Sed aliquyam rebum rebum ea duo.</p>
                     </div>
                     <div class="imageSliderPicture">
@@ -357,6 +403,7 @@
                 </div>
             </div>
 
+            <!--Collapsible________________________________________________________________________________________-->
             <div class="block collapsible alignWidth text-ubuntu">
                 <details class="noHorizontalPadding text-ubuntu">
                     <summary class="text-ubuntu">Week 1</summary>
@@ -383,6 +430,7 @@
                 </details>
             </div>
 
+            <!--Table________________________________________________________________________________________-->
             <div class="block table alignWidth text-ubuntu">
                 <table>
                     <tr>
@@ -423,6 +471,11 @@
                     </tr>
                 </table>
             </div>
+
+            <!--Pictures grid________________________________________________________________________________________-->
+
+            <!--Pictures + text grid________________________________________________________________________________________-->
+
         </section>
     </main>
 
