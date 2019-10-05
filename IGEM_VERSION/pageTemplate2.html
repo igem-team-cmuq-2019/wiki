@@ -51,37 +51,174 @@
         /* END jumbotron styles */
 
         /* START description styles */
-        .description #projectPicture {
+
+        .description .orderedList {
+            text-decoration: none;
+            color: white;
+            text-align: justify;
+
+        }
+        .description .links {
+            text-decoration: none;
+            color: var(--gold-color);
+            
+        }
+        
+        .description .links:hover {
+            text-decoration: underline;
+            color: white;
+
+        }
+        
+        .description #blockPicture {
             display: block;
             width: 100%;
-            max-width: 600px;
+            max-width: 1000px;
             margin: 30px auto;
         }
         .description .blockContainer {
             width: 100%;
-            max-width: 800px;
+            max-width: 1000px;
             margin: 0 auto;
         }
-        .description .purpleBackground {
-            background-color: var(--purple-color);
+
+        .description .blueBackground {
+            background-color: var(--blue-color);
         }
-        .description .block.purpleBackground p, .description .block.purpleBackground h1 {
+        .description .block.blueBackground p, .description .block.blueBackground h1 {
             color: #fff;
         }
         .description .block {
-            padding: 50px;
+            padding: 50px 0;
         }
         .description .block .blockContent {
             line-height: 28pt !important;
-            font-size: 16pt !important;
+            font-size: 12pt !important;
+            text-align:justify !important;
+
         }
+
         .description .block .blockTitle {
             line-height: 28pt !important;
             font-size: 22pt !important;
         }
-        .description .block:not(.purpleBackground) p, .description .block:not(.purpleBackground) h1 {
-            color: var(--purple-color);
+        .description .block .inlineblockTitle {
+            line-height: 28pt !important;
+            font-size: 22pt !important;
         }
+
+
+        .description .block:not(.blueBackground) p, .description .block:not(.blueBackground) h1 {
+            color: var(--blue-color);
+        }
+
+        .description .button {
+            border: none;
+            border-radius: 4px;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            box-shadow: 0 0 5px grey;
+        }
+        
+        .description .button:hover {
+            filter: brightness(85%);
+            
+        }
+        .description .whitebutton {
+            background-color: white; /* White */
+            color: black;
+
+        }
+        .description .blackButton {
+            background-color: black; /* Black */
+            color: white;
+
+        }
+
+        .projectPicture {
+            margin: 0 auto;
+            max-width: 1000px;
+            width: 100%;
+        }
+
+        .description .blueButton {
+            background-color: var(--blue-color); /* Blue */
+            color: white;
+        }
+        .description .purpleButton {
+            background-color: var(--purple-color); /* Purple */
+            color: white;
+        }
+            /* START imageSlider styles */
+
+            .description .imageSliderBlock {
+                display: flex;
+                flex-direction: column;
+                padding: 20px;
+                align-items: center;
+            }
+            .description .imageSliderBlock:nth-child(even) {
+                background-color: #f2f2f2;
+            }
+            .description .imageSliderBlock .imageSliderContent {
+                line-height: 22pt;
+            }
+            .description .imageSliderPicture img {
+                width: 1000px;
+                height: 750px;
+                object-fit: cover;
+            }
+            .description .imageSliderContent.marginRight {
+                margin-right: 20px;
+            }
+            .description .imageSliderContent.marginLeft {
+                margin-left: 20px;
+            }
+            /* END imageSlider styles */
+
+            /* START slider styles */
+            .swiper-container {
+                width: 1000px;
+                height: 750px;
+            }
+            .swiper-slide {
+                text-align: center;
+                font-size: 18px;
+                background: #fff;
+                /* Center slide text vertically */
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: -webkit-flex;
+                display: flex;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                -webkit-justify-content: center;
+                justify-content: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                -webkit-align-items: center;
+                align-items: center;
+            }
+            .description .imageSliderPicture img {
+                margin: 0 auto;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            .alignWidth {
+                width: 80%;
+                max-width: 767px;
+                margin: 0 auto;
+            }
+            .table, table {
+                width: 90%;
+                margin: 0 auto;
+            }
+            /* END slider styles*/
+
         /* END description styles */
 
         /* START misc. styles */
@@ -122,13 +259,19 @@
                 line-height: 18pt !important;
                 font-size: 20pt !important;
             }
+            .textGrid .cont {
+                flex-direction: column;
+            }
+            .textGrid .cont img {
+                width: 100% !important;
+            }
         }
         /* END media queries */
 
 
         /* START template styles */
         .alignWidth {
-            width: 100%;
+            width: calc(100% - 20px);
             max-width: 800px;
             margin: 0 auto;
         }
@@ -167,8 +310,9 @@
         }
 
         .table, table {
-            width: 100%;
+            width: calc(100% - 10px);
             text-align: left;
+            margin: 0 auto;
         }
         .table table {
             box-shadow: 0 0 5px 0 rgba(0,0,0,0.5);
@@ -185,6 +329,28 @@
         .table table tr:nth-child(odd) {
             background-color: #eee;
         }
+        .grid .parentGrid {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+            width: calc(100%);
+        }
+        .grid .parentGrid img {
+            height: 250px;
+            height: 250px;
+            object-fit: cover;
+            margin: 5px;
+        }
+        .textGrid .cont {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        .textGrid img {
+            display: inline-block;
+            width: 50% !important;
+        }
         /* END template styles */
     </style>
 </head>
@@ -197,9 +363,9 @@
         </section>
 
         <section class="description text-ubuntu">
-            <img id="projectPicture" src="https://2019.igem.org/wiki/images/d/d0/T--CMUQ--descillustration.png">
             <div class="block purpleBackground">
                 <div class="blockContainer">
+                    <img class="projectPicture" src="https://2019.igem.org/wiki/images/d/d0/T--CMUQ--descillustration.png">
                     <h1 class="blockTitle text-ubuntu">Header</h1>
                     <p class="blockContent text-ubuntu">Clita sed dolores gubergren sea eos tempor duo no. Justo diam eos duo justo accusam. Amet sit dolor ea labore sed, diam rebum amet et duo accusam rebum ipsum kasd. Et erat elitr sit magna et sed sed labore. Ea sanctus eirmod takimata voluptua duo sanctus, diam sed diam magna gubergren sed tempor erat, elitr stet erat dolores eos sed, nonumy duo ipsum sit dolores sit et. Amet dolores elitr nonumy ipsum vero vero ipsum sanctus invidunt. Et dolores labore et sit gubergren ipsum dolores sed, clita duo aliquyam labore invidunt, clita lorem accusam rebum aliquyam est dolore nonumy, et dolor lorem magna no sadipscing diam, diam eos tempor kasd ipsum rebum et et amet lorem, at magna sed diam duo sit consetetur. Amet magna gubergren et et aliquyam, dolores nonumy sadipscing accusam et, kasd amet tempor ipsum et ipsum aliquyam invidunt takimata labore. No sit justo dolores gubergren voluptua et diam, dolore lorem at diam vero sea invidunt kasd erat. Elitr ut erat ipsum consetetur tempor ea et justo, ut ut at et at dolor ea sit vero et, sea sadipscing diam kasd tempor. Sea eos dolor ipsum consetetur eirmod diam vero gubergren, at accusam sanctus lorem consetetur, sadipscing.</p>
                 </div>
@@ -209,7 +375,7 @@
                 <div class="blockContainer">
                     <h1 class="blockTitle text-ubuntu">Header</h1>
                     <p class="blockContent text-ubuntu">Diam sanctus ipsum ut dolor stet sea elitr, duo sit at takimata ipsum aliquyam lorem, est lorem no clita diam voluptua duo sit rebum et, clita clita et sadipscing magna et dolores lorem dolores, sea ea tempor ipsum diam et et dolor. Sit no nonumy sit diam, diam eirmod justo ipsum invidunt dolor takimata magna, invidunt kasd et ipsum lorem tempor erat accusam. Gubergren ipsum sed dolore diam elitr at, justo stet erat elitr sea dolores dolor. Gubergren est erat sit vero, voluptua et ipsum sea ipsum amet kasd et amet sit, ipsum consetetur ipsum dolor sadipscing ipsum, dolor et diam erat et. Vero est eirmod no vero sit ipsum dolore sadipscing. Amet duo sadipscing sadipscing accusam ipsum, takimata amet sea nonumy magna et dolore diam amet dolor. Consetetur takimata rebum takimata erat kasd sadipscing. Stet gubergren amet diam consetetur, sit eos et lorem eirmod aliquyam, sit no sea magna labore, takimata dolores justo invidunt stet elitr, eirmod diam clita sit sit, lorem clita duo est sea sanctus et. Et diam magna amet sed lorem eos. Et ipsum elitr ea duo, consetetur et labore aliquyam invidunt kasd accusam takimata, clita eirmod aliquyam est dolor nonumy. Clita aliquyam dolores duo stet.</p>
-                    <img id="projectPicture" src="https://2019.igem.org/wiki/images/d/d0/T--CMUQ--descillustration.png">
+                    <img class="projectPicture" src="https://2019.igem.org/wiki/images/d/d0/T--CMUQ--descillustration.png">
 
                 </div>
             </div>
@@ -288,6 +454,35 @@
                     </tr>
                 </table>
             </div>
+
+            <div class="block grid alignWidth text-ubuntu">
+                <div class="parentGrid">
+                    <img src="https://dummyimage.com/255x255/000/fff">
+                    <img src="https://dummyimage.com/255x255/000/fff">
+                    <img src="https://dummyimage.com/255x255/000/fff">
+                    <img src="https://dummyimage.com/255x255/000/fff">
+                    <img src="https://dummyimage.com/255x255/000/fff">
+                    <img src="https://dummyimage.com/255x255/000/fff">
+                    <img src="https://dummyimage.com/255x255/000/fff">
+                    <img src="https://dummyimage.com/255x255/000/fff">
+                    <img src="https://dummyimage.com/255x255/000/fff">
+                    <img src="https://dummyimage.com/255x255/000/fff">
+                    <img src="https://dummyimage.com/255x255/000/fff">
+                    <img src="https://dummyimage.com/255x255/000/fff">
+                </div>
+            </div>
+
+            <!--Header + Text section + Picture________________________________________________________________________________________-->
+            <div class="block">
+                    <div class="blockContainer textGrid">
+                        <h1 class="blockTitle text-ubuntu">Header</h1>
+                        <p class="blockContent text-ubuntu">Diam sanctus ipsum ut dolor stet sea elitr, duo sit at takimata ipsum aliquyam lorem, est lorem no clita diam voluptua duo sit rebum et, clita clita et sadipscing magna et dolores lorem dolores, sea ea tempor ipsum diam et et dolor. Sit no nonumy sit diam, diam eirmod justo ipsum invidunt dolor takimata magna, invidunt kasd et ipsum lorem tempor erat accusam. Gubergren ipsum sed dolore diam elitr at, justo stet erat elitr sea dolores dolor. Gubergren est erat sit vero, voluptua et ipsum sea ipsum amet kasd et amet sit, ipsum consetetur ipsum dolor sadipscing ipsum, dolor et diam erat et. Vero est eirmod no vero sit ipsum dolore sadipscing. Amet duo sadipscing sadipscing accusam ipsum, takimata amet sea nonumy magna et dolore diam amet dolor. Consetetur takimata rebum takimata erat kasd sadipscing. Stet gubergren amet diam consetetur, sit eos et lorem eirmod aliquyam, sit no sea magna labore, takimata dolores justo invidunt stet elitr, eirmod diam clita sit sit, lorem clita duo est sea sanctus et. Et diam magna amet sed lorem eos. Et ipsum elitr ea duo, consetetur et labore aliquyam invidunt kasd accusam takimata, clita eirmod aliquyam est dolor nonumy. Clita aliquyam dolores duo stet.</p>
+                        <div class="cont">
+                                <img id="blockPicture" src="https://2019.igem.org/wiki/images/d/d0/T--CMUQ--descillustration.png">
+                                <img id="blockPicture" src="https://2019.igem.org/wiki/images/d/d0/T--CMUQ--descillustration.png">
+                        </div>
+                    </div>
+                </div>
         </section>
     </main>
 
