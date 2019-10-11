@@ -26,7 +26,7 @@
             justify-content: center;
             align-items: center;
             max-width: 100%;
-            height: 400px;
+            height: 250px;
             background-image: url(https://2019.igem.org/wiki/images/f/fc/T--CMUQ--wikiimglab.jpeg);
             background-size: cover;
             background-repeat: no-repeat;
@@ -40,7 +40,7 @@
         }
         .jumbotron .mainHeader h1 {
             margin: 0;
-            font-size: 32pt;
+            font-size: 48pt;
             color: #fff;
         }
         .jumbotron .mainHeader h1 a {
@@ -64,6 +64,11 @@
             color: var(--gold-color);
             
         }
+
+        .description .refTitle {
+            color: var(--gold-color) !important;
+            
+        }
         
         .description .links:hover {
             text-decoration: underline;
@@ -74,19 +79,19 @@
         .description #blockPicture {
             display: block;
             width: 100%;
-            max-width: 1000px;
-            margin: 30px auto;
+            max-width: 1100px;
+            margin: 20px auto;
         }
         .description .blockContainer {
             width: 100%;
-            max-width: 1000px;
+            max-width: 1100px;
             margin: 0 auto;
         }
 
-        .description .blueBackground {
-            background-color: var(--blue-color);
+        .description .purpleBackground {
+            background-color: var(--purple-color);
         }
-        .description .block.blueBackground p, .description .block.blueBackground h1 {
+        .description .block.purpleBackground p, .description .block.purpleBackground h1 {
             color: #fff;
         }
         .description .block {
@@ -94,7 +99,7 @@
         }
         .description .block .blockContent {
             line-height: 28pt !important;
-            font-size: 12pt !important;
+            font-size: 16pt !important;
             text-align:justify !important;
 
         }
@@ -109,8 +114,8 @@
         }
 
 
-        .description .block:not(.blueBackground) p, .description .block:not(.blueBackground) h1 {
-            color: var(--blue-color);
+        .description .block:not(.purpleBackground) p, .description .block:not(.purpleBackground) h1 {
+            color: var(--purple-color);
         }
 
         .description .button {
@@ -162,8 +167,8 @@
                 line-height: 22pt;
             }
             .description .imageSliderPicture img {
-                width: 1000px;
-                height: 750px;
+                width: 1100px;
+                height: 825px;
                 object-fit: cover;
             }
             .description .imageSliderContent.marginRight {
@@ -176,8 +181,8 @@
 
             /* START slider styles */
             .swiper-container {
-                width: 1000px;
-                height: 750px;
+                width: 1100px;
+                height: 825px;
                 }
                 .swiper-slide {
                 text-align: center;
@@ -205,11 +210,11 @@
         /* START template styles */
         .alignWidth {
             width: calc(100% - 20px);
-            max-width: 1000px;
+            max-width: 1100px;
             margin: 0 auto;
         }
         .collapsible details summary {
-            background-color: var(--blue-color);
+            background-color: var(--purple-color);
             padding: 20px;
             outline: none;
             cursor: pointer;
@@ -252,7 +257,7 @@
             border-collapse: collapse;
         }
         .table table th {
-            background-color: var(--blue-color) !important;
+            background-color: var(--purple-color) !important;
             padding: 10px;
             color: #fff !important;
         }
@@ -318,15 +323,18 @@
         /* START media queries */
         /* Mobiles/Tablets */
         @media (min-width : 320px) and (max-width : 767px) {
+            .jumbotron {
+                height: 200px;
+            }
             .jumbotron .mainHeader h1 {
-                font-size: 16pt;
+                font-size: 32pt;
             }
             .jumbotron {
                 background-attachment: inherit;
             }
             .description .block .blockContent {
                 line-height: 18pt !important;
-                font-size: 8pt !important;
+                font-size: 12pt !important;
             }
             .description .block .blockTitle {
                 line-height: 18pt !important;
@@ -368,7 +376,7 @@
             
             
             <!--Header + Text section________________________________________________________________________________________-->
-            <div class="block blueBackground">
+            <div class="block purpleBackground">
                 <div class="blockContainer">
                     <h1 class="blockTitle text-ubuntu">Header</h1>
                     <p class="blockContent text-ubuntu">Clita sed dolores gubergren sea eos tempor duo no. Justo diam eos duo justo accusam. Amet sit dolor ea labore sed, diam rebum amet et duo accusam rebum ipsum kasd. Et erat elitr sit magna et sed sed labore. Ea sanctus eirmod takimata voluptua duo sanctus, diam sed diam magna gubergren sed tempor erat, elitr stet erat dolores eos sed, nonumy duo ipsum sit dolores sit et. Amet dolores elitr nonumy ipsum vero vero ipsum sanctus invidunt. Et dolores labore et sit gubergren ipsum dolores sed, clita duo aliquyam labore invidunt, clita lorem accusam rebum aliquyam est dolore nonumy, et dolor lorem magna no sadipscing diam, diam eos tempor kasd ipsum rebum et et amet lorem, at magna sed diam duo sit consetetur. Amet magna gubergren et et aliquyam, dolores nonumy sadipscing accusam et, kasd amet tempor ipsum et ipsum aliquyam invidunt takimata labore. No sit justo dolores gubergren voluptua et diam, dolore lorem at diam vero sea invidunt kasd erat. Elitr ut erat ipsum consetetur tempor ea et justo, ut ut at et at dolor ea sit vero et, sea sadipscing diam kasd tempor. Sea eos dolor ipsum consetetur eirmod diam vero gubergren, at accusam sanctus lorem consetetur, sadipscing.</p>
@@ -411,9 +419,9 @@
             </div>
 
             <!--References________________________________________________________________________________________-->
-            <div class="block blueBackground">
+            <div class="block purpleBackground">
                 <div class="blockContainer">
-                    <h1 class="blockTitle text-ubuntu">References</h1>
+                    <h1 class="blockTitle text-ubuntu refTitle">References</h1>
                     <ol class = "orderedList blockContent">
                         <li>
                             <a href="" class="links blockContent text-ubuntu">Et amet justo takimata invidunt clita invidunt labore nonumy, et ipsum lorem aliquyam et. Diam elitr lorem et et, sit lorem vero kasd sed. Sit voluptua labore justo sit dolor sanctus ipsum sadipscing. Diam ipsum at stet amet erat gubergren sadipscing et, justo clita dolore eirmod sanctus elitr sed invidunt.</a>
