@@ -6,9 +6,9 @@
     --gold-color: #E4CD7D;
     --grey-color: #454545;
 
-    --purple-shade1: #113f9b;
-    --purple-shade2: #144cbc;
-    --purple-shade3: #96b5f4;
+    --purple-shade1: #7958bc;
+    --purple-shade2: #9b81c9;
+    --purple-shade3: #cec1e5;
 }
 html, body {
     width: 100%;
@@ -84,8 +84,36 @@ html, body {
 }
 
 .description .purpleBackground {
-    background-color: #61429B !important;
+    background-color: var(--purple-color) !important;
 }
+
+.description .purple1Background {
+    background-color: var(--purple-shade1) !important;
+}
+
+.description .purple2Background {
+    background-color: var(--purple-shade2) !important;
+}
+.description .purple3Background {
+    background-color: var(--purple-shade3) !important;
+}
+.description .whiteBackground {
+    background-color: #fff !important;
+}
+
+.description .purpleText {
+    color: var(--purple-color) !important;
+}
+.description .blueText {
+    color: var(--blue-color) !important;
+}
+.description .goldText {
+   color: var(--gold-color) !important;
+}
+.description .whiteText {
+    color:#fff !important;
+}
+
 .description .block.purpleBackground p, .description .block.purpleBackground h1 {
     color: #fff !important;
 }
