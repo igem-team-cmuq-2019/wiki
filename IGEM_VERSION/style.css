@@ -5,6 +5,10 @@
     --burgundy-color: #73194D;
     --gold-color: #E4CD7D;
     --grey-color: #454545;
+
+    --purple-shade1: #113f9b;
+    --purple-shade2: #144cbc;
+    --purple-shade3: #96b5f4;
 }
 html, body {
     width: 100%;
@@ -56,7 +60,7 @@ html, body {
     
 }
 
-.description .refTitle {
+.description h1 .refTitle {
     color: var(--gold-color) !important;
     
 }
