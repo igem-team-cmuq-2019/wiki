@@ -3,139 +3,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>iGEM 2019 CMUQ</title>
+    <title>Project Description</title>
+    <link rel="stylesheet" href="https://2019.igem.org/wiki/index.php?title=Team:CMUQ/swipercss&action=raw&ctype=text/css">
+    <link rel="stylesheet" href="https://2019.igem.org/wiki/index.php?title=Template:CMUQ/css&action=raw&ctype=text/css">
 
-    <style>
-        :root {
-            --blue-color: #252D73;
-            --purple-color: #61429B;
-            --white-color: #E8E8E8;
-            --burgundy-color: #73194D;
-            --gold-color: #E4CD7D;
-            --grey-color: #454545;
-        }
-        html, body {
-            width: 100%;
-            margin: 0;
-        }
-
-        /* START jumbotron styles */
-        .jumbotron {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            max-width: 100%;
-            height: 400px;
-            background-image: url(https://2019.igem.org/wiki/images/f/fc/T--CMUQ--wikiimglab.jpeg);
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: bottom;
-            background-attachment: fixed;
-        }
-        .jumbotron .content {
-            text-align: center;
-            color: #fff;
-            line-height: 32px;
-        }
-        .jumbotron .content h1 {
-            margin: 0;
-            font-size: 32pt;
-            color: #fff;
-        }
-        .jumbotron .content h1 a {
-            color: #fff !important;
-            text-decoration: none !important;
-            border-bottom: dotted 3px rgba(255, 255, 255, 0.5) !important;
-            line-height: 32pt !important;
-        }
-        /* END jumbotron styles */
-
-        /* START description styles */
-        .description #projectPicture {
-            display: block;
-            width: 100%;
-            max-width: 600px;
-            margin: 30px auto;
-        }
-        .description .blockContainer {
-            width: 100%;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        .description .purpleBackground {
-            background-color: var(--purple-color);
-        }
-        .description .block.purpleBackground p, .description .block.purpleBackground h1 {
-            color: #fff;
-        }
-        .description .block {
-            padding: 50px;
-        }
-        .description .block .blockContent {
-            line-height: 28pt !important;
-            font-size: 16pt !important;
-        }
-        .description .block .blockTitle {
-            line-height: 28pt !important;
-            font-size: 22pt !important;
-        }
-        .description .block:not(.purpleBackground) p, .description .block:not(.purpleBackground) h1 {
-            color: var(--purple-color);
-        }
-        /* END description styles */
-
-        /* START misc. styles */
-        @font-face {
-            font-family: 'Ubuntu';
-            src: url(https://2019.igem.org/wiki/images/c/c3/T--CMUQ--wikiubunturegular.ttf);
-        }
-        .text-ubuntu {
-            font-family: 'Ubuntu' !important;
-        }
-        .sectionTitle {
-            font-family: 'Ubuntu' !important;
-            color: #000 !important;
-            text-align: center;
-            font-size: 26pt !important;
-            margin-bottom: 30px !important;
-            line-height: 26pt !important;
-        }
-        .padding-bottom-10 {
-            padding-bottom: 10px !important;
-        }
-        /* END misc. styles */
-
-        /* START media queries */
-        /* Mobiles/Tablets */
-        @media (min-width : 320px) and (max-width : 767px) {
-            .jumbotron .content h1 {
-                font-size: 16pt;
-            }
-            .jumbotron {
-                background-attachment: inherit;
-            }
-            .description .block .blockContent {
-                line-height: 18pt !important;
-                font-size: 12pt !important;
-            }
-            .description .block .blockTitle {
-                line-height: 18pt !important;
-                font-size: 20pt !important;
-            }
-        }
-        /* END media queries */
-    </style>
 </head>
 <body>
     <main class="text-ubuntu">
         <section class="jumbotron text-ubuntu">
-            <div class="content text-ubuntu">
-                <h1 class="text-ubuntu">Project Description</h1>
+            <div class="mainHeader text-ubuntu">
+                <h1 class="text-ubuntu">project Description</h1>
             </div>
         </section>
 
         <section class="description text-ubuntu">
-            <img id="projectPicture" src="https://2019.igem.org/wiki/images/d/d0/T--CMUQ--descillustration.png">
+            
+            <!--Picture________________________________________________________________________________________-->
+            <div class="block">
+                <div class="blockContainer">
+                    <h1 class="blockTitle text-ubuntu">The project at a glance:</h1>
+                    <img id="blockPicture" src="https://2019.igem.org/wiki/images/d/d0/T--CMUQ--descillustration.png">
+                </div>
+            </div>
+            
+            <!--Header + Text section________________________________________________________________________________________-->
             <div class="block purpleBackground">
                 <div class="blockContainer">
                     <h1 class="blockTitle text-ubuntu">How it all started..</h1>
@@ -143,20 +34,21 @@
                 </div>
             </div>
 
+            <!--Header + Text section________________________________________________________________________________________-->
             <div class="block">
                 <div class="blockContainer">
                     <h1 class="blockTitle text-ubuntu">What inspired us?</h1>
                     <p class="blockContent text-ubuntu">Inspired by Dr. Doudna’s published work “CRISPR- Cas12a target binding unleashes indiscriminate single-stranded DNase activity”, we are utilizing CRISPR for purposes other than gene editing to create a novel, field-ready, diagnostic technique for carriers of recessive traits. Cas12a proteins are DNA targeting enzymes that recognize DNA based on a guide RNA (gRNA) sequence designed to match a target. The binding initiates non-specific single-stranded DNA (ssDNA) cleavage activity in Cas12a sufficient to degrade linear and circular ssDNA within minutes. Through this, ssDNA attached to fluorescent dye and quencher, serving as reporters, will undergo degradation. Upon cleavage, the quencher is released and fluorescence is emitted. This mechanism will be used where a complementary gRNA of a specific recessive genetic disease will be integrated into the Cas12a protein such when the target DNA is processed by Cas12a and bound to the gRNA, cleavage activity proceeds to eventually emit fluorescence. Afterward, using a device we built and programmed, the fluorescence will be detected with high-sensitivity and algorithmic analysis of the measurement will determine a +/- result for the disease.</p>
                 </div>
             </div>
-
+            <!--Header + Text section________________________________________________________________________________________-->
             <div class="block purpleBackground">
                 <div class="blockContainer">
                     <h1 class="blockTitle text-ubuntu">What is new this year?</h1>
                     <p class="blockContent text-ubuntu">Although the bases of our research project have been presented by our team in the iGEM 2018 round, this year we are integrating the judges and other experts feedback to optimize the sensitivity of our device, broaden our technique to identify other similar genetic diseases and to provide a pre-counseling prediction calculation. Our endeavor will be achievable by measuring the fluorescence emitted in the processing of a template DNA by Cas12a in comparison with double-blinded DNA samples. Moreover, we are designing gRNAs for locally and internationally common genetic diseases, other than the Sickle cell anemia one which we worked on earlier, including Cystic Fibrosis, and Gaucher disease. As for our technical part of the team, the software and hardware team are working on integrating Bayesian Statistical analysis of genetic diseases into a software connected to the hand-held device created earlier and a lab-desktop device.</p>
                 </div>
             </div>
-
+            <!--Header + Text section________________________________________________________________________________________-->
             <div class="block">
                 <div class="blockContainer">
                     <h1 class="blockTitle text-ubuntu">Biology + Technology coming together!</h1>
@@ -164,16 +56,44 @@
                 </div>
             </div>
 
+            <!--References________________________________________________________________________________________-->
             <div class="block purpleBackground">
                 <div class="blockContainer">
-                    <h1 class="blockTitle text-ubuntu">References</h1>
-                    <p class="blockContent text-ubuntu">Biolabs, N. E. (n.d.). EnGen® Lba Cas12a (Cpf1). Retrieved from https://international.neb.com/products/m0653-engen-lba-cas12a-cpf1#Product Information_Notes</p>
-                    <p class="blockContent text-ubuntu">Chen, J. S., Ma, E., Harrington, L. B., Da Costa, M., Tian, X., Palefsky, J. M., & Doudna, J. A. (2018). CRISPR-Cas12a target binding unleashes indiscriminate single-stranded DNase activity. Science, 360(6387), 436-439.</p>
+                    <h1 class="blockTitle text-ubuntu refTitle">References</h1>
+                    <ol class = "orderedList blockContent">
+                        <li>
+                            <a href="https://international.neb.com/products/m0653-engen-lba-cas12a-cpf1#Product%20Information" class="links blockContent text-ubuntu">Biolabs, N. E. (n.d.). EnGen® Lba Cas12a (Cpf1).</a>
+                        </li>
+                        <li>
+                            <a href="" class="links blockContent text-ubuntu">Chen, J. S., Ma, E., Harrington, L. B., Da Costa, M., Tian, X., Palefsky, J. M., & Doudna, J. A. (2018). CRISPR-Cas12a target binding unleashes indiscriminate single-stranded DNase activity. Science, 360(6387), 436-439.</a>
+                        </li>
+                    </ol>
                 </div>
             </div>
         </section>
     </main>
 
     <script src="https://2019.igem.org/wiki/index.php?title=Team:CMUQ/jquery&action=raw&ctype=text/javascript"></script>
-</body>
+    <script src="https://2019.igem.org/wiki/index.php?title=Team:CMUQ/swiperjs&action=raw&ctype=text/javascript"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+        var swiper = new Swiper('.swiper-container', {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+            },
+            pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+            },
+            navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+            },
+        });
+        </script>
+    </body>
 </html>
