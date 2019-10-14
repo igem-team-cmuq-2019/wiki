@@ -1,0 +1,133 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>iGEM 2019 CMUQ</title>
+    <link rel="stylesheet" href="https://2019.igem.org/wiki/index.php?title=Team:CMUQ/swipercss&action=raw&ctype=text/css">
+    <link rel="stylesheet" href="https://2019.igem.org/wiki/index.php?title=Template:CMUQ/css&action=raw&ctype=text/css">
+
+</head>
+<body>
+    <main class="text-ubuntu">
+        <section class="jumbotron text-ubuntu">
+            <div class="mainHeader text-ubuntu">
+                <h1 class="text-ubuntu">Software</h1>
+            </div>
+        </section>
+
+        <section class="description text-ubuntu">            
+            <!--Header + Text section________________________________________________________________________________________-->
+            <div class="block">
+                <div class="blockContainer">
+                    <h1 class="blockTitle text-ubuntu">Two Software Components: Pre-counseling and Bluetooth</h1>
+                    <p class="blockContent text-ubuntu">All code is publicly available on <a href = "">github</a>. We implemented everything using Python3 and compiled a Windows executable.</p>
+                </div>
+            </div>
+
+            <!--Header + Text section________________________________________________________________________________________-->
+            <div class="block purpleBackground">
+                <div class="blockContainer">
+                    <h1 class="blockTitle text-ubuntu">Pre-counseling</h1>
+                    <p class="blockContent text-ubuntu">Pre-counseling consists of probabilistic diagnosis using historical data. We obtained a database from Qatar Biobank containing positive and negative diagnosis details for hundreds of patients. Each patient’s record indicates their ethnicity, age, mother/father genotypes, and parent relatedness. We converted this patient information into a set of binary features. Using this and final diagnosis of the patient, we constructed a prediction algorithm. Our prediction algorithm consists of a neural network which takes in this set of features, does some inner calculations, and outputs the likelihood of testing positive. Using the online database, we obtained an accuracy of <span><strong>NUMBER</strong></span>.</p>
+                    <!--Table________________________________________________________________________________________-->
+                    <div class="block purpleBackground table alignWidth text-ubuntu blockNoHorizPadding">
+                        <p class="blockContent text-ubuntu">Sample Database Entries for our neural network:</p>
+                        <table>
+                            <tr>
+                                <td class="text-ubuntu">Patient</td>
+                                <td class="text-ubuntu">Age</td>
+                                <td class="text-ubuntu">Ethnicity</td>
+                                <td class="text-ubuntu">Mother/Carrier</td>
+                                <td class="text-ubuntu">Father/Carrier</td>
+                                <td class="text-ubuntu">Consanguineous status</td>
+                                <td class="text-ubuntu">Positive?</td>
+
+                            </tr>
+                            <tr>
+                                <td class="text-ubuntu whiteBackground">1</td>
+                                <td class="text-ubuntu whiteBackground">32</td>
+                                <td class="text-ubuntu whiteBackground">African</td>
+                                <td class="text-ubuntu whiteBackground">Y</td>
+                                <td class="text-ubuntu whiteBackground">N</td>
+                                <td class="text-ubuntu whiteBackground">N</td>
+                                <td class="text-ubuntu whiteBackground">Y</td>
+
+                            </tr>
+                            <tr>
+                                <td class="text-ubuntu">2</td>
+                                <td class="text-ubuntu">45</td>
+                                <td class="text-ubuntu">Asian</td>
+                                <td class="text-ubuntu">N</td>
+                                <td class="text-ubuntu">N</td>
+                                <td class="text-ubuntu">Y</td>
+                                <td class="text-ubuntu">Y</td>
+                            </tr>
+                        </table>
+                        <p class="blockContent text-ubuntu">When our application is started, the user is asked to input their own set of features (age, ethnicity, etc…). Following this, our neural network inputs this new unseen data and outputs the probability of having the disease.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!--Table________________________________________________________________________________________-->
+            <div class="block table alignWidth text-ubuntu blockNoHorizPadding">
+                <h1 class="blockTitle text-ubuntu">Bluetooth</h1>
+                <p class="blockContent text-ubuntu">Our application makes a connection with our bluetooth-enabled device. Once a pairing has been secured, the application keeps track of any new tests recorded. The handheld device measures fluorescence and as a result outputs a number out of 255.</p>
+                <table>
+                    <tr>
+                        <th class="text-ubuntu">Fluorescence</th>
+                        <th class="text-ubuntu">Value</th>
+
+                    </tr>
+                    <tr>
+                        <td class="text-ubuntu blackBackground"></td>
+                        <td class="text-ubuntu">0</td>
+
+
+                    </tr>
+                    <tr>
+                        <td class="text-ubuntu neonGreenBackground"></td>
+                        <td class="text-ubuntu">127</td>
+                    </tr>
+                    <tr>
+                        <td class="text-ubuntu darkGreenBackground"></td>
+                        <td class="text-ubuntu">255</td>
+                    </tr>
+                </table>
+                <p class="blockContent text-ubuntu">Each disease we are testing we test for will have a different threshold value for positive/negative result. Thus, after conducting several tests using our bluetooth device, we come up with a threshold value.</p>
+            </div>
+
+            <!--Header + Text section________________________________________________________________________________________-->
+            <div class="block purpleBackground">
+                <div class="blockContainer">
+                    <h1 class="blockTitle text-ubuntu">Diagnosis</h1>
+                    <p class="blockContent text-ubuntu">Our application outputs both the statistical probability of pre-counseling and the result of our handheld device.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://2019.igem.org/wiki/index.php?title=Team:CMUQ/jquery&action=raw&ctype=text/javascript"></script>
+    <script src="https://2019.igem.org/wiki/index.php?title=Team:CMUQ/swiperjs&action=raw&ctype=text/javascript"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+        var swiper = new Swiper('.swiper-container', {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+            },
+            pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+            },
+            navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+            },
+        });
+        </script>
+    </body>
+</html>

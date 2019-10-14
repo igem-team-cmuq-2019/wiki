@@ -100,6 +100,16 @@ html, body {
 .description .whiteBackground {
     background-color: #fff !important;
 }
+.description .blackBackground {
+    background-color: #000 !important;
+}
+.description .neonGreenBackground {
+    background-color: #00ff00 !important;
+}
+.description .darkGreenBackground {
+    background-color: #38761d !important;
+}
+
 
 .description .purpleText {
     color: var(--purple-color) !important;
