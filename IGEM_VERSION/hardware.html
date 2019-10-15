@@ -17,6 +17,105 @@
         </section>
 
         <section class="description text-ubuntu">
+            <!--Header + Text section________________________________________________________________________________________-->
+            <div class="block purpleBackground">
+                <div class="blockContainer">
+                    <p class="blockContent text-ubuntu">With the recent developments of the Cas12a enzyme, our biology team was able to use its matching and breaking abilities to snap matching gene sequences to that of a specific genetic disease, such as: sickle cell anemia, cystic fibrosis, etc. With the aid of an identifier molecule that has a fluorescent tag, we can map these identifiers throughout the genetic sequence, such that when the Cas12a enzyme snaps on matching gene sequences, the identifier’s fluorescent tag gets released. To be able to detect the level of fluorescent tags released, we have to excite the tags with 535 nm of light, and at full emission should emit back at 555 nm.</p>
+                    <p class="blockContent text-ubuntu">Keeping the quantities of identifiers controlled, we can analyze multiple test trials to probabilistically plot a threshold value for which we can deterministically say whether a patient’s genes carry a certain genetic disease. </p>
+                </div>
+            </div>
+
+            <!--Header + Text section + 2 Pictures________________________________________________________________________________________-->
+            <div class="block">
+                <div class="blockContainer textGrid">
+                    <h1 class="blockTitle text-ubuntu">Design</h1>
+                    <p class="blockContent text-ubuntu">In tight tandem with the bio-lab team, the hardware team was able to design and develop a complete hardware interface. After coming with a list of requirements that the device should satisfy, we went through several iterations of components, circuit designs, and overall schematics before coming to a design we were all happy with.</p>
+                </div>
+            </div>
+
+            <!--Text + Picture on left________________________________________________________________________________________-->
+            <div class="block purpleBackground">
+                <div class="block picNoWrap alignWidth text-ubuntu blockNoHorizPadding purpleBackground">
+                    <h1 class="blockTitle text-ubuntu">Design 1</h1>
+                    <div class="blockContainer">
+                        <p class="blockContent">
+                            <span>This design was built around the purpose of a tight and small product that fit all the modules as close as possible. It was to be 15cm by 2cm, roughly the size of a marker, with a hole on one end to insert the testing cuvette. Given the size restraints, battery life and actual user functionality was limited with how small it was.</span>
+                        </p>
+                        <img class="leftMargin" src="https://2019.igem.org/wiki/images/e/e2/T--CMUQ--hardwareDrawing1.png">
+                    </div>
+                </div>
+            </div>
+
+            <!--Text + Picture on left________________________________________________________________________________________-->
+            <div class="block picNoWrap alignWidth text-ubuntu blockNoHorizPadding">
+                <h1 class="blockTitle text-ubuntu">Design 2</h1>
+                <div class="blockContainer">
+                    <p class="blockContent">
+                        <span>This next design was inspired to be more ergonomic in shape and size, as well improve the cuvette encapsulation module. Given our specs it would have had a 100% increase in battery life, and much easier user handling. The design featured a skeleton that housed the cuvette module and electronics container, surrounded by two outer sheaths. One of the sheaths was movable and would snap open and close with neodymium magnets to reveal the cuvette module. This design was limited by its sophisticated construction, and because the team, in tandem with the biology team, decided to move from cuvettes to micro tubes for closer fluorescence analysis.</span>
+                    </p>
+                    <img class="leftMargin" src="https://2019.igem.org/wiki/images/f/ff/T--CMUQ--hardwareDrawing2.png">
+                </div>
+            </div>
+            <!--Text + Picture on left________________________________________________________________________________________-->
+            <div class="block purpleBackground">
+                <div class="block picNoWrap alignWidth text-ubuntu blockNoHorizPadding purpleBackground">
+                    <h1 class="blockTitle text-ubuntu">Design 3</h1>
+                    <div class="blockContainer">
+                        <p class="blockContent">
+                            <span>This final design complemented the best features of previous designs while also shaping it around the specificity of the micro tube. The design features a similar shape to the last without any sheathing outer walls, only a partly rotating cover to open and close the micro tube encapsulation module. Otherwise it is very similar in structure to the last with an electronics container and wire channels.</span>
+                        </p>
+                        <img class="leftMargin" src="https://2019.igem.org/wiki/images/7/74/T--CMUQ--hardwareDesign3.png">
+                    </div>
+                </div>
+            </div>
+
+            <!--Header + Text section + Picture________________________________________________________________________________________-->
+            <div class="block">
+                <div class="blockContainer">
+                    <h1 class="blockTitle text-ubuntu">The interface works as such:</h1>
+                    <p class="blockContent text-ubuntu">A specifically shaped slot is made for the microtube - with patient DNA sequence, target DNA sequence, and Cas12a enzyme - to fit in.</p>
+                    <p class="blockContent text-ubuntu">The slot is fitted with a custom light detection sensor, and an LED that emits light at 530nm.</p>
+                    <p class="blockContent text-ubuntu">The device is operated by an Arduino based PCB, equipped with a Bluetooth module, LCD screen, and a Lithium Polymer battery for portability.</p>
+                    <p class="blockContent text-ubuntu">The motherboard controls the entire program sequence and follows this control flow:</p>
+                    <img id="blockPicture" src="https://2019.igem.org/wiki/images/1/11/T--CMUQ--hardwareIllustration.png">
+                </div>
+            </div>
+            
+            <!--Header + Text section________________________________________________________________________________________-->
+            <div class="block purpleBackground">
+                <div class="blockContainer">
+                    <!--Table________________________________________________________________________________________-->
+                    <div class="block purpleBackground table alignWidth text-ubuntu blockNoHorizPadding">
+                        <h1 class="blockTitle text-ubuntu">Individual Parts:</h1>
+                        <table>
+                            <tr>
+                                <td class="text-ubuntu">TSL252</td>
+                                <td class="text-ubuntu">This is a specific ambient light sensor that responds to light by changes of output voltage. With a supply of 5V (VCC), the fluorescence of the micro tube creates a range of output voltage from the sensor of 2.2V to 2.8V. This is read via an Analog pin on the Arduino board and mapped to a PWM value.</td>
+                            </tr>
+                            <tr>
+                                <td class="text-ubuntu whiteBackground">HC-05</td>
+                                <td class="text-ubuntu whiteBackground">This is a fairly popular Bluetooth module that allows serial communication through RX and TX terminals. This is connected to the Arduino for live relay of fluorescence data to a computer for analysts to compile with other data per analysis. The HC-05 was programmed with AT commands into ‘Slave’ mode to automatically connect to anything that connects to it, and takes in specifically encrypted commands so as to protect the device from ill-intentioned attackers.</td>
+                            </tr>
+                            <tr>
+                                <td class="text-ubuntu">Arduino Pro Mini: </td>
+                                <td class="text-ubuntu">The specific model we chose is a 5V @ 16MHz, for direct communication with the amplified LiPo charger that outputs at 5V exactly. Although the HC-05 communicates at 3.3V, we had to integrate a voltage divider to protect the HC05 from surges and ensure a stable line of communication. Otherwise the Pro Mini provides a great low profile and a variety of analog and digital pins, with I2C and Serial communication for our LCD and Bluetooth modules.</td>
+                            </tr>
+                            <tr>
+                                <td class="text-ubuntu whiteBackground">128x32 OLED LCD: </td>
+                                <td class="text-ubuntu whiteBackground">A low profile display for live measurements and instructions of the device, regardless of the Bluetooth connection. It was great for our project, because it communicates with an I2C interface and has supply voltage options for 3.3 and 5V. </td>
+                            </tr>
+                            <tr>
+                                <td class="text-ubuntu">Micro Tube: </td>
+                                <td class="text-ubuntu">A micro test tube provided better results than a cuvette given its smaller form factor. With the cuvette, we had to dilute the solution to actually fill the cuvette enough for the sensor and LED. A micro tube allows the same material with little to none fluorescence resistance and no dilution of the substance.</td>
+                            </tr>
+                            <tr>
+                                <td class="text-ubuntu whiteBackground">535nm LED: </td>
+                                <td class="text-ubuntu whiteBackground">On the color spectrum, 535nm of light is about a light green color and is exactly what we need to excite the fluorescent tags that have been broken off by the Cas12a to determine how much of the target gene was matched to the disease.</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
