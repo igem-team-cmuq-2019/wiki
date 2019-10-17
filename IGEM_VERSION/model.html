@@ -1,0 +1,53 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>iGEM 2019 CMUQ</title>
+        <link rel="stylesheet" href="https://2019.igem.org/wiki/index.php?title=Team:CMUQ/swipercss&action=raw&ctype=text/css">
+        <link rel="stylesheet" href="https://2019.igem.org/wiki/index.php?title=Template:CMUQ/css&action=raw&ctype=text/css">
+
+    </head>
+    <body>
+        <main class="text-ubuntu">
+            <section class="jumbotron text-ubuntu">
+                <div class="mainHeader text-ubuntu">
+                    <h1 class="text-ubuntu">Model</h1>
+                </div>
+            </section>
+
+            <section class="description text-ubuntu">
+                 <!--Header + Text section________________________________________________________________________________________-->
+                <div class="block purpleBackground">
+                    <div class="blockContainer">
+                        <p class="blockContent text-ubuntu">As the key element of our pre-counseling, our software team implemented a machine learning algorithm that receives the user’s ethnicity, age, mother/father carrier status and consanguineous status as input and returns the statistical probability of the user having Sickle-Cell Anemia or Cystic Fibrosis. This was implemented as a neural network, with all model training being conducted on a database. Our team also statistically evaluated the biological mechanism and our device separately. We considered the distribution of True/False Positives and True/False Negatives to compute precision, recall, and F1 score. This allowed us to track our progress and verify that changes to mechanism and design resulted in project improvements. We also used the pre-counseling probability to bias the result of our device and produce a high-accuracy diagnosis.</p>
+                    </div>
+                </div>
+                
+            </section>
+        </main>
+
+        <script src="https://2019.igem.org/wiki/index.php?title=Team:CMUQ/jquery&action=raw&ctype=text/javascript"></script>
+        <script src="https://2019.igem.org/wiki/index.php?title=Team:CMUQ/swiperjs&action=raw&ctype=text/javascript"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper('.swiper-container', {
+                spaceBetween: 30,
+                centeredSlides: true,
+                autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+                },
+                pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+                },
+                navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+                },
+            });
+        </script>
+    </body>
+</html>
