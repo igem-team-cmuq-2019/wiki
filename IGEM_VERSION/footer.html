@@ -30,18 +30,19 @@
                 margin-right: 50px;
             }
             footer .rightSide img {
-                height: 80px;
-                width: auto;
+                height: 55px;
+                width: 55px;
+                object-fit: contain;
             }
-            footer .rightSide img:not(:last-child) {
-                margin-right: 15px;
+            footer .rightSide .circleNew:not(:last-child) {
+                margin-right: 5px;
             }
             footer .sectionTitle {
                 font-family: 'Ubuntu' !important;
                 color: #fff !important;
                 font-size: 16pt !important;
             }
-            footer img {
+            footer .leftSide img {
                 width: 20px;
             }
             footer .circle {
@@ -77,12 +78,37 @@
                 border: 0 solid transparent !important;
                 vertical-align: middle !important;
             }
+            .circleNew {
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #fff;
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+            }
             @media (min-width : 320px) and (max-width : 767px) {
                 footer .leftSide {
                     margin-left: 10px;
                 }
                 footer .rightSide {
                     margin-right: 10px;
+                }
+                footer .rightSide .sponsors {
+                    display: flex;
+                    flex-direction: column;
+                }
+                footer .rightSide .circleNew {
+                    width: 70px;
+                    height: 70px;
+                    margin-right: 0;
+                }
+                footer .rightSide img {
+                    height: 45px;
+                    width: 45px;
+                }
+                footer .rightSide .circleNew:not(:last-child) {
+                    margin-bottom: 5px;
                 }
             }
             /* END footer styles */
@@ -114,8 +140,9 @@
                 </div>
                 <div class="rightSide">
                     <div class="sponsors">
-                        <img src="https://2019.igem.org/wiki/images/0/0d/T--CMUQ--wikiimagecmuq.png">
-                        <img src="https://2019.igem.org/wiki/images/9/9b/T--CMUQ--wikiimgqf.png">
+                        <div class="circleNew"><img src="https://2019.igem.org/wiki/images/0/0d/T--CMUQ--wikiimagecmuq.png"></div>
+                        <div class="circleNew"><img src="https://2019.igem.org/wiki/images/9/9b/T--CMUQ--wikiimgqf.png"></div>
+                        <div class="circleNew"><img src="https://2019.igem.org/wiki/images/6/60/T--CMUQ--alkhalijiFooterVersion.png"></div>
                     </div>
                 </div>
             </div>
