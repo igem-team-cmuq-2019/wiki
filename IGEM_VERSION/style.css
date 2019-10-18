@@ -37,6 +37,7 @@ html, body {
     margin: 0;
     font-size: 48pt;
     color: #fff;
+    line-height: 48pt;
 }
 .jumbotron .mainHeader h1 a {
     color: #fff !important;
@@ -128,7 +129,7 @@ html, body {
     color: #fff !important;
 }
 .description .block {
-    padding: 50px;
+    padding: 20px;
 }
 .description .block .blockContent {
     line-height: 28pt !important;
@@ -261,6 +262,13 @@ html, body {
     outline: none;
     color: #000;
 }
+.collapsible details .detailsContent {
+    padding: 20px;
+    background-color: #eee;
+    margin: 0;
+    outline: none;
+    color: #000;
+}
 .collapsible details {
     padding: 20px;
 }
@@ -331,7 +339,7 @@ html, body {
     width: 50% !important;
 }
 .blockNoHorizPadding {
-    padding: 50px 0 !important;
+    padding: 20px 0 !important;
 }
 .picWrap .blockContent, .picNoWrap .blockContent {
     color: var(--purple-color) !important;
@@ -386,6 +394,18 @@ html, body {
 }
 .padding-bottom-10 {
     padding-bottom: 10px !important;
+}
+.clear-user-agent-styles-padding {
+    background-color: transparent !important;
+    border: 0 solid transparent !important;
+    outline: none !important;
+    background: transparent !important;
+    padding: 20px !important;
+}
+.clear-user-agent-styles-padding td {
+    padding: 20px !important;
+    border: 0 solid transparent !important;
+    vertical-align: middle !important;
 }
 /* END misc. styles */
 
