@@ -348,30 +348,37 @@ html, body {
     text-align: justify !important;
 }
 .picWrap img {
-            width: 500px;
-            height: 375px;
-            float: right;
-            margin: 0 0 20px 20px;
-        }
+    max-width: 350px !important;
+    max-height: 350px !important;
+    min-width: 350px !important;
+    min-height: 350px !important;
+    float: right;
+    margin: 0 0 20px 20px;
+    object-fit: contain;
+}
 
-        .picNoWrap .blockContainer {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-        }
-        .picNoWrap img, .picNoWrap p {
-            display: inline-block;
-        }
-        .picNoWrap img.leftMargin {
-            margin: 0 0 0 20px;
-        }
-        .picNoWrap img.rightMargin {
-            margin: 0 20px 0 0;
-        }
-        .picNoWrap img.leftMargin {
-            width: 500px;
-            height: 375px;
-        }
+.picNoWrap .blockContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-shrink: 0;
+}
+.picNoWrap img, .picNoWrap p {
+    display: inline-block;
+}
+.picNoWrap img.leftMargin {
+    margin: 0 0 0 20px;
+}
+.picNoWrap img.rightMargin {
+    margin: 0 20px 0 0;
+}
+.picNoWrap img.leftMargin {
+    max-width: 350px !important;
+    max-height: 350px !important;
+    min-width: 350px !important;
+    min-height: 350px !important;
+    object-fit: contain;
+}
 /* END template styles */
 
 
@@ -536,6 +543,15 @@ html, body {
     .teamPicture {
         background-attachment: inherit;
         background-size: contain;
+    }
+    .picNoWrap .blockContainer {
+        flex-direction: column !important;
+    }
+    .blockContainer img, .picNoWrap img.leftMargin {
+        width: 100% !important;
+        height: 200px !important;
+        margin: 0 !important;
+        object-fit: cover;
     }
 }
 /* END media queries */
