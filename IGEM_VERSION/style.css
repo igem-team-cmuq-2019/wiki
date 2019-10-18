@@ -357,6 +357,8 @@ html, body {
     object-fit: contain;
 }
 
+
+
 .picNoWrap .blockContainer {
     display: flex;
     flex-direction: row;
@@ -366,10 +368,10 @@ html, body {
 .picNoWrap img, .picNoWrap p {
     display: inline-block;
 }
-.picNoWrap img.leftMargin {
+.picNoWrap img.leftMargin, .picNoWrap video.leftMargin {
     margin: 0 0 0 20px;
 }
-.picNoWrap img.rightMargin {
+.picNoWrap img.rightMargin, .picNoWrap video.rightMargin {
     margin: 0 20px 0 0;
 }
 .picNoWrap img.leftMargin {
