@@ -3,364 +3,102 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>iGEM 2019 CMUQ</title>
-    <link rel="stylesheet" href="anchor.css">
-
-    <style>
-        :root {
-            --blue-color: #252D73;
-            --purple-color: #61429B;
-            --white-color: #E8E8E8;
-            --burgundy-color: #73194D;
-            --gold-color: #E4CD7D;
-            --grey-color: #454545;
-        }
-        html, body {
-            width: 100%;
-            margin: 0;
-        }
-        /* * {
-            border: 1px solid red;
-        } */
-        /* START jumbotron styles */
-        .jumbotron {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            max-width: 100%;
-            height: 400px;
-            background-image: url(https://2019.igem.org/wiki/images/f/fc/T--CMUQ--wikiimglab.jpeg);
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: bottom;
-            background-attachment: fixed;
-        }
-        .jumbotron .content {
-            text-align: center;
-            color: #fff;
-            line-height: 32px;
-        }
-        .jumbotron .content h1 {
-            margin: 0;
-            font-size: 32pt;
-            color: #fff;
-        }
-        .jumbotron .content h1 a {
-            color: #fff !important;
-            text-decoration: none !important;
-            border-bottom: dotted 3px rgba(255, 255, 255, 0.5) !important;
-            line-height: 32pt !important;
-        }
-        /* END jumbotron styles */
-
-        /* START pageContent styles */
-        .sideBarSplit {
-            display: flex;
-            flex-direction: row;
-        }
-        /* END pageContent styles */
-
-        /* START details styles */
-        .details {
-            width: calc(100% - 30px);
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        .details .members {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-        .details .members .member:nth-child(odd) {
-            background-color: #f2f2f2;
-        }
-        .details .member {
-            /* margin: 20px; */
-            padding: 30px;
-        }
-        .details .member {
-            display: flex;
-            flex-direction: row;
-            align-items: top;
-        }
-        .details .member .memberPicture {
-            display: block;
-            width: 300px;
-            height: 300px;
-            object-fit: cover;
-            border-radius: 3px;
-            margin-right : 100px;
-        }
-
-        .details .member .textPicture {
-            display: block;
-            width: 100%;
-            object-fit: cover;
-            border-radius: 3px;
-            margin-right : 100px;
-        }
-        .details .member .memberPosition {
-            flex-basis: 3em;
-            flex-shrink: 0;
-            width: 75px;
-            height: 75px;
-            background-color: var(--purple-color);
-            color: #fff;
-            text-align: center;
-            line-height: 75px;
-            font-size: 22pt !important;
-            display: block;
-            margin-right: 40px;
-        }
-        .details .member .memberName {
-            display: inline-block;
-            margin: 0;
-            padding: 0;
-            font-size: 25pt !important;
-            font-weight: bold;
-            color: var(--purple-color);
-        }
-        .details .member .memberNumbers {
-            font-size: 28pt !important;
-            line-height: 28pt;
-            font-weight: bold;
-            margin: 10px auto;
-        }
-        .details .member .memberDesc {
-            font-size: 16pt !important;
-            line-height: 30pt;
-        }
-        .details .member .memberLinkedIn {
-            position: absolute;
-            display: inline-block;
-            height: 18px;
-            margin: 10px 0 0 10px;
-        }
-        .details .member .memberTitle {
-            display: block;
-            margin: 0;
-            color: #888;
-            font-size: 14px !important;
-        }
-        .details .member .overlayContainer:hover .overlay, .details .member .overlayContainer:active .overlay {
-            opacity: 1;
-        }
-        .details .purpleBackground {
-            background-color: var(--purple-color);
-        }
-        .details .member .overlay {
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            max-height: 100%;
-            max-width: 100%;
-            opacity: 0;
-            transition: .5s ease;
-            background-color: rgba(255, 255, 255, 0.8);
-            padding: 10px 20px;
-        }
-        .details .member .overlayText {
-            color: #000;
-            font-size: 12pt !important;
-            line-height: 1.5rem;
-        }
-        .details .member .viewResume {
-            text-decoration: none;
-            color: var(--burgundy-color);
-        }
-        /* END team styles */
-
-        /* START references styles */
-        .references {
-            /* margin: 50px auto 0 auto; */
-        }
-        .references .blockContainer {
-            max-width: 800px;
-            width: calc(100% - 100px);
-            margin: 0 auto;
-        }
-        .references .purpleBackground {
-            width: 100%;
-            background-color: var(--purple-color);
-        }
-        .references .block.purpleBackground p, .references .block.purpleBackground h1 {
-            color: #fff;
-        }
-        .references .block {
-            /* padding: 50px 0; */
-        }
-        .references .block .blockContent {
-            line-height: 28pt !important;
-            font-size: 16pt !important;
-            margin-bottom: 30px;
-        }
-        .references .block .blockTitle {
-            line-height: 28pt !important;
-            font-size: 22pt !important;
-        }
-        /* END references styles */
-
-        /* START misc. styles */
-        @font-face {
-            font-family: 'Ubuntu';
-            src: url(https://2019.igem.org/wiki/images/c/c3/T--CMUQ--wikiubunturegular.ttf);
-        }
-        .text-ubuntu {
-            font-family: 'Ubuntu' !important;
-        }
-        .sectionTitle {
-            font-family: 'Ubuntu' !important;
-            color: #000 !important;
-            text-align: center;
-            font-size: 35pt !important;
-            margin-bottom: 30px !important;
-            line-height: 26pt !important;
-        }
-        .padding-bottom-10 {
-            padding-bottom: 10px !important;
-        }
-        .purpleColor {
-            color: var(--purple-color);
-        }
-        /* END misc. styles */
-
-        /* START media queries */
-        /* Mobiles/Tablets */
-        @media (min-width : 320px) and (max-width : 767px) {
-            .jumbotron .content h1 {
-                font-size: 16pt;
-            }
-            .jumbotron {
-                background-attachment: inherit;
-            }
-            .description .block .blockContent {
-                line-height: 18pt !important;
-                font-size: 12pt !important;
-            }
-            .description .block .blockTitle {
-                line-height: 18pt !important;
-                font-size: 20pt !important;
-            }
-        }
-        @media (min-width : 320px) and (max-width : 1050px) {
-            .details .member {
-                flex-direction: column;
-            }
-            .details .member .memberPosition {
-                flex-basis: 0%;
-                margin-bottom: 15px;
-            }
-            .details .member .memberPicture {
-                margin: 0 auto 20px auto;
-            }
-        }
-        /* END media queries */
-    </style>
+    <title>Project Details</title>
+    <link rel="stylesheet" href="https://2019.igem.org/wiki/index.php?title=Team:CMUQ/swipercss&action=raw&ctype=text/css">
+    <link rel="stylesheet" href="https://2019.igem.org/wiki/index.php?title=Template:CMUQ/css&action=raw&ctype=text/css">
 </head>
 <body>
     <main class="text-ubuntu">
         <section class="jumbotron text-ubuntu">
-            <div class="content text-ubuntu">
+            <div class="mainHeader text-ubuntu">
                 <h1 class="text-ubuntu">Project Details</h1>
+                
             </div>
         </section>
-        <div class="sideBarSplit">
-            <ul id="nav" class = "scrollMenu">
-                <li class = "scrollMenu"><a href="#section-1" class="js-anchor-link">Current CRISPR Methods</a></li>
-                <li class = "scrollMenu"><a href="#section-2" class="js-anchor-link">Current Carrier Testing Methods</a></li>
-                <li class = "scrollMenu"><a href="#section-3" class="js-anchor-link">Target Diseases</a></li>
-                <li class = "scrollMenu"><a href="#section-4" class="js-anchor-link">References</a></li>
-            </ul>
 
-            <div class="pageContent">
-                <section id="section-1" class="references section">
-                    <div class="block">
-                        <div  class="blockContainer">
-                            <h1 class="blockTitle text-ubuntu">Current CRISPR methods</h1>
-                            <p class="blockContent text-ubuntu">CRISPR is becoming an indispensable tool in biological research. Once known as the bacterial immune system against invading viruses, the programmable capacity of the Cas9 enzyme is now revolutionizing diverse fields of medical research, biotechnology, and agriculture. CRISPR-Cas9 is no longer just a gene-editing tool; the application areas of catalytically impaired inactive Cas9, including gene regulation, epigenetic editing, chromatin engineering, and imaging, now exceed the gene-editing functionality of WT Cas9 [1]. Some potential application of this system could also be used in the treatment of different diseases, such as pulmonary, gastrointestinal, hematologic, immune system, viral, autoimmune and inflammatory diseases, and cancer [6] </p>        
-                        </div>
-                    </div>
-                </section>
-
-                <section id="section-2" class="references section">
-                    <div class="block purpleBackground">
-                        <div class="blockContainer">
-                            <h1 class="blockTitle text-ubuntu">Current Carrier Testing Methods</h1>
-                            <p class="blockContent text-ubuntu">TBD</p>        
-                        </div>
-                    </div>
-                </section>
-
-                <section id="section-3" class="details text-ubuntu section">
-                    <h1 class="sectionTitle">Target Diseases</h1>
-                    <div class="members text-ubuntu">
-                        <div class="member text-ubuntu">
-                                <div class="memberPosition text-ubuntu">1</div>
-                            <!-- <img class="memberPicture" src="https://2019.igem.org/wiki/images/7/7d/T--CMUQ--bacteria.png" alt="Team Member Picture"> -->
-                            <div class="memberContent">
-                                    <p class="memberName text-ubuntu">Sickle Cell Anemia</p>
-                                <p class="memberDesc text-ubuntu">Sickle Cell Anemia is one of the most common, severe, monogenic disorders
-                                        in the world. Genetic studies indicate that this condition is inherited in an autosomal
-                                        recessive pattern where parents, often showing no symptoms of the condition, each
-                                        contributes one copy of the mutated gene. This genetic disease is mainly caused by
-                                        rs334, a single nucleotide polymorphism (SNP) located in the Hemoglobin-
-                                        coding gene (HBB). Prevalence of sickle cell trait varies greatly between different
-                                        regions but reaches levels as high as 40 percent in some areas of sub-Saharan Africa,
-                                        eastern Saudi Arabia, and central India.</p> 
-                                        
-                                    <p class="memberNumbers text-ubuntu">14.63% of the population are
-                                            suffering from sickle cell anemia in Qatar.</p>
-                                    <p class="memberDesc">Current treatment might include antibiotics, vitamins, Blood transfusions, pain-relieving medicines, other medications and possibly surgery, suchas to correct vision problems or to remove a damaged spleen.</p>
-                            </div>
-                        </div>
-
-                        <div class="member text-ubuntu">
-                            <!-- <img class="memberPicture" src="https://2019.igem.org/wiki/images/7/7d/T--CMUQ--bacteria.png" alt="Team Member Picture"> -->
-                            <div class="memberPosition text-ubuntu">2</div>
-                            <div class="memberContent">
-                                <p class="memberName text-ubuntu">Cystic fibrosis</p>
-                                <p class="memberDesc text-ubuntu">Cystic fibrosis is caused by mutations in the CFTR which is responsible for
-                                        coding for chloride channel into and out of cells. Chloride ion is important in cells as it
-                                        regulates the movement of water in tissues (osmolarity), which is necessary for the
-                                        production of thin, freely flowing mucus. The phenotype observed are difficulty
-                                        breathing and coughing up mucus as a result of frequent lung infections. Other signs
-                                        and symptoms may include sinus infections, poor growth, fatty stool, clubbing of the
-                                        fingers and toes, and infertility in most males. There is no known statistics for the
-                                        detection rate in Qatar.</p>
-
-                                <!-- IMAGE HERE -->
-                                <img class = "textPicture" src="https://2019.igem.org/wiki/images/1/11/T--CMUQ--Cystic-fibrosis-statistic.png" alt="Cystic fibrosis">
-                                <p class="memberDesc text-ubuntu">Currently, there is no known cure for cystic fibrosis. Lung infections are treated
-                                        with antibiotics which may be given intravenously, inhaled, or by mouth. Sometimes,
-                                        the antibiotic azithromycin is used long term. Lung transplantation may be an option
-                                        if lung function continues to worsen. Pancreatic enzyme replacement and fat-soluble
-                                        vitamin supplementation is important, especially in the young.
-                                        </p>
-                            </div>
-                        </div>
-                </section>
-
-                <section class="references">
-                    <div class="block purpleBackground">
-                        <div class="blockContainer">
-                            <h1 class="blockTitle text-ubuntu">References</h1>
-                            <p class="blockContent text-ubuntu">1. Adli M. (2018). The CRISPR tool kit for genome editing and beyond. Nature communications, 9(1), 1911. doi:10.1038/s41467-018-04252-2</p>
-                            <p class="blockContent text-ubuntu">2. Diagnosis and Treatment of Sickle Cell Anemia, Mayo Clinic, retrieved from: https://www.mayoclinic.org/diseases-conditions/sickle-cell-anemia/diagnosis-treatment/drc-2035582</p>
-                            <p class="blockContent text-ubuntu">3. Z. O. Fawzi  et al(2003). Distribution of Hemoglobinopathies and Thalassemias in Qatari Nationals Seen at Hamad Hospital in Qatar. Qatar Medical Journal, Volume 2003, Issue 1, Jun 2003, DOI: https://doi.org/10.5339/qmj.2003.1.11</p>
-                            <p class="blockContent text-ubuntu">4. O'Sullivan, BP; Freedman, SD (30 May 2009). "Cystic fibrosis". Lancet. 373 (9678): 1891–904. doi:10.1016/s0140-6736(09)60327-5. PMID 19403164.</p>
-                            <p class="blockContent text-ubuntu">5. Rodríguez‑Rodríguez, D.R., Ramírez‑Solís, R., Garza‑Elizondo, M.A., Garza‑Rodríguez, M.D., & Barrera‑Saldaña, H.A. (2019). Genome editing: A perspective on the application of CRISPR/Cas9 to study human diseases (Review). International Journal of Molecular Medicine, 43, 1559-1574. https://doi.org/10.3892/ijmm.2019.4112</p>
-                        </div>
-                    </div>
-                </section>
+        <section class="description details text-ubuntu">
+            
+            <!--Header + Text section________________________________________________________________________________________-->
+            <div class="block">
+                <div class="blockContainer">
+                    <h1 class="blockTitle text-ubuntu"><span class="blockPos">1</span>Sickle Cell Anemia</h1>
+                    <p class="blockContent text-ubuntu">Sickle Cell Anemia is one of the most common, severe, monogenic disorders in the world. Genetic studies indicate that this condition is inherited in an autosomal recessive pattern where parents, often showing no symptoms of the condition, each contributes one copy of the mutated gene. This genetic disease is mainly caused by rs334, a single nucleotide polymorphism (SNP) located in the Hemoglobin- coding gene (HBB). Prevalence of sickle cell trait varies greatly between different regions but reaches levels as high as 40 percent in some areas of sub-Saharan Africa, eastern Saudi Arabia, and central India.</p>
+                    <p class="blockContent text-ubuntu" style="font-weight: bold !important; font-size: 22pt !important; color: #000 !important; line-height: 36pt !important;">14.63% of the population are suffering from sickle cell anemia in Qatar.</p>
+                    <p class="blockContent text-ubuntu">Current treatment might include antibiotics, vitamins, Blood transfusions, pain-relieving medicines, other medications and possibly surgery, suchas to correct vision problems or to remove a damaged spleen.</p>
+                </div>
             </div>
-        </div>
+
+            <!--Header + Text section________________________________________________________________________________________-->
+            <div class="block">
+                <div class="blockContainer">
+                    <h1 class="blockTitle text-ubuntu"><span class="blockPos">2</span>Cystic fibrosis</h1>
+                    <p class="blockContent text-ubuntu">Cystic fibrosis is caused by mutations in the CFTR which is responsible for
+                            coding for chloride channel into and out of cells. Chloride ion is important in cells as it
+                            regulates the movement of water in tissues (osmolarity), which is necessary for the
+                            production of thin, freely flowing mucus. The phenotype observed are difficulty
+                            breathing and coughing up mucus as a result of frequent lung infections. Other signs
+                            and symptoms may include sinus infections, poor growth, fatty stool, clubbing of the
+                            fingers and toes, and infertility in most males. There is no known statistics for the
+                            detection rate in Qatar.</p>
+
+                    <!-- IMAGE HERE -->
+                    <img class = "textPicture" src="https://2019.igem.org/wiki/images/1/11/T--CMUQ--Cystic-fibrosis-statistic.png" alt="Cystic fibrosis">
+                    <p class="blockContent text-ubuntu">Currently, there is no known cure for cystic fibrosis. Lung infections are treated
+                            with antibiotics which may be given intravenously, inhaled, or by mouth. Sometimes,
+                            the antibiotic azithromycin is used long term. Lung transplantation may be an option
+                            if lung function continues to worsen. Pancreatic enzyme replacement and fat-soluble
+                            vitamin supplementation is important, especially in the young.
+                            </p>
+                </div>
+            </div>
+            
+            <!--References________________________________________________________________________________________-->
+            <div class="block purpleBackground">
+                <div class="blockContainer">
+                    <h1 class="blockTitle text-ubuntu refTitle">References</h1>
+                    <ol class = "orderedList blockContent">
+                        <li>
+                            <a href="" class="links blockContent text-ubuntu">Adli M. (2018). The CRISPR tool kit for genome editing and beyond. Nature communications, 9(1), 1911.</a>
+                        </li>
+                        <li>
+                            <a href="https://www.mayoclinic.org/diseases-conditions/sickle-cell-anemia/diagnosis-treatment/drc-2035582" class="links blockContent text-ubuntu">Diagnosis and Treatment of Sickle Cell Anemia, Mayo Clinic.</a>
+                        </li>
+                        <li>
+                            <a href="" class="links blockContent text-ubuntu">Z. O. Fawzi  et al(2003). Distribution of Hemoglobinopathies and Thalassemias in Qatari Nationals Seen at Hamad Hospital in Qatar. Qatar Medical Journal, Volume 2003, Issue 1, Jun 2003.</a>
+                        </li>
+                        <li>
+                            <a href="" class="links blockContent text-ubuntu">O'Sullivan, BP; Freedman, SD (30 May 2009). "Cystic fibrosis". Lancet. 373 (9678): 1891–904.</a>
+                        </li>
+                        <li>
+                            <a href="" class="links blockContent text-ubuntu">Rodríguez‑Rodríguez, D.R., Ramírez‑Solís, R., Garza‑Elizondo, M.A., Garza‑Rodríguez, M.D., & Barrera‑Saldaña, H.A. (2019). Genome editing: A perspective on the application of CRISPR/Cas9 to study human diseases (Review). International Journal of Molecular Medicine, 43, 1559-1574.</a>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </section>
     </main>
 
     <script src="https://2019.igem.org/wiki/index.php?title=Team:CMUQ/jquery&action=raw&ctype=text/javascript"></script>
-    <script src="anchor.js"></script>
+    <script src="https://2019.igem.org/wiki/index.php?title=Team:CMUQ/swiperjs&action=raw&ctype=text/javascript"></script>
 
-</body>
+        <!-- Initialize Swiper -->
+        <script>
+        var swiper = new Swiper('.swiper-container', {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+            },
+            pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+            },
+            navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+            },
+        });
+        </script>
+    </body>
 </html>

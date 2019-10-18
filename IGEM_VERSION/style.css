@@ -466,6 +466,28 @@ html, body {
 }
 /* END team picture styles */
 
+/* START details styles */
+.details .block:nth-child(odd).block:not(.purpleBackground) {
+    background-color: #f2f2f2 !important;
+}
+.details .textPicture {
+    display: block !important;
+    margin: 0 auto !important;
+    max-width: 100% !important;
+    object-fit: contain !important;
+}
+.details .block .blockPos {
+    display: inline-block !important;
+    background-color: var(--purple-color) !important;
+    color: #fff !important;
+    width: 50px !important;
+    height: 50px !important;
+    text-align: center !important;
+    margin-right: 15px !important;
+    line-height: 50px !important;
+}
+/* END details styles */
+
 /* START misc. styles */
 @font-face {
     font-family: 'Ubuntu';
