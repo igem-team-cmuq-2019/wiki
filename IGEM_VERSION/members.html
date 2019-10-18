@@ -4,294 +4,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Members</title>
-
-    <style>
-        :root {
-            --blue-color: #252D73;
-            --purple-color: #61429B;
-            --white-color: #E8E8E8;
-            --burgundy-color: #73194D;
-            --gold-color: #E4CD7D;
-            --grey-color: #454545;
-        }
-        html, body {
-            width: 100%;
-            margin: 0;
-        }
-
-        /* START jumbotron styles */
-        .jumbotron {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            max-width: 100%;
-            height: 250px;
-            background-image: url(https://2019.igem.org/wiki/images/f/fc/T--CMUQ--wikiimglab.jpeg);
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: bottom;
-            background-attachment: fixed;
-        }
-        .jumbotron h1.dont-overflow {
-            overflow: visible;
-        }
-        .jumbotron .content {
-            text-align: center;
-            color: #fff;
-            line-height: 40px;
-        }
-        .jumbotron .content h1 {
-            margin: 0;
-            font-size: 32pt;
-            color: #fff;
-        }
-        .jumbotron .content h1 a {
-            color: #fff !important;
-            text-decoration: none !important;
-            border-bottom: dotted 3px rgba(255, 255, 255, 0.5) !important;
-            line-height: 32pt !important;
-        }
-        /* END jumbotron styles */
-
-        /* START abstract styles */
-        .projectAbstract {
-            margin: 0 auto;
-            width: 1200px;
-            max-width: calc(100% - 100px);
-            text-align: left;
-            line-height: 24pt !important;
-            font-size: 14pt !important;
-        }
-        /* END abstract styles */
-
-        /* START team styles */
-        .team .members {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-        .team .member {
-            margin: 20px;
-        }
-        .team .member .memberPicture {
-            display: block;
-            width: 300px;
-            height: 300px;
-            object-fit: cover;
-            border-radius: 3px;
-        }
-        .team .member .memberName {
-            display: inline-block;
-            margin: 10px 0 10px 0;
-            line-height: 20px;
-            padding: 0;
-            font-size: 20px !important;
-        }
-        .team .member .memberLinkedIn {
-            position: absolute;
-            display: inline-block;
-            height: 18px;
-            margin: 10px 0 0 10px;
-        }
-        .team .member .memberTitle {
-            display: block;
-            margin: 0;
-            color: #888;
-            font-size: 14px !important;
-        }
-        .team .member .overlayContainer {
-            position: relative;
-            width: 100%;
-        }
-        .team .member .overlayContainer:hover .overlay, .team .member .overlayContainer:active .overlay {
-            opacity: 1;
-        }
-        .team .member .overlay {
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            max-height: 100%;
-            max-width: 100%;
-            opacity: 0;
-            transition: .5s ease;
-            background-color: rgba(255, 255, 255, 0.8);
-            padding: 10px 20px;
-        }
-        .team .member .overlayText {
-            color: #000;
-            font-size: 12pt !important;
-            line-height: 1.5rem;
-        }
-        .team .member .viewResume {
-            text-decoration: none;
-            color: var(--burgundy-color);
-        }
-        /* END team styles */
-
-        /* START team picture styles */
-        .teamPicture {
-            width: 100%;
-            height: 500px;
-            background-image: url(https://2019.igem.org/wiki/images/a/af/T--CMUQ--wikiteam.jpg);
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-            background-attachment: fixed;
-        }
-        /* END team picture styles */
-
-        /* START sponsor styles */
-        .sponsorContainer {
-            display: flex;
-            justify-content: center;
-        }
-        .sponsorContainer img {
-            height: 100px;
-        }
-        /* END sponsor styles */
-
-        /* START misc. styles */
-        @font-face {
-            font-family: 'Ubuntu';
-            src: url(https://2019.igem.org/wiki/images/c/c3/T--CMUQ--wikiubunturegular.ttf);
-        }
-        .text-ubuntu {
-            font-family: 'Ubuntu' !important;
-        }
-        section {
-            margin-bottom: 50px;
-        }
-        .sectionTitle {
-            font-family: 'Ubuntu' !important;
-            color: #000 !important;
-            text-align: center;
-            font-size: 26pt !important;
-            margin-bottom: 30px !important;
-            line-height: 26pt !important;
-        }
-        .padding-bottom-10 {
-            padding-bottom: 10px !important;
-        }
-        .superscript-question, .superscript-question img {
-            display: inline-block;
-            width: 20px;
-            height: 20px;
-        }
-        /* END misc. styles */
-
-        /* START media queries */
-        /* Mobiles/Tablets */
-        @media (min-width : 320px) and (max-width : 767px) {
-            .jumbotron .content h1 {
-                font-size: 16pt;
-            }
-            .jumbotron {
-                background-attachment: inherit;
-            }
-            .jumbotron .content .superscript-question {
-                display: none;
-            }
-
-            .teamPicture {
-                background-attachment: inherit;
-                background-size: contain;
-            }
-        }
-        /* END media queries */
-
-        /* START tooltip styles */
-        @supports (display: grid) {
-            
-            *,*:before,*:after {
-                box-sizing: border-box;
-            }
-            
-            .box {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-            
-            .diamond {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                position: relative;
-                z-index: 2;
-                /* width: 50px;
-                height: 50px; */
-                text-align: center;
-                transform-origin: center;
-                top: -10px;
-            }
-            
-            .diamond span {
-                font-weight: bold;
-            }
-            
-            
-            .tooltip {
-                position: absolute;
-                z-index: 1;
-                padding: 0.25rem 1rem;
-                border-radius: 5px;
-                background: #29343d;
-                opacity: 0;
-                color: #cedfe9;
-                font-size: 0.875rem;
-                transition: opacity 500ms, transform 500ms;
-                width: 500px;
-                pointer-events: none;
-            }
-            
-            .tooltip:before {
-                content: '';
-                position: absolute;
-                top: -9px;
-                left: calc(50% - 10px);
-                width: 0;
-                height: 0;
-                border-left: 10px solid transparent;
-                border-right: 10px solid transparent;
-                border-bottom: 10px solid #29343d;
-            }
-            
-            .item:hover .tooltip,
-            .item:focus .tooltip {
-                opacity: 1;
-                transform: translateY(70px);
-            }
-            
-            .item {
-                position: relative;
-                /*padding: 1vw;*/
-                background-position:  left bottom;
-                /*background-size: 150% 100%;*/
-                transition: background 500ms, outline 500ms;
-                background-position: center;
-                outline: transparent;
-            }
-            
-            .item:hover,
-            .item:focus {
-                background-position: top right;
-            }
-        }
-        /* END tooltip styles */
-    </style>
+    <link rel="stylesheet" href="https://2019.igem.org/wiki/index.php?title=Template:CMUQ/css&action=raw&ctype=text/css">
 </head>
 <body>
     <main class="text-ubuntu">
         <section class="jumbotron text-ubuntu">
-            <div class="content text-ubuntu">
+            <div class="mainHeader text-ubuntu">
                 <h1 class="text-ubuntu">Team Members</h1>
             </div>
         </section>
 
         <section class="team text-ubuntu">
-            <h1 class="sectionTitle">Our Team</h1>
             <div class="members text-ubuntu">
                 <div class="member text-ubuntu">
                     <div class="overlayContainer text-ubuntu" onclick="">
@@ -303,7 +26,7 @@
                     <p class="memberName text-ubuntu">Dr. Annette Vincent</p>
                     <p class="memberTitle text-ubuntu">TEAM MENTOR</p>
                 </div>
-
+                <div class="divider"></div>
                 <div class="member">
                     <div class="overlayContainer" onclick="">
                         <img class="memberPicture" src="https://2019.igem.org/wiki/images/e/e6/T--CMUQ--wikikaan.jpeg" alt="Team Member Picture">
@@ -329,7 +52,7 @@
                     <a href="https://www.linkedin.com/in/joana-khatib-927b97157/"><img class="memberLinkedIn" src="https://2019.igem.org/wiki/images/8/83/T--CMUQ--wikilinkedin.png" alt="Member LinkedIn"></a>
                     <p class="memberTitle text-ubuntu">STUDENT CO-LEADER</p>
                 </div>
-
+                <div class="divider"></div>
                 <div class="member">
                     <div class="overlayContainer" onclick="">
                         <img class="memberPicture" src="https://2019.igem.org/wiki/images/3/32/T--CMUQ--wikiandrew.jpeg" alt="Team Member Picture">
@@ -475,14 +198,6 @@
         </section>
 
         <section class="teamPicture text-ubuntu">
-        </section>
-
-        <section class="sponsors text-ubuntu">
-            <h1 class="sectionTitle text-ubuntu">Our Sponsors</h1>
-            <div class="sponsorContainer">
-                <a href="https://www.qatar.cmu.edu/"><img src="https://2019.igem.org/wiki/images/0/0d/T--CMUQ--wikiimagecmuq.png" alt="Sponsor picture"></a>
-                <a href="https://www.qf.org.qa/"><img src="https://2019.igem.org/wiki/images/9/9b/T--CMUQ--wikiimgqf.png" alt="Sponsor picture"></a>
-            </div>
         </section>
     </main>
 

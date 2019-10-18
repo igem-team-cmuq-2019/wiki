@@ -375,6 +375,88 @@ html, body {
 /* END template styles */
 
 
+/* START team styles */
+.team .members {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.team .member {
+    margin: 20px;
+}
+.team .member .memberPicture {
+    display: block;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 3px;
+}
+.team .member .memberName {
+    display: inline-block;
+    margin: 10px 0 10px 0;
+    line-height: 20px;
+    padding: 0;
+    font-size: 20px !important;
+}
+.team .member .memberLinkedIn {
+    position: absolute;
+    display: inline-block;
+    height: 18px;
+    margin: 10px 0 0 10px;
+}
+.team .member .memberTitle {
+    display: block;
+    margin: 0;
+    color: #888;
+    font-size: 14px !important;
+}
+.team .member .overlayContainer {
+    position: relative;
+    width: 100%;
+}
+.team .member .overlayContainer:hover .overlay, .team .member .overlayContainer:active .overlay {
+    opacity: 1;
+}
+.team .member .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    max-height: 100%;
+    max-width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px 20px;
+}
+.team .member .overlayText {
+    color: #000;
+    font-size: 12pt !important;
+    line-height: 1.5rem;
+}
+.team .member .viewResume {
+    text-decoration: none;
+    color: var(--burgundy-color);
+}
+.team .divider {
+    width: 100%;
+    display: block;
+}
+/* END team styles */
+
+/* START team picture styles */
+.teamPicture {
+    width: 100%;
+    height: 500px;
+    background-image: url(https://2019.igem.org/wiki/images/a/af/T--CMUQ--wikiteam.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+/* END team picture styles */
+
 /* START misc. styles */
 @font-face {
     font-family: 'Ubuntu';
@@ -450,6 +532,10 @@ html, body {
     }
     .textGrid .cont img {
         width: 100% !important;
+    }
+    .teamPicture {
+        background-attachment: inherit;
+        background-size: contain;
     }
 }
 /* END media queries */
