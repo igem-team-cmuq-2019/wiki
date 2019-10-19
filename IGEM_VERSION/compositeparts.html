@@ -1,0 +1,84 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Composite Parts</title>
+    <link rel="stylesheet" href="https://2019.igem.org/wiki/index.php?title=Team:CMUQ/swipercss&action=raw&ctype=text/css">
+    <link rel="stylesheet" href="https://2019.igem.org/wiki/index.php?title=Template:CMUQ/css&action=raw&ctype=text/css">
+
+</head>
+<body>
+    <main class="text-ubuntu">
+        <section class="jumbotron text-ubuntu">
+            <div class="mainHeader text-ubuntu">
+                <h1 class="text-ubuntu">Composite Parts</h1>
+            </div>
+        </section>
+        
+        <section class="description text-ubuntu">
+
+            <!--Text + Picture on left________________________________________________________________________________________-->
+            <div class="block purpleBackground">
+                <div class="block picNoWrap alignWidth text-ubuntu blockNoHorizPadding purpleBackground">
+                    <h1 class="blockTitle text-ubuntu">Text title here</h1>
+                    <div class="blockContainer">
+                        <p class="blockContent">
+                            <span>This design was built around the purpose of a tight and small product that fit all the modules as close as possible. It was to be 15cm by 2cm, roughly the size of a marker, with a hole on one end to insert the testing cuvette. Given the size restraints, battery life and actual user functionality was limited with how small it was.</span>
+                        </p>
+                        <img class="leftMargin" src="https://2019.igem.org/wiki/images/e/e2/T--CMUQ--hardwareDrawing1.png">
+                    </div>
+                </div>
+            </div>
+
+            <!--Header + Text section + Picture________________________________________________________________________________________-->            
+            <div class="block">
+                <div class="blockContainer textGrid">
+                    <h1 class="blockTitle text-ubuntu">More text here</h1>
+                    <p class="blockContent text-ubuntu">We were mentored by <strong>iGEM Team Tubingen</strong> through how to model experimentally determined fluorescence values. They advised us to use machine learning by integrating a database of labeled DNA, as well as to consider DNA lengths for consistency and meaningful extrapolation of fluorescent value, which inspired us to develop software of a mobile application to aid us in diagnostic purposes.</p>
+                    <div class="cont">
+                        <img id="blockPicture" src="https://2019.igem.org/wiki/images/2/23/T--CMUQ--T%C3%BCbingenLogo.png">
+                        <img id="blockPicture" src="https://2019.igem.org/wiki/images/7/75/T--CMUQ--TübingenTeam.png">
+                    </div>
+                </div>
+            </div>
+            <!--Text + Picture on left________________________________________________________________________________________-->
+            <div class="block purpleBackground">
+                    <div class="block picNoWrap alignWidth text-ubuntu blockNoHorizPadding purpleBackground">
+                        <h1 class="blockTitle text-ubuntu">Text title here</h1>
+                        <div class="blockContainer">
+                            <p class="blockContent">
+                                <span>This design was built around the purpose of a tight and small product that fit all the modules as close as possible. It was to be 15cm by 2cm, roughly the size of a marker, with a hole on one end to insert the testing cuvette. Given the size restraints, battery life and actual user functionality was limited with how small it was.</span>
+                            </p>
+                            <img class="leftMargin" src="https://2019.igem.org/wiki/images/e/e2/T--CMUQ--hardwareDrawing1.png">
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+    </main>
+
+    <script src="https://2019.igem.org/wiki/index.php?title=Team:CMUQ/jquery&action=raw&ctype=text/javascript"></script>
+    <script src="https://2019.igem.org/wiki/index.php?title=Team:CMUQ/swiperjs&action=raw&ctype=text/javascript"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+        var swiper = new Swiper('.swiper-container', {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+            },
+            pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+            },
+            navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+            },
+        });
+        </script>
+    </body>
+</html>
