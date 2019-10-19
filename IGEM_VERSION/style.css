@@ -525,6 +525,9 @@ html, body {
 .tableTitle {
     font-weight: bold;
 }
+.center-item {
+    text-align: center;
+}
 /* END misc. styles */
 
 
