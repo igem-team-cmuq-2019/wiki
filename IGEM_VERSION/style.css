@@ -516,9 +516,14 @@ html, body {
     padding: 20px !important;
 }
 .clear-user-agent-styles-padding td {
-    padding: 20px !important;
+    padding: 10px !important;
+    font-family: 'Ubuntu' !important;
+    font-size: 12pt !important;
     border: 0 solid transparent !important;
     vertical-align: middle !important;
+}
+.tableTitle {
+    font-weight: bold;
 }
 /* END misc. styles */
 
