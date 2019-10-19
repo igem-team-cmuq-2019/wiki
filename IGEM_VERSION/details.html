@@ -17,7 +17,19 @@
         </section>
 
         <section class="description details text-ubuntu">
-            
+            <!--Header + Text section________________________________________________________________________________________-->
+            <div class="block">
+                <div class="blockContainer">
+                    <h1 class="blockTitle text-ubuntu">Current CRISPR Uses:</h1>
+                    <p class="blockContent text-ubuntu">CRISPR is becoming an indispensable tool in biological research. Once known as the bacterial immune system against invading viruses, 
+                        the programmable capacity of the Cas9 enzyme is now revolutionizing diverse fields of medical research, biotechnology, 
+                        and agriculture. CRISPR-Cas9 is no longer just a gene-editing tool; the application areas of catalytically impaired inactive Cas9, 
+                        including gene regulation, epigenetic editing, chromatin engineering, and imaging, now exceed the gene-editing functionality of 
+                        WT Cas9 <sup><a href = "#ref1"> [1]</a></sup>. Some potential application of this system could also be used in the treatment 
+                        of different diseases, such as pulmonary, gastrointestinal, hematologic, immune system, viral, autoimmune and inflammatory diseases, and cancer<sup><a href = "#ref6"> [6]</a></sup>
+                    </p>
+                </div>
+            </div>
             <!--Header + Text section________________________________________________________________________________________-->
             <div class="block">
                 <div class="blockContainer">
@@ -51,6 +63,37 @@
                             </p>
                 </div>
             </div>
+            <!--Header + Text section________________________________________________________________________________________-->
+            <div class="block purpleBackground">
+                <div class="blockContainer">
+                    <h1 class="blockTitle text-ubuntu">Current Carrier Testing Methods for Prototype Diseases: </h1>
+                    <p class="blockContent text-ubuntu">Although there are the traditional laboratory methods which withdraw blood to test for genetic diseases, 
+                        today a variety of alternative techniques are being introduced, presenting a high competition in this field. 
+                        According to the American Association of Cereal Chemist (AACC) carrier testing, today can be done by extracting genome from a 
+                        body part or fluid that will then undergo PCR, DNA Sequencing, Cytogenetic Analysis, Microarrays, or Gene Expression Profiling, 
+                        depending on the type of mutation searched for. The mentioned methods are observed to be time-consuming, require a lot of expertise 
+                        and lab equipment. Studying sickle cell anemia as one of our prototype diseases, we came across a recent method for detecting 
+                        carriers based on intrinsic characteristics and physical differences of the red blood cells as explained in this article. 
+                        While such a technique could be efficient and low in cost, it remains invasive and presents biohazards. Moreover, this technique is limited to sickle cell anemia, 
+                        where another non blood related genetic disease can not be detected. 
+                          <sup><a href = "#ref5"> [5]</a></sup>
+                    </p>
+                    <p class = "blockContent text-ubuntu">As for testing for Cystic Fibrosis, the most non-invasive current method is 
+                        sweat test where people who have Cystic Fibrosis tend to have a much higher chloride concentration. 
+                        However, to test for carriers, DNA is extracted from blood or cheek swabs and then traditional sequencing 
+                        is done<sup><a href = "#ref6"> [6]</a></sup>. 
+                        </p>
+                </div>
+            </div>
+
+            <!--Header + Text section________________________________________________________________________________________-->
+            <div class="block">
+                    <div class="blockContainer">
+                        <h1 class="blockTitle text-ubuntu">Project Details: </h1>
+                        <p class="blockContent text-ubuntu">Our preliminary kit aims to provide a first step of genetic testing where if suspicious results are obtained, further and more detailed testing can be done. The biological mechanism behind this genetic test depends on the ability of the Cas12a protein to detect a specific single nucleotide polymorphism (SNP) of a gene. That is done by having a designed guide RNA (gRNA) with a fixed loop in the reaction solution where the fixed loop will help the gRNA to integrate itself within Cas12a in order to guide it to find the SNP of interest. As Cas12a utilizes gRNA and a TTTN Protospacer adjacent motif (PAM) on the DNA template to detect the SNP, upon detection, binding of the Cas12a and DNA-template occurs to form a reaction complex. This complex initiates an indiscriminate cleavage activity where single and double stranded nucleic acids get cut. Taking advantage of this characteristic, we use a single stranded DNA (ssDNA) reporter molecule which has a quencher and a fluorescent tag. When the indiscriminate cleavage activity is initiated, this ssDNA reporter molecule gets cleaved allowing the fluorescent tag to emit fluorescence as it is no longer quenched. </p>
+                        <p class = "blockContent text-ubuntu">We endeavored to extract DNA from saliva to eliminate the biohazardous use of blood. In addition,our project design  paid particular attention to the importance of genetic counseling. Genetic tests have been heavily stigmatized that people tend to either hesitate to take them or remain tense about the results, which we understand. Thus, we worked on developing an application that includes the necessary algorithm for %liability calculation to prepare the patient with possible expected results. The integrated algorithm will help in saving the time and the money usually invested in finding the risk percentage of a specific disease within the normal pre-test counseling and it will psychologically prepare the patient for any type of results. Whilst the pre-counselling results will be prepared by a machine, we recommend that the device and software are to be used with people with healthcare experience in order to better deliver results.Furthermore, although we are using statistical knowledge to draw possible outcomes from the calculated liability percentage as a first step, we still recommend that the report produced by our application/software would be reviewed by a genetic counselor for deeper analysis.</p>
+                    </div>
+                </div>
             
             <!--References________________________________________________________________________________________-->
             <div class="block purpleBackground">
@@ -58,20 +101,24 @@
                     <h1 class="blockTitle text-ubuntu refTitle">References</h1>
                     <ol class = "orderedList blockContent">
                         <li>
-                            <a href="" class="links blockContent text-ubuntu">Adli M. (2018). The CRISPR tool kit for genome editing and beyond. Nature communications, 9(1), 1911.</a>
+                            <a id = "ref1" href="https://www.nature.com/articles/s41467-018-04252-2" class="links blockContent text-ubuntu">Adli M. (2018). The CRISPR tool kit for genome editing and beyond. Nature communications, 9(1), 1911.</a>
                         </li>
                         <li>
-                            <a href="https://www.mayoclinic.org/diseases-conditions/sickle-cell-anemia/diagnosis-treatment/drc-2035582" class="links blockContent text-ubuntu">Diagnosis and Treatment of Sickle Cell Anemia, Mayo Clinic.</a>
+                            <a id ="ref2" href="https://www.mayoclinic.org/diseases-conditions/sickle-cell-anemia/diagnosis-treatment/drc-2035582" class="links blockContent text-ubuntu">Diagnosis and Treatment of Sickle Cell Anemia, Mayo Clinic.</a>
                         </li>
                         <li>
-                            <a href="" class="links blockContent text-ubuntu">Z. O. Fawzi  et al(2003). Distribution of Hemoglobinopathies and Thalassemias in Qatari Nationals Seen at Hamad Hospital in Qatar. Qatar Medical Journal, Volume 2003, Issue 1, Jun 2003.</a>
+                            <a id = "ref3" href="https://doi.org/10.5339/qmj.2003.1.11" class="links blockContent text-ubuntu">Z. O. Fawzi  et al(2003). Distribution of Hemoglobinopathies and Thalassemias in Qatari Nationals Seen at Hamad Hospital in Qatar. Qatar Medical Journal, Volume 2003, Issue 1, Jun 2003.</a>
                         </li>
                         <li>
-                            <a href="" class="links blockContent text-ubuntu">O'Sullivan, BP; Freedman, SD (30 May 2009). "Cystic fibrosis". Lancet. 373 (9678): 1891–904.</a>
+                            <a id = "ref4" href="https://www.scirp.org/(S(351jmbntvnsjt1aadkposzje))/reference/ReferencesPapers.aspx?ReferenceID=251723" class="links blockContent text-ubuntu">O'Sullivan, BP; Freedman, SD (30 May 2009). "Cystic fibrosis". Lancet. 373 (9678): 1891–904.</a>
                         </li>
                         <li>
-                            <a href="" class="links blockContent text-ubuntu">Rodríguez‑Rodríguez, D.R., Ramírez‑Solís, R., Garza‑Elizondo, M.A., Garza‑Rodríguez, M.D., & Barrera‑Saldaña, H.A. (2019). Genome editing: A perspective on the application of CRISPR/Cas9 to study human diseases (Review). International Journal of Molecular Medicine, 43, 1559-1574.</a>
+                            <a id = "ref5" href="https://doi.org/10.3892/ijmm.2019.4112" class="links blockContent text-ubuntu">Rodríguez‑Rodríguez, D.R., Ramírez‑Solís, R., Garza‑Elizondo, M.A., Garza‑Rodríguez, M.D., & Barrera‑Saldaña, H.A. (2019). Genome editing: A perspective on the application of CRISPR/Cas9 to study human diseases (Review). International Journal of Molecular Medicine, 43, 1559-1574.</a>
                         </li>
+                        <li>
+                            <a id = "ref6" href="https://www.webmd.com/children/how-do-doctors-diagnose-cystic-fibrosis#1" class="links blockContent text-ubuntu">Cystic Fibrosis Diagnosis: Exams & Tests To Diagnose CF.</a>
+                        </li>
+                        
                     </ol>
                 </div>
             </div>
