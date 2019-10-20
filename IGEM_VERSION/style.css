@@ -124,6 +124,9 @@ html, body {
 .description .whiteText {
     color:#fff !important;
 }
+.description .blackText {
+    color:#000 !important;
+}
 
 .description .block.purpleBackground p, .description .block.purpleBackground h1 {
     color: #fff !important;
