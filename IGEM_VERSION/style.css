@@ -531,19 +531,17 @@ html, body {
     border: 0 solid transparent !important;
     vertical-align: middle !important;
 }
-<<<<<<< HEAD
 .bold {
     font-weight: bold;
 }
 .displayBlock {
     display: block;
-=======
+}
 .tableTitle {
     font-weight: bold;
 }
 .center-item {
     text-align: center;
->>>>>>> 5ab6af58e0ce3aa9498fe034781e275152bf5a65
 }
 /* END misc. styles */
 
