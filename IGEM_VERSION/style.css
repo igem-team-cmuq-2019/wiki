@@ -308,6 +308,9 @@ html, body {
 .table table tr:nth-child(odd) {
     background-color: #eee;
 }
+.table table tr:nth-child(even) {
+    background-color: #fff;
+}
 .grid .parentGrid {
     display: flex;
     flex-direction: row;
@@ -488,6 +491,12 @@ html, body {
 }
 /* END details styles */
 
+/* START Lab Notebook styles */
+.notebookList li {
+    margin: 15px auto;
+}
+/* END Lab Notebook styles */
+
 /* START misc. styles */
 @font-face {
     font-family: 'Ubuntu';
@@ -522,11 +531,19 @@ html, body {
     border: 0 solid transparent !important;
     vertical-align: middle !important;
 }
+<<<<<<< HEAD
+.bold {
+    font-weight: bold;
+}
+.displayBlock {
+    display: block;
+=======
 .tableTitle {
     font-weight: bold;
 }
 .center-item {
     text-align: center;
+>>>>>>> 5ab6af58e0ce3aa9498fe034781e275152bf5a65
 }
 /* END misc. styles */
 
