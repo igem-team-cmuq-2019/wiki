@@ -29,7 +29,8 @@
             <div class="block purpleBackground">
                 <div class="blockContainer">
                     <h1 class="blockTitle text-ubuntu">Pre-counseling</h1>
-                    <p class="blockContent text-ubuntu">Pre-counseling consists of probabilistic diagnosis using historical data. We obtained a database from Qatar Biobank containing positive and negative diagnosis details for hundreds of patients. Each patient’s record indicates their ethnicity, age, mother/father genotypes, and parent relatedness. We converted this patient information into a set of binary features. Using this and final diagnosis of the patient, we constructed a prediction algorithm. Our prediction algorithm consists of a neural network which takes in this set of features, does some inner calculations, and outputs the likelihood of testing positive. Using the online database, we obtained an accuracy of</p>
+                    <p class="blockContent text-ubuntu">Pre-counseling consists of probabilistic diagnosis using historical data. We created a 500-patient database using common SCD statistics. We chose this route because we could not obtain a real patient database as it goes against patient confidentiality. Each patient’s record indicates their ethnicity, age, mother/father genotypes, and parent relatedness. We converted this patient information into a set of binary features. Using this and final diagnosis of the patient, we constructed a prediction algorithm. Our prediction algorithm consists of a neural network which takes in this set of features, does some inner calculations, and outputs the likelihood of testing positive.</p>
+                    <p class = "blockContent text-ubuntu">The patient database above can be replaced with a real database representing real and unique patients. This will give accurate results for a given pre-counseling input.</p>
                     <!--Table________________________________________________________________________________________-->
                     <div class="block purpleBackground table alignWidth text-ubuntu blockNoHorizPadding">
                         <p class="blockContent text-ubuntu">Sample Database Entries for our neural network:</p>
@@ -86,11 +87,11 @@
 
                     </tr>
                     <tr>
-                        <td class="text-ubuntu neonGreenBackground"></td>
+                        <td class="text-ubuntu darkGreenBackground"></td>
                         <td class="text-ubuntu">127</td>
                     </tr>
                     <tr>
-                        <td class="text-ubuntu darkGreenBackground"></td>
+                        <td class="text-ubuntu neonGreenBackground"></td>
                         <td class="text-ubuntu">255</td>
                     </tr>
                 </table>
