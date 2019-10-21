@@ -3,59 +3,116 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Basic Parts</title>
+    <title>Project Details</title>
     <link rel="stylesheet" href="https://2019.igem.org/wiki/index.php?title=Team:CMUQ/swipercss&action=raw&ctype=text/css">
     <link rel="stylesheet" href="https://2019.igem.org/wiki/index.php?title=Template:CMUQ/css&action=raw&ctype=text/css">
-
 </head>
 <body>
     <main class="text-ubuntu">
         <section class="jumbotron text-ubuntu">
             <div class="mainHeader text-ubuntu">
                 <h1 class="text-ubuntu">Basic Parts</h1>
+                
             </div>
         </section>
-        
-        <section class="description text-ubuntu">
 
-            <!--Text + Picture on left________________________________________________________________________________________-->
+        <section class="description details text-ubuntu">
+            <!--Header + Text section________________________________________________________________________________________-->
             <div class="block purpleBackground">
-                <div class="block picNoWrap alignWidth text-ubuntu blockNoHorizPadding purpleBackground">
-                    <h1 class="blockTitle text-ubuntu">Text title here</h1>
-                    <div class="blockContainer">
-                        <p class="blockContent">
-                            <span>This design was built around the purpose of a tight and small product that fit all the modules as close as possible. It was to be 15cm by 2cm, roughly the size of a marker, with a hole on one end to insert the testing cuvette. Given the size restraints, battery life and actual user functionality was limited with how small it was.</span>
-                        </p>
-                        <img class="leftMargin" src="https://2019.igem.org/wiki/images/e/e2/T--CMUQ--hardwareDrawing1.png">
-                    </div>
+                <div class="blockContainer">
+                    <h1 class="blockTitle text-ubuntu">The basic parts that we generated this year may be further broken down into two categories:</h1>                
                 </div>
             </div>
-
-            <!--Header + Text section + Picture________________________________________________________________________________________-->            
+            <!--Header + Text section________________________________________________________________________________________-->
             <div class="block">
-                <div class="blockContainer textGrid">
-                    <h1 class="blockTitle text-ubuntu">More text here</h1>
-                    <p class="blockContent text-ubuntu">We were mentored by <strong>iGEM Team Tubingen</strong> through how to model experimentally determined fluorescence values. They advised us to use machine learning by integrating a database of labeled DNA, as well as to consider DNA lengths for consistency and meaningful extrapolation of fluorescent value, which inspired us to develop software of a mobile application to aid us in diagnostic purposes.</p>
-                    <div class="cont">
-                        <img id="blockPicture" src="https://2019.igem.org/wiki/images/2/23/T--CMUQ--T%C3%BCbingenLogo.png">
-                        <img id="blockPicture" src="https://2019.igem.org/wiki/images/7/75/T--CMUQ--TübingenTeam.png">
-                    </div>
+                <div class="blockContainer">
+                    <h1 class="blockTitle text-ubuntu"><span class="blockPos">1</span>Human CFTR gene segments (BBa_K2961000 and BBa_K2961001): </h1>
+                    <p class="blockContent text-ubuntu">These are the two parts that represent nucleotides from the human genome that are a part of the CFTR gene. There are no other segments of the human genome where these two parts could perfectly match with.</p>
+                    <p class="blockContent text-ubuntu">Both of these parts match with the CFTR gene at the exact same location (base number 3763 to 3786 on the mRNA of the gene), and only have one nucleotide difference so that one part (BBa_K2961001) uniquely represents the wildtype variant of the gene and the other (BBa_K2961000) uniquely represents a common mutant variant of the CFTR gene. Thus the difference between the parts is only a single nucleotide difference that corresponds to a Ile1234Val mutation phenotype in real life (known to be a common cause for cystic fibrosis in the Middle East).</p>
+                    <p class="blockContent text-ubuntu">Both part sequences also happen to be in a special place in the gene such that the four bases that precede just before their sequence starts in the gene is “TTTC”, a known required PAM sequence for Cas12a if guideRNAs were to be used to target this part of the genome using these sequences. </p>
+
                 </div>
             </div>
-            <!--Text + Picture on left________________________________________________________________________________________-->
-            <div class="block purpleBackground">
-                    <div class="block picNoWrap alignWidth text-ubuntu blockNoHorizPadding purpleBackground">
-                        <h1 class="blockTitle text-ubuntu">Text title here</h1>
-                        <div class="blockContainer">
-                            <p class="blockContent">
-                                <span>This design was built around the purpose of a tight and small product that fit all the modules as close as possible. It was to be 15cm by 2cm, roughly the size of a marker, with a hole on one end to insert the testing cuvette. Given the size restraints, battery life and actual user functionality was limited with how small it was.</span>
-                            </p>
-                            <img class="leftMargin" src="https://2019.igem.org/wiki/images/e/e2/T--CMUQ--hardwareDrawing1.png">
-                        </div>
-                    </div>
-                </div>
-        </section>
 
+            <!--Header + Text section________________________________________________________________________________________-->
+            <div class="block">
+                <div class="blockContainer">
+                    <h1 class="blockTitle text-ubuntu"><span class="blockPos">2</span>gRNA fixed loop repeat segment (BBa_K2961003):</h1>
+                    <p class="blockContent text-ubuntu">This is a common fixed sequence that any guide RNA that is intended to hybridize with a Cas protein needs in order to associate with the Cas protein. Otherwise, the guide RNA would only have a segment that targets it to the human genome, but would not be able to attach to the Cas protein.</p>
+                    <p class="blockContent text-ubuntu">Note that every Cas protein has a different sequence requirement. As we worked with Cas12a / Cpf1 this summer, the sequence we used here is optimized for hybridizing with Cas12a. The sequence also tends to vary based on the specific variant of the Cas12a one uses; the sequence here is optimized for Cas12a manufactured by NEB.</p>
+                    <p class="blockContent text-ubuntu"></p>
+                </div>
+            </div>
+            <!--Table________________________________________________________________________________________-->
+            <div class="block table alignWidth text-ubuntu blockNoHorizPadding">
+                <div class="blockContainer">
+                    <p class="blockContent text-ubuntu"><strong>Together, the above two components combine to form our composite parts that allow for diagnosis of recessive alleles in patients.</strong></p>
+                    <h1 class="blockTitle text-ubuntu">iGEM CMU-Q BioBrick List</h1>                    
+                    <table>
+                        <tr>
+                            <th class="text-ubuntu">Part Number</th>
+                            <th class="text-ubuntu">Basic Or Composite</th>
+                            <th class="text-ubuntu">Description</th>
+                            <th class="text-ubuntu">Type</th>
+                            <th class="text-ubuntu">Designer</th>
+                            <th class="text-ubuntu">Lengths</th>
+                        </tr>
+                        <tr>
+                            <td class="text-ubuntu">BBa_K2961000</td>
+                            <td class="text-ubuntu">Basic</td>
+                            <td class="text-ubuntu">CFTR Mutant Gene Segment (rs75389940_G)</td>
+                            <td class="text-ubuntu">DNA</td>
+                            <td class="text-ubuntu">iGEM CMUQ</td>
+                            <td class="text-ubuntu">24bps</td>
+
+                        </tr>
+                        <tr>
+                            <td class="text-ubuntu">BBa_K2961001</td>
+                            <td class="text-ubuntu">Basic</td>
+                            <td class="text-ubuntu">CFTR Wildtype gene segment</td>
+                            <td class="text-ubuntu">DNA</td>
+                            <td class="text-ubuntu">iGEM CMUQ</td>
+                            <td class="text-ubuntu">24bps</td>
+                        </tr>
+                        <tr>
+                            <td class="text-ubuntu">BBa_K2961003</td>
+                            <td class="text-ubuntu">Basic</td>
+                            <td class="text-ubuntu">gRNA / crRNA fixed-loop repeat for Cpf1 / Cas12a</td>
+                            <td class="text-ubuntu">RNA</td>
+                            <td class="text-ubuntu">iGEM CMUQ</td>
+                            <td class="text-ubuntu">21bps</td>
+
+                        </tr>
+                        <tr>
+                            <td class="text-ubuntu">BBa_K2961004</td>
+                            <td class="text-ubuntu">Composite</td>
+                            <td class="text-ubuntu">gRNA for Cystic Fibrosis SNP targeting of Cas12a / Cpf1 (rs75389940_G)</td>
+                            <td class="text-ubuntu">RNA</td>
+                            <td class="text-ubuntu">iGEM CMUQ</td>
+                            <td class="text-ubuntu">45bps</td>
+
+                        </tr>
+                        <tr>
+                            <td class="text-ubuntu">BBa_K2961005</td>
+                            <td class="text-ubuntu">Composite</td>
+                            <td class="text-ubuntu">gRNA for Cystic Fibrosis Wildtype gene targeting of Cas12a / Cpf1</td>
+                            <td class="text-ubuntu">RNA</td>
+                            <td class="text-ubuntu">iGEM CMUQ</td>
+                            <td class="text-ubuntu">45bps</td>
+
+                        </tr>
+                        <tr>
+                            <td class="text-ubuntu">BBa_K2961006</td>
+                            <td class="text-ubuntu">Basic</td>
+                            <td class="text-ubuntu">Template DNA sequence encoding for HBB rs334 mutation (A to T) in humans (improves on --> BBa_K2872881)</td>
+                            <td class="text-ubuntu">DNA</td>
+                            <td class="text-ubuntu">iGEM CMUQ</td>
+                            <td class="text-ubuntu">210bps</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
     </main>
 
     <script src="https://2019.igem.org/wiki/index.php?title=Team:CMUQ/jquery&action=raw&ctype=text/javascript"></script>

@@ -18,42 +18,116 @@
         
         <section class="description text-ubuntu">
 
-            <!--Text + Picture on left________________________________________________________________________________________-->
             <div class="block purpleBackground">
-                <div class="block picNoWrap alignWidth text-ubuntu blockNoHorizPadding purpleBackground">
-                    <h1 class="blockTitle text-ubuntu">Text title here</h1>
-                    <div class="blockContainer">
-                        <p class="blockContent">
-                            <span>This design was built around the purpose of a tight and small product that fit all the modules as close as possible. It was to be 15cm by 2cm, roughly the size of a marker, with a hole on one end to insert the testing cuvette. Given the size restraints, battery life and actual user functionality was limited with how small it was.</span>
-                        </p>
-                        <img class="leftMargin" src="https://2019.igem.org/wiki/images/e/e2/T--CMUQ--hardwareDrawing1.png">
-                    </div>
+                <div class="blockContainer">
+                    <p class="blockContent text-ubuntu">Last year, our team produced BBa_K2872881, a part dedicated to emulating the human HBB gene so that we could perform our experiments in the lab without actual human samples first to test the idea. We have made some improvements to this parts so that it resembles the real human HBB gene better and also is designed to be targeted better by guideRNA - Cpf1 complex.</p>
                 </div>
             </div>
-
-            <!--Header + Text section + Picture________________________________________________________________________________________-->            
             <div class="block">
-                <div class="blockContainer textGrid">
-                    <h1 class="blockTitle text-ubuntu">More text here</h1>
-                    <p class="blockContent text-ubuntu">We were mentored by <strong>iGEM Team Tubingen</strong> through how to model experimentally determined fluorescence values. They advised us to use machine learning by integrating a database of labeled DNA, as well as to consider DNA lengths for consistency and meaningful extrapolation of fluorescent value, which inspired us to develop software of a mobile application to aid us in diagnostic purposes.</p>
-                    <div class="cont">
-                        <img id="blockPicture" src="https://2019.igem.org/wiki/images/2/23/T--CMUQ--T%C3%BCbingenLogo.png">
-                        <img id="blockPicture" src="https://2019.igem.org/wiki/images/7/75/T--CMUQ--TübingenTeam.png">
-                    </div>
+                <div class="blockContainer">
+                    <p class="blockContent text-ubuntu">The HBB gene is responsible for producing beta-globin, a component of haemoglobin that is essential to red blood cells for its efficient functioning in carrying oxygen around the body. A set of known defects in the HBB gene leads to sickle cell anemia, a common disease in some parts of the world. However, most of such defective alleles are recessive in nature and are only expressed when both of the alleles inherited from the parents are recessive. 
+                        </p>
                 </div>
             </div>
-            <!--Text + Picture on left________________________________________________________________________________________-->
             <div class="block purpleBackground">
-                    <div class="block picNoWrap alignWidth text-ubuntu blockNoHorizPadding purpleBackground">
-                        <h1 class="blockTitle text-ubuntu">Text title here</h1>
-                        <div class="blockContainer">
-                            <p class="blockContent">
-                                <span>This design was built around the purpose of a tight and small product that fit all the modules as close as possible. It was to be 15cm by 2cm, roughly the size of a marker, with a hole on one end to insert the testing cuvette. Given the size restraints, battery life and actual user functionality was limited with how small it was.</span>
-                            </p>
-                            <img class="leftMargin" src="https://2019.igem.org/wiki/images/e/e2/T--CMUQ--hardwareDrawing1.png">
-                        </div>
-                    </div>
+                <div class="blockContainer">
+                    <p class="blockContent text-ubuntu">We tried to design a detector for carriers of the disease that have the recessive allele for sickle cell anemia but are unaware of it. The test could inform carriers so that they are aware that if they produced children with other carriers there was a chance of their child having the genetic disease.</p>
                 </div>
+            </div>
+            <div class="block">
+                <div class="blockContainer">
+                    <p class="blockContent text-ubuntu">However, turning the idea into action requires actual genetic samples, which are often hard to get, especially at the beginning of an idea’s development when the required approvals cannot be obtained without significant testing of the idea. Therefore, a part was designed last year to mimic the human genome. The part contained a segment of the mutated HBB gene as a template DNA that could be targeted by the guide RNAs that we designed last year to see if we could diagnose a DNA segment with having such an allele or not.</p>
+                </div>
+            </div>
+            <div class="block purpleBackground">
+                <div class="blockContainer">
+                    <p class="blockContent text-ubuntu">The part had its defects, however. Firstly, the part was a modification of the actual HBB gene, as it had an artificial “TTTC” segment (PAM sequence for Cas12a) inserted so as to allow Cpf1 to target the genome. Secondly, the targeting experiments seemed to fail with this template. </p>
+                </div>
+            </div>
+            <div class="block">
+                <div class="blockContainer">
+                    <p class="blockContent text-ubuntu">Upon closer examination, we realized that the PAM sequence for the previous year’s part design may have been placed too far from the mutated HBB gene. We looked at literature for the optimal distance of the PAM sequence from the intended target sequence in the genome and adjusted our design accordingly. We also placed it in the correct orientation and location (upstream instead of downstream) based on what was recommended in the literature. </p>
+                </div>
+            </div>
+            <div class="block purpleBackground">
+                <div class="blockContainer">
+                    <p class="blockContent text-ubuntu">Furthermore, we managed to reduce the number of artificially inserted nucleotides in the template (compared to the actual human gene) from three to zero. Instead, we modified just one nucleotide to create a PAM site right in the middle of the gene. </p>
+                </div>
+            </div>
+            <div class="block">
+                <div class="blockContainer">
+                    <p class="blockContent text-ubuntu">Overall, we managed to improve our template DNA design for the mutated HBB gene by reducing the number of modifications compared to  the real human gene and by placing the PAM sequence at a more appropriate location. We note, however, that we were still not able to get any substantially improved results with this new result. We will investigate further nito why this specific target seems to elude us every time.</p>
+                </div>
+            </div>
+            
+
+
+            <!--Table________________________________________________________________________________________-->
+            <div class="block table alignWidth text-ubuntu blockNoHorizPadding">
+                <h1 class="blockTitle text-ubuntu">iGEM CMU-Q BioBrick List</h1>                    
+                <table>
+                    <tr>
+                        <th class="text-ubuntu">Part Number</th>
+                        <th class="text-ubuntu">Basic Or Composite</th>
+                        <th class="text-ubuntu">Description</th>
+                        <th class="text-ubuntu">Type</th>
+                        <th class="text-ubuntu">Designer</th>
+                        <th class="text-ubuntu">Lengths</th>
+                    </tr>
+                    <tr>
+                        <td class="text-ubuntu">BBa_K2961000</td>
+                        <td class="text-ubuntu">Basic</td>
+                        <td class="text-ubuntu">CFTR Mutant Gene Segment (rs75389940_G)</td>
+                        <td class="text-ubuntu">DNA</td>
+                        <td class="text-ubuntu">iGEM CMUQ</td>
+                        <td class="text-ubuntu">24bps</td>
+
+                    </tr>
+                    <tr>
+                        <td class="text-ubuntu">BBa_K2961001</td>
+                        <td class="text-ubuntu">Basic</td>
+                        <td class="text-ubuntu">CFTR Wildtype gene segment</td>
+                        <td class="text-ubuntu">DNA</td>
+                        <td class="text-ubuntu">iGEM CMUQ</td>
+                        <td class="text-ubuntu">24bps</td>
+                    </tr>
+                    <tr>
+                        <td class="text-ubuntu">BBa_K2961003</td>
+                        <td class="text-ubuntu">Basic</td>
+                        <td class="text-ubuntu">gRNA / crRNA fixed-loop repeat for Cpf1 / Cas12a</td>
+                        <td class="text-ubuntu">RNA</td>
+                        <td class="text-ubuntu">iGEM CMUQ</td>
+                        <td class="text-ubuntu">21bps</td>
+
+                    </tr>
+                    <tr>
+                        <td class="text-ubuntu">BBa_K2961004</td>
+                        <td class="text-ubuntu">Composite</td>
+                        <td class="text-ubuntu">gRNA for Cystic Fibrosis SNP targeting of Cas12a / Cpf1 (rs75389940_G)</td>
+                        <td class="text-ubuntu">RNA</td>
+                        <td class="text-ubuntu">iGEM CMUQ</td>
+                        <td class="text-ubuntu">45bps</td>
+
+                    </tr>
+                    <tr>
+                        <td class="text-ubuntu">BBa_K2961005</td>
+                        <td class="text-ubuntu">Composite</td>
+                        <td class="text-ubuntu">gRNA for Cystic Fibrosis Wildtype gene targeting of Cas12a / Cpf1</td>
+                        <td class="text-ubuntu">RNA</td>
+                        <td class="text-ubuntu">iGEM CMUQ</td>
+                        <td class="text-ubuntu">45bps</td>
+
+                    </tr>
+                    <tr>
+                        <td class="text-ubuntu">BBa_K2961006</td>
+                        <td class="text-ubuntu">Basic</td>
+                        <td class="text-ubuntu">Template DNA sequence encoding for HBB rs334 mutation (A to T) in humans (improves on --> BBa_K2872881)</td>
+                        <td class="text-ubuntu">DNA</td>
+                        <td class="text-ubuntu">iGEM CMUQ</td>
+                        <td class="text-ubuntu">210bps</td>
+                    </tr>
+                </table>
+            </div>
         </section>
 
     </main>
