@@ -600,8 +600,8 @@ html, body {
     .blockContainer img, .picNoWrap img.leftMargin {
         width: 100% !important;
         height: 200px !important;
-        margin: 0 !important;
-        object-fit: cover;
+        margin: 10px 0 !important;
+        object-fit: contain;
     }
 }
 /* END media queries */
